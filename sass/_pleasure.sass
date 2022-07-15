@@ -1,0 +1,135 @@
+.pleasure
+ color: #333333
+ min-height: 100vh
+ &__wrapper
+  padding: 0 15px
+ ul
+  flex-wrap: wrap
+  max-width: 1078px
+  display: flex
+  margin: auto
+  li
+   flex-basis: 25%
+   display: flex
+   justify-content: center
+   align-items: center
+   max-width: 270px
+   height: 230px
+   a
+    justify-content: center
+    display: flex
+    align-items: center
+    width: 100%
+    height: 100%
+    border-right: 1px solid rgba(168, 166, 166, 1)
+    border-bottom: 1px solid rgba(168, 166, 166, 1)
+  li:nth-child(4) a
+   border-right: none
+  li:nth-child(8) a
+   border-right: none
+  li:nth-child(12) a
+   border-right: none
+  li:nth-child(9) a
+   border-bottom: none
+  li:nth-child(10) a
+   border-bottom: none
+  li:nth-child(11) a
+   border-bottom: none
+  li:nth-child(12) a
+   border-bottom: none
+.empty-spot-li
+ position: relative
+.empty-spot-li:before
+ content: ''
+ width: 2px
+ height: calc(100% - 40px)
+ background: rgba(92, 77, 216, 1)
+ position: absolute
+ left: 20px
+ top: 20px
+ transform: scaleY(.4) scaleX(1)
+ transform-origin: top
+ transition: .5s cubic-bezier(.858, .01, .068, .99)
+.empty-spot-li:after
+ width: calc(100% - 40px)
+ height: 2px
+ transform: scaleY(1) scaleX(.4)
+ transform-origin: left
+ content: ''
+ background: rgba(92, 77, 216, 1)
+ position: absolute
+ left: 20px
+ top: 20px
+ transition: .5s cubic-bezier(.858, .01, .068, .99)
+.empty-spot
+ position: relative
+ text-decoration: none
+ font-size: 14px
+ font-family: 'Gilroy-Medium'
+ display: flex
+ flex-direction: column
+ letter-spacing: 0.12em
+ line-height: 140%
+ span
+  animation-delay: 1s
+.empty-spot:before
+ content: ''
+ width: 2px
+ height: calc(100% - 40px)
+ background: rgba(92, 77, 216, 1)
+ position: absolute
+ right: 20px
+ bottom: 20px
+ transform: scaleY(.4) scaleX(1)
+ transform-origin: bottom
+ transition: .5s cubic-bezier(.858, .01, .068, .99)
+.empty-spot:after
+ width: calc(100% - 40px)
+ height: 2px
+ transform: scaleY(1) scaleX(.4)
+ transform-origin: right
+ content: ''
+ background: rgba(92, 77, 216, 1)
+ position: absolute
+ bottom: 20px
+ right: 20px
+ transition: .5s cubic-bezier(.858, .01, .068, .99)
+.empty-spot-li:hover:after
+ transform: scaleY(1) scaleX(1)
+.empty-spot-li:hover:before
+ transform: scaleY(1) scaleX(1)
+.empty-spot-li:hover
+ .empty-spot:before
+  transform: scaleY(1) scaleX(1)
+ .empty-spot:after 
+  transform: scaleY(1) scaleX(1)
+
+@media screen and ( max-width: 768px )
+ .pleasure
+  ul
+   justify-content: center
+   li
+    flex-basis: 50%
+   li:nth-child(2) a
+    border-right: none
+   li:nth-child(4) a
+    border-right: none
+   li:nth-child(6) a
+    border-right: none
+   li:nth-child(8) a
+    border-right: none
+   li:nth-child(10) a
+    border-right: none
+    border-bottom: 1px solid rgba(168, 166, 166, 1)
+   li:nth-child(9) a
+    border-bottom: 1px solid rgba(168, 166, 166, 1)
+@media screen and ( max-width: 480px )
+ .pleasure
+  ul
+   li
+    max-width: 150px
+    max-height: 150px
+    a
+     img
+      max-width: 73px
+      max-height: 73px
