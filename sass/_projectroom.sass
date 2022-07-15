@@ -1,62 +1,88 @@
 .projectroom
- background-color: #222222
- color: #FFFFFF
- min-height: 100vh
- display: flex
- justify-content: center
- align-items: center
- &__container
-  max-width: 900px
-  margin: auto
- &__container-flex
+  background-color: #222222
+  color: #FFFFFF
+  min-height: 100vh
   display: flex
-  flex-wrap: wrap
- &__title
-  flex-basis: 100%
- &__large-title
-  display: flex
-  flex-direction: column
-  text-align: center
-  font-size: 64px
-  transition-delay: 0.5s
-  transition-duration: 1s
+  justify-content: center
+  align-items: center
+  &__container
+    max-width: 900px
+    margin: auto
+  &__container-flex
+    display: flex
+    flex-wrap: wrap
+  &__title
+    flex-basis: 100%
+  &__large-title
+    display: flex
+    flex-direction: column
+    text-align: center
+    font-size: 64px
   span:nth-child(2)
-   font-size: 28px
-   animation-duration: 1.5s
- &__quality-wrapper
-  display: flex
-  flex-wrap: wrap
-  padding-left: 127px
-  padding-right: 20px
- &__quality
-  flex-basis: 50%
-  display: flex
-  flex-direction: column
+    font-size: 28px
+  &__quality-wrapper
+    display: flex
+    flex-wrap: wrap
+    padding-left: 127px
+    padding-right: 20px
+  &__quality
+    flex-basis: 50%
+    display: flex
+    flex-direction: column
   h4
-   background-color: #5C4DD8
-   width: fit-content
-   padding: 4px 14px
-   opacity: 0
-   animation-delay: 1s
-   margin: 5px 0
-   margin-left: 10px
+    background-color: #5C4DD8
+    width: fit-content
+    padding: 4px 14px
+    opacity: 0
+    animation-delay: 1s
+    margin: 5px 0
+    margin-left: 10px
   p
-   font-family: 'Gilroy-Medium'
-   max-width: 350px
-   color: rgba(168, 166, 166, 1)
-   opacity: 0
-   animation-delay: 2s
-   margin-left: 10px
+    font-family: 'Gilroy-Medium'
+    max-width: 350px
+    color: rgba(168, 166, 166, 1)
+    opacity: 0
+    animation-delay: 2s
+    margin-left: 10px
 /*animation */
 [data-animation]
- opacity: 0 
+  opacity: 0
 [data-animation] .animated
- opacity: 1   
- 
+  opacity: 1
 
 @media screen and ( max-width: 900px )
- .projectroom
-  &__large-title
-   transition-delay: 0.5s
-   font-size: 40px
-   transition-duration: 1s
+  .projectroom
+    &__quality-wrapper
+      padding-left: 60px
+      padding-right: 20px
+    &__large-title
+      font-size: 56px
+      span:nth-child(2)
+        font-size: 20px
+@media screen and ( max-width: 768px )
+  .projectroom
+    &__quality-wrapper
+      flex-wrap: nowrap
+      flex-direction: column
+      padding-left: 20px
+      padding-right: 0
+    &__large-title
+      font-size: 56px
+      span:nth-child(2)
+        font-size: 20px
+@media screen and ( max-width: 500px )
+  .projectroom
+    &__quality-wrapper
+      flex-wrap: nowrap
+      flex-direction: column
+      padding-left: 12px
+      padding-right: 12px
+    &__large-title
+      font-size: 34px
+      span:nth-child(2)
+        font-size: 18px
+    &__quality
+      h4
+        font-size: 14px
+      p
+        font-size: 14px

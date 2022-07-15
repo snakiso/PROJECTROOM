@@ -1,0 +1,27 @@
+.own-transition
+ transition-delay: 0.5s
+ transition-duration: 1s
+ 
+[data-animation].overlay-anim-box1:before,
+[data-animation].overlay-anim-box1:after,
+[data-animation].overlay-anim-box1
+ opacity: 1
+
+.overlay-anim-box1
+ display: inline-block
+ overflow: hidden
+ position: relative
+.overlay-anim-box1:before
+ content: ''
+ background: #FFFFFF
+ position: absolute
+ top: 0
+ left: 0
+ bottom: 0
+ right: 0
+ transition: 2s cubic-bezier(.858, .01, .068, .99)
+ z-index: 3
+ transform: translateX(0)
+
+.overlay-anim-box1.overlay-anim2:before
+ transform: translateX(110%)

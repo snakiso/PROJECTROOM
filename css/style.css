@@ -24,6 +24,49 @@ body {
   cursor: pointer;
 }
 
+.container {
+  text-align: center;
+}
+
+.own-transition {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+[data-animation].overlay-anim-box1:before,
+[data-animation].overlay-anim-box1:after,
+[data-animation].overlay-anim-box1 {
+  opacity: 1;
+}
+
+.overlay-anim-box1 {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay-anim-box1:before {
+  content: "";
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: 2s cubic-bezier(0.858, 0.01, 0.068, 0.99);
+  transition: 2s cubic-bezier(0.858, 0.01, 0.068, 0.99);
+  z-index: 3;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.overlay-anim-box1.overlay-anim2:before {
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
+}
+
 .preview {
   width: 100%;
   height: 600px;
@@ -69,15 +112,9 @@ body {
           flex-direction: column;
   text-align: center;
   font-size: 64px;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
-.projectroom__large-title span:nth-child(2) {
+.projectroom span:nth-child(2) {
   font-size: 28px;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
 }
 .projectroom__quality-wrapper {
   display: -webkit-box;
@@ -99,7 +136,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.projectroom__quality h4 {
+.projectroom h4 {
   background-color: #5C4DD8;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -111,7 +148,7 @@ body {
   margin: 5px 0;
   margin-left: 10px;
 }
-.projectroom__quality p {
+.projectroom p {
   font-family: "Gilroy-Medium";
   max-width: 350px;
   color: rgb(168, 166, 166);
@@ -131,12 +168,57 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .projectroom__quality-wrapper {
+    padding-left: 60px;
+    padding-right: 20px;
+  }
   .projectroom__large-title {
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
-    font-size: 40px;
-    -webkit-transition-duration: 1s;
-            transition-duration: 1s;
+    font-size: 56px;
+  }
+  .projectroom__large-title span:nth-child(2) {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projectroom__quality-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  .projectroom__large-title {
+    font-size: 56px;
+  }
+  .projectroom__large-title span:nth-child(2) {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .projectroom__quality-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .projectroom__large-title {
+    font-size: 34px;
+  }
+  .projectroom__large-title span:nth-child(2) {
+    font-size: 18px;
+  }
+  .projectroom__quality h4 {
+    font-size: 14px;
+  }
+  .projectroom__quality p {
+    font-size: 14px;
   }
 }
 .cases {
@@ -155,9 +237,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 111px;
-     -moz-column-gap: 111px;
-          column-gap: 111px;
+  -webkit-column-gap: 5%;
+     -moz-column-gap: 5%;
+          column-gap: 5%;
 }
 .cases__info {
   max-width: 332px;
@@ -196,4 +278,42 @@ body {
           flex-direction: row-reverse;
   margin-right: 0;
   margin-left: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .cases__title {
+    font-size: 24px;
+  }
+  .cases__text {
+    font-size: 14px;
+  }
+  .cases__button {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cases__case {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cases__info {
+    padding: 0 12px;
+    margin-top: 22px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 56px;
+  }
+  .button {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 34px;
+  }
 }/*# sourceMappingURL=style.css.map */
