@@ -18,6 +18,18 @@ ul {
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
   width: 195px;
   height: 60px;
   background-color: #333333;
@@ -525,6 +537,99 @@ ul {
     max-height: 73px;
   }
 }
+.mini-slider {
+  background-color: #F5F5F5;
+}
+
+.testimonials-slider {
+  padding: 120px 15px 167px 15px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  max-width: 1078px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.swiper-slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-height: 400px;
+  background-color: #FFFFFF;
+}
+.swiper-slide__info {
+  padding-left: 40px;
+}
+.swiper-slide__title {
+  font-size: 24px;
+  color: rgb(92, 77, 216);
+}
+.swiper-slide__text {
+  font-family: "Gilroy-Medium";
+  font-size: 16px;
+  color: rgb(168, 166, 166);
+}
+.swiper-slide__author {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Gilroy-Medium";
+}
+.swiper-slide__author-position {
+  font-family: "Gilroy-Medium";
+  color: rgb(102, 102, 102);
+}
+.swiper-slide__button {
+  margin-top: 55px;
+}
+
+.swiper-pagination {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+  left: 0;
+  padding-top: 33px;
+}
+
+.swiper-pagination-bullet {
+  -webkit-transition: 0.8s cubic-bezier(0.225, 1, 0.316, 0.99);
+  transition: 0.8s cubic-bezier(0.225, 1, 0.316, 0.99);
+  border-radius: 100%;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  display: inline-block;
+  margin: 0 20px;
+  width: 10px;
+  height: 10px;
+  background: rgb(34, 34, 34);
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(92, 77, 216);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.8s cubic-bezier(0.225, 1, 0.316, 0.99);
+  transition: 0.8s cubic-bezier(0.225, 1, 0.316, 0.99);
+}
+
 @media screen and (max-width: 900px) {
   .title {
     font-size: 56px;
