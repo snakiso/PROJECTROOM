@@ -1,7 +1,7 @@
 .mini-slider
  background-color: #F5F5F5
-.testimonials-slider
- padding: 120px 15px 167px 15px 
+.testimonials-slider 
+ padding: 120px 0px 167px 0px 
  height: 100%
  overflow: hidden
  position: relative
@@ -21,6 +21,9 @@
  margin: auto
  max-height: 400px
  background-color: #FFFFFF
+ &__img
+  display: flex
+  justify-content: end
  &__info
   padding-left: 40px
  &__title
@@ -60,3 +63,39 @@
  background: rgba(92, 77, 216, 1)
  transform: scale(1)
  transition: .8s cubic-bezier(.225, 1, .316, .99)
+
+@media screen and ( max-width: 900px )
+  .testimonials-slider 
+    margin: 0 15px
+  .swiper-slide
+    max-height: 300px
+    &__title
+      font-size: 18px
+    &__text
+      font-size: 12px
+    &__author
+      font-size: 12px
+    &__author-position
+      font-size: 10px
+    &__button
+      margin-top: 20px
+    &__img
+      max-width: 350px
+@media screen and ( max-width: 768px )                
+  .swiper-slide
+    flex-direction: column-reverse
+    min-height: 528px
+    &__title
+      margin-bottom: 4px
+    &__text
+      margin: 0  
+    &__info
+      padding-left: 24px
+    &__img
+      min-width: 100%
+      min-height: 100%
+      img
+        width: 100%
+    &__button
+      margin-bottom: 10px
+
