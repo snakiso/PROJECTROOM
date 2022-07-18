@@ -1,0 +1,134 @@
+input[type=checkbox]
+ width: 30px
+ height: 30px
+ cursor: pointer
+::placeholder
+ color: #FFFFFF
+ font-family: 'Gilroy-Medium'
+ padding: 10px 0 0 8px
+ font-size: 16px
+input,textarea
+ width: 100%
+ display: block
+ padding: 0
+ border: none
+ background-color: #222222
+ color: #FFFFFF
+ font-family: 'Gilroy-Medium'
+ outline: none
+.contact-us
+ margin-bottom: 362px
+ min-height: 100vh
+ background-color: #222222
+ color: #FFFFFF
+ &__title
+  margin: 0
+  padding-top: 232px
+  font-size: 28px
+  text-align: center
+ &__wrapper
+  padding: 80px 15px 0
+  max-width: 856px
+  margin: auto
+ &__data
+  display: flex
+  column-gap: 10px
+ &__data-block
+  max-width: 279px
+  flex-grow: 1
+  input
+   height: 40px
+   border-bottom: 2px solid rgba(102, 102, 102, 1)
+ &__message
+  margin-top: 30px
+  textarea
+   height: 140px
+   border-bottom: 2px solid rgba(102, 102, 102, 1)
+   resize: none
+ &__send-field
+  margin-top: 30px
+  display: grid
+  grid-template-columns: 1fr 1fr 2fr
+  grid-template-rows: 20px 84px
+  column-gap: 30px
+ &__captcha
+  grid-column-start: 1
+  grid-row-start: 1
+  grid-column-end: 3
+  position: relative
+  border: 1px solid rgba(102, 102, 102, 1)
+  max-width: 413px
+  height: 104px
+  display: flex
+  align-items: center
+  form
+   padding-left: 4px
+   display: grid
+   grid-template-columns: 1fr 2fr
+   align-items: center
+  p
+   font-family: 'Gilroy-Medium'
+   padding-right: 10px
+   position: absolute
+   bottom: 0
+   right: 0
+   font-size: 9px 
+   color: #7a7a7a
+ &__send
+  max-width: 412px
+  grid-area: send
+ &__agree
+  grid-column-start: 3
+  grid-row-start: 1
+  max-height: 20px
+  display: grid
+  grid-template-columns: 1fr 10fr
+  align-items: center
+  input[type=checkbox]
+   width: 20px
+   height: 20px
+   margin: 0
+  label
+   color: rgba(102, 102, 102, 1)
+   font-size: 14px
+   font-family: 'Gilroy-Medium'
+ &__button
+  grid-column-start: 3
+  background-color: #222222  
+  border: 1px solid #FFFFFF
+  margin-top: 25px
+  width: 100%
+  height: 60px !important
+@media screen and ( max-width: 875px )
+ .contact-us
+  margin-bottom: 403px
+@media screen and ( max-width: 600px )  
+ .contact-us
+  margin-bottom: 608px
+  &__title
+   padding-top: 80px
+  &__data
+   flex-direction: column
+  &__data-block
+   max-width: 570px
+   margin-bottom: 20px
+  &__send-field
+   justify-items: center
+   grid-template-areas: 'agree' 'captcha' 'button'
+   grid-template-columns: 1fr
+   grid-template-rows: 1fr
+  &__captcha
+   margin-top: 22px
+   grid-area: captcha
+   width: 100%
+  &__agree
+   grid-area: agree
+  &__button
+   width: 192px
+   height: 40px 
+   grid-area: button
+@media screen and ( max-width: 450px )
+ .contact-us
+  &__agree
+   width: 100%   
+   

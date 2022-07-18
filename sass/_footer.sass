@@ -1,0 +1,85 @@
+.footer
+ background-color: black
+ color: #FFFFFF
+ min-height: 362px
+ position: fixed
+ bottom: 0
+ width: 100%
+ z-index: 1
+ &__wrapper
+  padding: 70px 15px 0
+  display: flex
+  justify-content: center
+  padding-top: 70px
+  max-width: 1300px
+  margin: auto
+  column-gap: 18%
+ &__left-block
+  display: flex
+  max-width: 430px
+  flex: 1
+  justify-content: space-between
+  column-gap: 5%
+  ul
+   li:not(:first-child)
+    margin-top: 22px
+  img
+   height: 95px
+   max-width: 192px
+ &__right-block
+  max-width: 635px
+  font-family: 'Gilroy-Medium'
+  flex-wrap: wrap
+  display: flex
+ &__contacts-1
+  flex-basis: 50%
+  ul
+   margin-bottom: 40px
+  p
+   color: rgba(168, 166, 166, 1)
+   font-size: 14px
+   margin: 0
+ &__contacts-2
+  flex-basis: 50%
+  ul
+   margin-bottom: 40px
+  a
+   letter-spacing: 0.12em
+   font-family: 'Gilroy-Bold'
+ &__cookie
+  display: flex
+  flex-direction: column
+  row-gap: 6px
+  a
+   min-width: 180px
+   letter-spacing: 0
+   font-family: 'Gilroy-Medium'
+   font-size: 12px
+   color: rgba(168, 166, 166, 1)
+ &__year
+  width: 100%
+  color: rgba(168, 166, 166, 1)
+  font-size: 12px
+  border-top: 1px solid #A8A6A6
+  margin-top: 44px
+  padding-top: 20px
+
+@media screen and ( max-width: 600px )
+ .footer
+  &__wrapper
+   padding: 60px 24px 0
+   flex-direction: column
+  &__left-block
+   img
+    display: none
+  &__right-block
+   flex-direction: column
+   margin-top: 40px
+  &__contacts-1
+   ul
+    margin-bottom: 24px
+  &__contacts-2
+    margin-top: 24px
+    ul
+      margin-bottom: 24px     
+ 
