@@ -1,0 +1,400 @@
+.slide-bg-2
+ background-image: url('../img/home-slide-2.png') !important
+.slide-bg__reverse 
+ background-image: url('../img/home-slide-3.png') !important
+.slide-bg-1
+  background-image: url('../img/home-slide-1.png') !important
+  z-index: 5 !important
+.slide-bg
+ position: absolute
+ width: 50%
+ height: 100%
+ left: 0
+ top: 0
+ background-size: cover
+ background-position: center center
+ background-repeat: no-repeat
+ z-index: 0
+ display: inline-block
+ overflow: hidden
+ &__reverse
+  right: 0
+  left: auto
+.home-slider
+ position: relative
+ height: 100%
+ width: 100%
+ overflow: hidden
+ background: #000
+ .swiper-wrapper
+  min-height: 100vh
+ .swiper-slide
+  height: auto
+  margin: 0
+ &__content-1
+  position: relative
+  z-index: 3
+  background-color: black
+ &__slide2 
+  font-size: 44px !important
+  margin: 0 0 40px 40px !important
+  max-width: 600px
+  span
+   background-color: rgba(92, 77, 216, 1)
+   line-height: 60px
+   padding: 0 10px
+ &__list
+   color: white
+   margin: 0 0 60px 40px
+   li
+    font-family: 'Gilroy-Medium'
+    text-transform: uppercase
+    letter-spacing: 0.12em
+   li:nth-child(2)
+    padding: 12px 0 
+ &__content
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+ &__title
+  color: #FFFFFF
+  font-size: 88px
+  font-family: 'Gilroy-Regular'
+  margin: 0 0 90px 40px
+ &__title-reverse
+  color: rgba(92, 77, 216, 1)
+  font-size: 44px
+  text-transform: uppercase
+  max-width: 520px
+  span
+    background-color: white
+    line-height: 60px 
+    padding: 0 10px
+ &__button
+  margin-left: 40px
+  background-color: rgba(92, 77, 216, 1)
+ &__button-reverse
+  margin-top: 85px
+  background-color: white
+  color: #000
+  img
+    width: 12px
+ .swiper-pagination
+  bottom: 66px
+  right: 40px
+  left: auto
+  width: auto
+  overflow: hidden
+  position: absolute
+  z-index: 8
+  text-align: center
+  transition: .3s opacity
+  transform: translate3d(0,0,0)
+ .swiper-pagination-bullet
+  display: inline-block
+  position: relative
+  background: transparent
+  transform: translateY(0)
+  transition-delay: .4s
+  width: 30px
+  height: 30px
+  opacity: 1
+  border-radius: 0
+  position: relative
+  overflow: hidden
+  background: transparent
+  transition: 1s cubic-bezier(.17, .85, .438, .99)
+ .swiper-pagination-bullet-active:before
+  transform: translateX(-50%) translateY(16px)
+ .swiper-pagination-bullet-active:after
+  transform: translateX(-50%) translateY(0) !important 
+ .swiper-pagination-bullet:before
+  position: absolute
+  bottom:0
+  color: white
+  font-size: 14px
+  transition: .6s cubic-bezier(.19, .94, .336, 1)
+  letter-spacing: 1px 
+  left: 20% 
+ .swiper-pagination-bullet:first-child:before
+  content: '01'
+ .swiper-pagination-bullet:nth-child(2)::before 
+  content: '02'
+ .swiper-pagination-bullet:nth-child(3)::before 
+  content: '03'
+ .swiper-pagination-bullet:after
+  content: '01'
+  position: absolute
+  bottom: 0
+  left: 50%      
+  letter-spacing: 1px
+  line-height: 1
+  font-size: 20px
+  color: rgba(92, 77, 216, 1)
+  transform: translateX(-50%) translateY(-30px)
+  transition: .6s cubic-bezier(.19, .94, .336, 1)
+ .swiper-pagination-bullet:nth-child(2)::after
+  content: '02'
+ .swiper-pagination-bullet:nth-child(3)::after
+  content: '03'
+.swiper-button-disabled
+ pointer-events: none
+ opacity: 0.35
+.swiper-button-prev
+ position: absolute
+ z-index: 3
+ left: calc( 50% + 40px )
+ top: auto
+ bottom: 66px
+ width: 50px
+ cursor: pointer
+ height: 26px
+.swiper-button-next
+ position: absolute
+ z-index: 3
+ left: calc( 50% + 100px )
+ top: auto
+ bottom: 66px
+ width: 50px
+ cursor: pointer
+ height: 26px
+.slider-arrow-prev-box
+ position: relative
+ width: 100%
+ height: 100%
+ transition-delay: .2s
+ transition: 1s cubic-bezier(.17, .85, .438, .99)
+.slider-arrow-next-box
+ position: relative
+ width: 100%
+ height: 100%
+ transition-delay: .2s
+ transition: 1s cubic-bezier(.17, .85, .438, .99)
+.slider-arrow-prev:before
+ content: ''
+ position: absolute
+ top: 4px
+ left: 6px
+ width: 16px
+ height: 16px
+ border-bottom: 2px solid white
+ border-left: 2px solid white
+ transform: rotate(45deg)
+ transition: .7s cubic-bezier(.19, .94, .336, 1)
+.slider-arrow-prev:after
+ content: ''
+ position: absolute
+ top: 50%
+ transform: translateY(-50%) scaleX(0)
+ width: 44px
+ height: 2px
+ background: rgba(92, 77, 216, 1)
+ left: auto
+ right: 2px
+ transform-origin: right
+ transition: .7s cubic-bezier(.19, .94, .336, 1)
+.swiper-button-prev:hover .slider-arrow-prev-box
+ transform: translateX(-15px)
+.swiper-button-prev:hover .slider-arrow-prev
+ transform: translateX(0)
+.swiper-button-prev:hover .slider-arrow-prev:before
+ border-bottom: 2px solid rgba(92, 77, 216, 1)
+ border-left: 2px solid rgba(92, 77, 216, 1)
+.swiper-button-prev:hover .slider-arrow-prev:after
+ transform: translateY(-50%) scaleX(1) 
+.slider-arrow-next
+ transform: translateX(-10px)
+ width: 100%
+ height: 100%
+ position: absolute
+ top: 0
+ transition: .7s cubic-bezier(.19, .94, .336, 1)
+.slider-arrow-next:before
+ content: ''
+ position: absolute
+ left: auto
+ top: 4px
+ right: 6px
+ width: 16px
+ height: 16px
+ border: none
+ border-top: 2px solid white
+ border-right: 2px solid white
+ transform: rotate(45deg)
+ transition: .7s cubic-bezier(.19, .94, .336, 1) 
+.slider-arrow-next:after
+ content: ''
+ position: absolute
+ top: 50%
+ transform: translateY(-50%) scaleX(0)
+ width: 44px
+ height: 2px
+ background: rgba(92, 77, 216, 1)
+ left: auto
+ right: 5px
+ transform-origin: right
+ transition: .7s cubic-bezier(.19, .94, .336, 1)
+.swiper-button-next:hover .slider-arrow-next
+ transform: translateX(0px)
+.swiper-button-next:hover .slider-arrow-next
+ transform: translateX(0)
+.swiper-button-next:hover .slider-arrow-next:before
+ border-top: 2px solid rgba(92, 77, 216, 1)
+ border-right: 2px solid rgba(92, 77, 216, 1)
+.swiper-button-next:hover .slider-arrow-next:after
+ transform: translateY(-50%) scaleX(1)
+.scroll-button
+ position: absolute
+ left: 75%
+ bottom: 44px
+ transform: translateX(-50%)
+ overflow: hidden
+ z-index: 3
+ height: 60px
+.scroll-arrow-box
+ position: absolute
+ transform: translateX(-50%)
+ left: 50%
+ bottom: 0
+ width: 20px
+ height: 30px
+ transition: 1s cubic-bezier(.17, .85, .438, .99)
+.scroll-arrow
+ position: absolute
+ left: 0
+ top: 0
+ transform: translateY(-15px)
+ width: 100%
+ height: 100%
+ transition: 1s cubic-bezier(.225, 1, .316, .99)
+.scroll-arrow:before
+ content: ''
+ width: 14px
+ height: 14px
+ border-right: 2px solid white
+ border-bottom: 2px solid white
+ position: absolute
+ bottom: 2px
+ left: 2px
+ transform: rotate(45deg)
+ transition: .6s cubic-bezier(.225, 1, .316, .99)
+.scroll-arrow:after
+ content: ''
+ width: 2px
+ height: 100%
+ background: rgba(92, 77, 216, 1)
+ position: absolute
+ bottom: 0
+ left: 50%
+ transform: translateX(-50%) scaleY(0)
+ transform-origin: bottom
+ transition: 1s cubic-bezier(.225, 1, .316, .99)
+.scroll-button:hover .scroll-arrow
+ transform: translateY(0)
+.scroll-button:hover .scroll-arrow:after
+ transform: translateX(-50%) scaleY(1)
+.scroll-button:hover .scroll-arrow:before
+ border-right: 2px solid rgba(92, 77, 216, 1)
+ border-bottom: 2px solid rgba(92, 77, 216, 1)
+
+.scroll-button-flip-box
+ overflow: hidden
+ display: inline-block
+ transition: 1s cubic-bezier(.858, .01, .068, .99)
+ transform: translateY(0)
+ transition-delay: .2s
+.scroll-button-flip
+ position: relative
+ color: transparent
+ display: block
+ font-family: 'Gilroy-Medium'
+ letter-spacing: 0.3em
+ font-size: 14px
+.scroll-button-flip:before, .scroll-button-flip:after
+ color: #FFFFFF
+ content: attr(data-text)
+ display: block
+ position: absolute
+ top: 50%
+ left: 0
+ width: 100%
+ transition: .5s cubic-bezier(.858, .01, .068, .99)
+.scroll-button-flip:before
+ transform: translateY(-50%)
+.scroll-button-flip:after
+ transform: translateY(-170%)
+ color: rgba(92, 77, 216, 1)
+.scroll-button:hover .scroll-button-flip:before
+ transform: translateY(52%)
+.scroll-button:hover .scroll-button-flip:after
+ transform: translateY(-50%)
+@media screen and ( max-width: 1250px )
+  .home-slider
+    &__title
+      font-size: 70px
+    &__slide2
+      font-size: 30px !important
+      max-width: 400px
+      span  
+        line-height: 40px
+    &__title-reverse
+        font-size: 30px
+        max-width: 400px
+        span 
+          line-height: 40px 
+@media screen and ( max-width: 950px )
+  .home-slider
+    .swiper-slide
+      height: 100% !important
+    &__title
+      font-size: 55px
+    &__slide2
+      font-size: 25px !important
+      max-width: 400px
+      span  
+        line-height: 40px
+    &__title-reverse
+        font-size: 25px
+        max-width: 300px
+        span 
+          line-height: 40px   
+@media screen and ( max-width: 768px )
+  .scroll-button
+    left: 50%
+    bottom: 90px
+  .home-slider
+    .swiper-pagination
+      bottom: 30px
+      right: 15px
+  .swiper-button-next
+    bottom: 30px
+    left: 75px
+  .swiper-button-prev
+    bottom: 30px
+    left: 15px
+  .home-slider
+    &__title
+      font-size: 44px
+      margin-left: 0
+      span
+        padding: 0 15px
+        background-color: black
+        line-height: 60px
+      div
+        background-color: black
+        max-width: 265px
+        padding: 0 15px
+        span
+          padding: 0
+        img
+          max-width: 19px  
+    &__content
+      justify-content: start
+      margin-top: 25px
+    &__content-1
+      z-index: 5
+      background-color: #ffffff00
+    .slide-bg
+      width: 100%
+      height: 90%             

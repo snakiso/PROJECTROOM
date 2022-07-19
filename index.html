@@ -17,8 +17,98 @@
   <header></header>
   <nav></nav>
   <main>
-    <section class="preview"></section>
-    <section class="projectroom">
+    <!-- home-slider start -->
+    <section class="home-slider">
+      <!--swiper-wrapper start -->
+      <div class="swiper-wrapper">
+        <!--swiper-slide start -->
+        <div class="swiper-slide width-100 bg-black">
+          <div class="slide-bg slide-bg-1"></div>
+          <div class="home-slider__content home-slider__content-1">
+            <div class="home-slider__container">
+              <div class="margin-left-50">
+                <h2 class="home-slider__title">
+                  <span>USABILITY</span>
+                  <div>
+                    <img src="./img/vs.svg" alt="">
+                    <span>CREATIVITY</span>
+                  </div>
+                </h2>
+                <button class="home-slider__button button">ПЕРЕЗЕНТАЦИЯ <img src="./img/Arrow_right.svg"
+                    alt=""></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--swiper-slide end -->
+        <!--swiper-slide start -->
+        <div class="swiper-slide width-100 bg-black">
+          <div class="slide-bg slide-bg-2"></div>
+          <div class="home-slider__content">
+            <div class="home-slider__container">
+              <div class="margin-left-50">
+                <h2 class="home-slider__title home-slider__slide2">
+                  <span>ЛУЧШИЕ РЕШЕНИЯ И ИДЕИ</span>
+                  <span>ДЛЯ ВАШЕГО БИЗНЕСА</span>
+                </h2>
+                <ul class="home-slider__list">
+                  <li>* Профессиональная команда</li>
+                  <li>* Новаторские идеи</li>
+                  <li>* Качественная реализация</li>
+                </ul>
+                <button class="home-slider__button button">ПОДРОБНЕЕ<img src="./img/Arrow_right.svg" alt=""></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--swiper-slide end -->
+        <!--swiper-slide start -->
+        <div class="swiper-slide width-100 bg-black__reverse">
+          <div class="slide-bg slide-bg__reverse"></div>
+          <div class="home-slider__content">
+            <div class="home-slider__container">
+              <div class='margin-left-50__reverse'>
+                <div class="home-slider__title-reverse">
+                    <span>веб-разработка</span>
+                    <span>сервис и поддержка</span>
+                    <span>маркетинг</span>
+                    <span>продвижение</span>
+                </div>
+                <button class="home-slider__button-reverse button">ПОДРОБНЕЕ<img src="./img/black-arrow.svg"
+                    alt=""></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--swiper-slide end -->
+      </div>
+      <!--swiper-wrapper end -->
+      <div class="swiper-button-next">
+        <div class="slider-arrow-next-box">
+          <span class="slider-arrow-next"></span>
+        </div>
+      </div>
+      <div class="swiper-button-prev">
+        <div class="slider-arrow-prev-box">
+          <span class="slider-arrow-prev"></span>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+
+      </div>
+      <a href="#down" class="scroll-button">
+        <div class="scroll-arrow-box">
+          <span class="scroll-arrow"></span>
+        </div>
+        <div class="scroll-button-flip-box">
+          <span class="scroll-button-flip" data-text='SCROLL'>
+            SCROLL
+          </span>
+        </div>
+      </a>
+    </section>
+    <!-- home-slider end -->
+    <section class="projectroom" id="down">
       <div class="min-height-inner">
         <div class="projectroom__container">
           <div data-animation-container class="projectroom__container-flex">
@@ -297,6 +387,7 @@
         </div>
       </div>
     </section>
+    <!-- section end -->
     <section class="contact-us">
       <div data-animation-container>
         <h4 data-animation-child class="contact-us__title animate__animated" data-animation="animate__fadeInLeft">
@@ -305,26 +396,27 @@
       <div class="contact-us__wrapper">
         <div data-animation-container class="contact-us__data">
           <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
-            <input type="text" name='name' placeholder="Имя"></div>
+            <input type="text" name='name' placeholder="Имя">
+          </div>
           <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
-            <input type="email" name='mail' placeholder="E-mail" pattern=".+@globex\.com" required></div>
+            <input type="email" name='mail' placeholder="E-mail" pattern=".+@globex\.com" required>
+          </div>
           <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
-            <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></div>
+            <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          </div>
         </div>
         <div data-animation-container class="contact-us__message animate__animated" data-animation="animate__fadeInUp">
           <textarea name="text" placeholder="Сообщение"></textarea>
         </div>
         <div data-animation-container class="contact-us__send-field">
-          <div data-animation-child class="contact-us__captcha animate__animated"
-            data-animation="animate__fadeInLeft">
+          <div data-animation-child class="contact-us__captcha animate__animated" data-animation="animate__fadeInLeft">
             <form>
               <input type="checkbox" name="robot">
               <label for="robot">Я не робот</label>
             </form>
             <p>Конфиденциальность-Условия использования</p>
           </div>
-          <form data-animation-child class="contact-us__agree animate__animated "
-            data-animation="animate__fadeInRight">
+          <form data-animation-child class="contact-us__agree animate__animated " data-animation="animate__fadeInRight">
             <input type="checkbox" name="robot">
             <label for="robot">Даю согласие на обработку данных</label>
           </form>
