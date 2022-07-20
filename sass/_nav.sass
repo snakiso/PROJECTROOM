@@ -1,0 +1,58 @@
+.nav-container
+ background: black
+ width: 50%
+ height: 100%
+ min-height: 100vh
+ overflow: hidden
+ margin: 0
+ padding: 0
+ position: fixed
+ top: 0
+ left: 100%
+ transition: 1s cubic-bezier(.858, .01, .068, .99)
+ z-index: 100
+ transition-delay: .7s
+ transform: translateX(0)
+.menu-close
+ position: absolute
+ top: 40px
+ right: 40px
+ width: 40px
+ height: 22px
+ z-index: 3
+ transition: .5s cubic-bezier(.767, .01, .18, 1.01) 
+.menu-close:before, .menu-close:after
+ content: ''
+ width: 40px
+ height: 2px
+ background: white
+ position: absolute
+ top: 50%
+ left: 0
+ transform: translateY(-50%) rotate(0deg)
+ transition: .7s cubic-bezier(.767, .01, .18, 1.01)
+.nav-container-active
+ transition-delay: 0s
+ transform: translateX(-100%)
+ .menu-close:before
+  transform: translateY(-50%) rotate(225deg)
+  transition: 1s cubic-bezier(.767, .01, .18, 1.01)
+  transition-delay: 1s
+ .menu-close:after
+  transform: translateY(-50%) rotate(135deg)
+  transition: 1s cubic-bezier(.767, .01, .18, 1.01)
+  transition-delay: 1s 
+.nav-list
+ transform: translate(-50%, -50%)
+ position: absolute
+ top: 50%
+ left: 50%
+ color: white
+ font-size: 44px
+ text-align: center
+ text-transform: uppercase
+@media screen and ( max-width: 768px )
+ .nav-container
+  width: 100%
+ .nav-list
+  font-size: 28px   

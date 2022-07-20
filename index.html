@@ -14,8 +14,29 @@
 </head>
 
 <body>
-  <header></header>
-  <nav></nav>
+  <header class="fixed-header">
+        <div class="fixed-header__wrapper">
+          <a href="index.html" class="fixed-header__logo">
+            <img src="./img/Logo.svg" alt="">
+          </a>
+          <div class="menu-open">
+            <span class="hamburger"></span>
+          </div>
+        </div>
+  </header>
+  <nav class="nav-container">
+    <div class="nav-container-bg">
+      <img src="./img/nav-back.svg" alt="">
+    </div>
+    <div class="menu-close"></div>
+    <ul class="nav-list">
+      <li><a href="#">главная</a></li>
+      <li><a href="#">о нас</a></li>
+      <li><a href="#">услуги</a></li>
+      <li><a href="#">кейсы</a></li>
+      <li><a href="#">контакты</a></li>
+    </ul>
+  </nav>
   <main>
     <!-- home-slider start -->
     <section class="home-slider">
@@ -162,7 +183,41 @@
         </div>
       </div>
     </section>
-    <section class="experiencies"></section>
+    <section class="experiencies">
+      <div data-animation-container class="container">
+        <h2 data-animation-child class="title">Опыт</h2>
+      </div>
+      <div class="experiencies__wrapper">
+        <div class="experiencies__item">
+          <div class="experiencies__item-img">
+            <img src="./img/exp1.jpg" alt="">
+            <div class="experiencies__year">
+              <span>15</span>
+              <span>лет опыта</span>
+            </div>
+          </div>
+        </div>
+        <div class="experiencies__item">
+          <div class="experiencies__item-img">
+            <img src="./img/exp2.jpg" alt="">
+            <div class="experiencies__year">
+              <span>165</span>
+              <span>клиентов</span>
+            </div>
+          </div>
+        </div>
+        <div class="experiencies__item">
+          <div class="experiencies__item-img">
+            <img src="./img/exp3.jpg" alt="">
+            <div class="experiencies__year">
+              <span>287</span>
+              <span>реализованных</span>
+              <span>проектов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="cases">
       <div data-animation-container class="container">
         <h2 data-animation-child class="title overlay-anim-box1" data-animation="overlay-anim2">КЕЙСЫ</h2>
@@ -466,6 +521,7 @@
   <script src="./swiper.js"></script>
   <script src="./jQuery2.2.0.js"></script>
   <script src="./ScrollAnimations.js"></script>
+  <script src="./Headroom.js"></script>
   <script src="./index.js"></script>
 </body>
 
