@@ -1,3 +1,5 @@
+.home-slider__slide2-mobile
+  display: none
 .slide-bg-2
  background-image: url('../img/home-slide-2.png') !important
 .slide-bg__reverse 
@@ -377,6 +379,7 @@
     &__title
       font-size: 44px
       margin-left: 0
+      margin-bottom: 22px
       span
         padding: 0 15px
         background-color: black
@@ -388,13 +391,44 @@
         span
           padding: 0
         img
-          max-width: 19px  
+          max-width: 19px 
+    &__title-reverse
+      color: white
+      span
+        line-height: 35px
+        background-color: rgba(92, 77, 216, 1)  
     &__content
       justify-content: start
       margin-top: 25px
+      z-index: 2
     &__content-1
       z-index: 5
       background-color: #ffffff00
     .slide-bg
       width: 100%
-      height: 90%             
+      height: 90%
+    &__button
+      margin: 0
+      background-color: black
+    &__button-reverse
+      margin-top: 30px
+    &__slide2-desk
+      display: none
+    &__slide2-mobile
+      display: block
+      max-width: 280px
+      line-height: 35px     
+    &__slide2
+      margin: 0 !important
+      span
+        background-color: rgba(92, 77, 216, 1)
+        line-height: 35px
+    &__list
+      margin: 0
+      font-size: 12px
+      margin-top: 12px
+  .bg-black__reverse     
+    background-color: #000 !important
+  .slider2-button
+    background-color: rgba(92, 77, 216, 1)
+    margin-top: 32px  
