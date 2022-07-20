@@ -64,39 +64,41 @@
  &__button
   margin-top: 55px
 @media screen and ( max-width: 900px )
-  .testimonials-slider 
-    margin: 0 15px
-  .mini-slider  
-    .swiper-slide
-      max-height: 300px
-    &__title
-      font-size: 18px
-    &__text
-      font-size: 12px
-    &__author
-      font-size: 12px
-    &__author-position
-      font-size: 10px
-    &__button
-      margin-top: 20px
-    &__img
-      max-width: 350px
+ .testimonials-slider 
+  margin: 0 15px
+ .mini-slider  
+  .swiper-slide
+   max-height: 300px
+   &__title
+    font-size: 18px
+   &__text
+    font-size: 12px
+   &__author
+    font-size: 12px
+   &__author-position
+    font-size: 10px
+   &__button
+    margin-top: 20px
+   &__img
+    max-width: 350px
 @media screen and ( max-width: 768px )
-  .mini-slider                
-    .swiper-slide
-      flex-direction: column-reverse
-      min-height: 528px
-    &__title
-      margin-bottom: 4px
-    &__text
-      margin: 0  
-    &__info
-      padding-left: 24px
-    &__img
-      min-width: 100%
-      min-height: 100%
-      img
-        width: 100%
-    &__button
-      margin-bottom: 10px
-
+ .mini-slider                
+  .swiper-slide
+   flex-direction: column-reverse
+   min-height: 528px
+   justify-content: space-between
+   &__title
+    margin-bottom: 4px
+   &__text
+    margin: 0  
+   &__info
+    padding-left: 24px
+    max-width: 249px
+    margin-bottom: 44px
+   &__img
+    max-width: 100%
+    max-height: 32%
+    img
+     width: 100%
+ .swiper-slide__button
+   margin-top: 10px
