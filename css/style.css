@@ -304,6 +304,11 @@ a {
           transition-duration: 1s;
 }
 
+.own-delay {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
 [data-animation].overlay-anim-box1:before,
 [data-animation].overlay-anim-box1:after,
 [data-animation].overlay-anim-box1 {
@@ -878,9 +883,16 @@ a {
     left: 50%;
     bottom: 90px;
   }
+  .home-slider {
+    height: calc(100vh - 110px);
+  }
   .home-slider .swiper-pagination {
     bottom: 30px;
     right: 15px;
+  }
+  .home-slider .swiper-wrapper {
+    height: 100%;
+    min-height: 0;
   }
   .swiper-button-next {
     bottom: 30px;
