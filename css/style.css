@@ -2180,6 +2180,9 @@ input, textarea {
 }
 
 @media screen and (max-width: 768px) {
+  .footer {
+    width: 100vw;
+  }
   .footer__wrapper {
     max-width: none;
     width: 100%;
@@ -2190,14 +2193,14 @@ input, textarea {
             flex-direction: column;
   }
   .footer__left-block {
-    max-width: none;
+    max-width: 100px;
     margin-left: 24px;
   }
   .footer__left-block img {
     display: none;
   }
   .footer__right-block {
-    max-width: none;
+    max-width: 240px;
     margin-left: 24px;
     width: 100%;
     -webkit-box-orient: vertical;
