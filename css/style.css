@@ -2181,6 +2181,7 @@ input, textarea {
 
 @media screen and (max-width: 768px) {
   .footer__wrapper {
+    max-width: none;
     width: 100%;
     padding: 60px 0 0 0;
     -webkit-box-orient: vertical;
