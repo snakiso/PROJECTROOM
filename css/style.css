@@ -2189,14 +2189,14 @@ input, textarea {
             flex-direction: column;
   }
   .footer__left-block {
-    max-width: 0;
+    max-width: none;
     margin-left: 24px;
   }
   .footer__left-block img {
     display: none;
   }
   .footer__right-block {
-    max-width: 0;
+    max-width: none;
     margin-left: 24px;
     width: 100%;
     -webkit-box-orient: vertical;
