@@ -197,12 +197,16 @@ a {
     height: 110px;
     background: black;
   }
-  .fixed-header__logo img {
+  .fixed-header .fixed-header__logo img {
     width: 135px;
     height: 65px;
   }
-  .fixed-header__wrapper {
+  .fixed-header .fixed-header__wrapper {
     width: calc(100% - 24px);
+  }
+  .headroom--unpinned {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 .nav-container {
@@ -1276,6 +1280,10 @@ a {
   top: calc(50% - 1px);
   background-color: rgb(92, 77, 216);
   right: -210px;
+}
+
+.benefits__number {
+  opacity: 0;
 }
 
 @media screen and (max-width: 1300px) {

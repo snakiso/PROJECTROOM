@@ -64,9 +64,11 @@
   position: relative  
   height: 110px
   background: black
-  &__logo
+  .fixed-header__logo
    img
     width: 135px
     height: 65px
-  &__wrapper
-   width: calc(100% - 24px )  
+  .fixed-header__wrapper
+   width: calc(100% - 24px )
+ .headroom--unpinned 
+  transform: translateY(0%)    

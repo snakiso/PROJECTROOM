@@ -28,12 +28,12 @@ var mySwiper = new Swiper('.home-slider', {
         var slideProgress = swiper.slides[i].progress;
         var innerOffset = swiper.width * interleaveOffset;
         var innerTranslate = slideProgress * innerOffset;
-        if(swiper.width > 768){
-        swiper.slides[i].querySelector(".slide-bg").style.transform =
-          "translate3d(" + innerTranslate + "px, 0, 0)";
-        }else{
+        if (swiper.width > 768) {
           swiper.slides[i].querySelector(".slide-bg").style.transform =
-            "translate3d(" - innerTranslate*2 + "px, 0, 0)";
+            "translate3d(" + innerTranslate + "px, 0, 0)";
+        } else {
+          swiper.slides[i].querySelector(".slide-bg").style.transform =
+            "translate3d(" - innerTranslate * 2 + "px, 0, 0)";
         }
       }
     },
@@ -82,7 +82,30 @@ closeButton.addEventListener('click', () => {
   nav.classList.remove('nav-container-active')
 })
 /* 4. Headroom */
-let width = window.screen.width
 let header = document.querySelector('.fixed-header')
 let headroom = new Headroom(header)
 headroom.init()
+
+/// /// ///
+/// /// ///
+/* 5. number animation (spincrement) */
+$(document).ready(function () {
+  var show = true;
+  var countbox = ".benefits__number";
+  $(window).on("scroll load resize", function () {
+    if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+    var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+    var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+    var w_height = $(window).height(); // Высота окна браузера
+    var d_height = $(document).height(); // Высота всего документа
+    var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+    if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+      $('.benefits__number').css('opacity', '1');
+      $('.benefits__number').spincrement({
+        thousandSeparator: "",
+        duration: 4000
+      });
+      show = false;
+    }
+  });
+});
