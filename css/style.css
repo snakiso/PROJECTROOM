@@ -2179,18 +2179,27 @@ input, textarea {
   padding-top: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
   .footer__wrapper {
-    padding: 60px 24px 0;
+    width: 100%;
+    padding: 60px 0 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__left-block {
+    margin-left: 24px;
+  }
   .footer__left-block img {
     display: none;
   }
   .footer__right-block {
+    margin-left: 24px;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2205,6 +2214,9 @@ input, textarea {
   }
   .footer__contacts-2 ul {
     margin-bottom: 24px;
+  }
+  .footer__year {
+    width: 85%;
   }
 }
 @media screen and (max-width: 1250px) {
