@@ -2527,7 +2527,7 @@ var onTouchMove = function (event) {
     return;
   }
   swiper.allowClick = false;
-  e.preventDefault();
+  if(event.cancelable) e.preventDefault();
   if (params.touchMoveStopPropagation && !params.nested) {
     e.stopPropagation();
   }
