@@ -315,7 +315,8 @@ a {
 
 [data-animation].overlay-anim-box1:before,
 [data-animation].overlay-anim-box1:after,
-[data-animation].overlay-anim-box1 {
+[data-animation].overlay-anim-box1,
+[data-animation].animated {
   opacity: 1;
 }
 
@@ -2180,7 +2181,8 @@ input, textarea {
 
 @media screen and (max-width: 768px) {
   .footer {
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
   }
   .footer__wrapper {
     max-width: none;
