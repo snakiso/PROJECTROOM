@@ -38,6 +38,7 @@ a {
 }
 
 .title {
+  text-transform: uppercase;
   text-align: center;
   font-size: 64px;
   font-family: "Gilroy-Bold";
@@ -75,6 +76,10 @@ a {
 }
 .margin-left-50__reverse {
   margin-left: calc(50% - 550px);
+}
+
+.height-100 {
+  min-height: 100vh;
 }
 
 .width-100 {
@@ -947,10 +952,6 @@ a {
     z-index: 5;
     background-color: rgba(255, 255, 255, 0);
   }
-  .home-slider .slide-bg {
-    width: 100%;
-    height: 90%;
-  }
   .home-slider__button {
     margin: 0;
     background-color: black;
@@ -984,6 +985,10 @@ a {
   .slider2-button {
     background-color: rgb(92, 77, 216);
     margin-top: 32px;
+  }
+  .slide-bg {
+    width: 100%;
+    height: 90%;
   }
 }
 .projectroom {
@@ -2223,6 +2228,81 @@ input, textarea {
   .footer__year {
     width: 85%;
   }
+}
+.we-do {
+  background-color: rgb(34, 34, 34);
+  min-height: 100vh;
+  color: white;
+}
+.we-do__item:last-child {
+  padding-bottom: 120px;
+}
+.we-do__item {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.we-do__info {
+  margin-top: 40px;
+  max-width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.we-do__title {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.we-do__title h4 {
+  color: rgb(92, 77, 216);
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.we-do__title h3 {
+  margin: 10px 0 30px 0;
+  font-size: 34px;
+  max-width: 550px;
+  text-transform: uppercase;
+}
+.we-do__title ul li {
+  position: relative;
+  padding: 8px 0 8px 18px;
+  font-family: "Gilroy-Medium";
+}
+.we-do__title ul li:before {
+  content: "";
+  position: absolute;
+  background: rgb(92, 77, 216);
+  width: 8px;
+  height: 8px;
+  left: 0px;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.we-do__text {
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.we-do__text p {
+  margin: 0;
+}
+
+.skills {
+  min-height: 100vh;
+  position: relative;
+  z-index: 4;
+  background-color: white;
 }
 @media screen and (max-width: 1250px) {
   .margin-left-50__reverse {
