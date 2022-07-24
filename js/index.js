@@ -68,6 +68,26 @@ var swiper = new Swiper('.testimonials-slider', {
     clickable: true
   }
 });
+// // // 
+// // // 
+// // //
+var swiper = new Swiper('.we-do__slider', {
+  speed: 1200,
+  autoplay: {
+    delay: 5000
+  },
+  navigation: {
+    nextEl: ".we-do__scroll-right",
+    prevEl: ".we-do__scroll-left"
+  },
+  spaceBetween: 30,
+  loop: true,
+  autoHeight: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
 
 ///3.header
 let hamburger = document.querySelector('.menu-open')
