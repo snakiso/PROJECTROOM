@@ -129,3 +129,11 @@ $(document).ready(function () {
     }
   });
 });
+// // //
+// // //
+/* 6. Progress bar */
+$(".skills__progress-zero").each(function () {
+  $(this).find(".skills__progress-full").animate({
+    width: $(this).attr("data-progress")
+  });
+});

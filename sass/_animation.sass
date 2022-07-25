@@ -2,7 +2,7 @@
  transition-delay: 0.5s
  transition-duration: 1s
 .own-delay
- animation-delay: .5s 
+ animation-delay: .5s
 
 [data-animation].overlay-anim-box1:before,
 [data-animation].overlay-anim-box1:after,
@@ -28,3 +28,14 @@
 
 .overlay-anim-box1.overlay-anim2:before
  transform: translateX(110%)
+
+.slide-progress
+ animation-name: slide-progress
+ animation-duration: 4s
+ animation-timing-function: cubic-bezier(.225, 1, .316, .99)
+
+@keyframes slide-progress
+ 0%
+  transform: translateX(-100%)
+ 100%
+  transform: translateX(0)
