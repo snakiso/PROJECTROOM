@@ -2529,6 +2529,9 @@ input, textarea {
   .skills__title {
     text-align: center;
   }
+  .skills__wrapper {
+    padding-bottom: 80px;
+  }
 }
 .services-main {
   height: calc(100vh - 110px);
