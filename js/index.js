@@ -115,7 +115,7 @@ var swiper = new Swiper('.we__work__slider-mobile', {
   spaceBetween: 10,
   centeredSlides: true,
   speed: 1400,
-  freeMode: true,
+  freeMode: false,
 });
 
 ///3.header
@@ -188,11 +188,10 @@ window.addEventListener('scroll', () =>{
 })
 let wrapperMobile = document.querySelector('.swiper-wrapper-for-js')
 let secondCircleMobile = document.querySelector('.work-circle-progress-mobile')
-let circleProgressMobile = window.getComputedStyle(secondCircleMobile).strokeDashoffset.slice(0, -2) 
-window.addEventListener('touchstart', () => {
-  let scrolled = 0 - wrapperMobile.getBoundingClientRect().left
+let circleProgressMobile = window.getComputedStyle(secondCircleMobile).strokeDashoffset.slice(0, -2)
+wrapperMobile.addEventListener('transitionend', () => {
+  let scrolled = 0 - window.getComputedStyle(wrapperMobile).transform.slice(19, -4)
   secondCircleMobile.style.strokeDashoffset = circleProgressMobile - (+scrolled / 5.87)
-  console.log(wrapperMobile.getBoundingClientRect().left)
 })
 
 //5.87

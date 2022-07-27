@@ -2892,6 +2892,8 @@ input, textarea {
     stroke-dashoffset: 264;
     stroke-dasharray: 314;
     stroke: rgb(92, 77, 216);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
   }
   .we-work__title span {
     font-size: 14px;
