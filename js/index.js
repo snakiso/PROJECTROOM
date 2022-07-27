@@ -191,7 +191,7 @@ let secondCircleMobile = document.querySelector('.work-circle-progress-mobile')
 let circleProgressMobile = window.getComputedStyle(secondCircleMobile).strokeDashoffset.slice(0, -2)
 wrapperMobile.addEventListener('transitionend', () => {
   let scrolled = 0 - window.getComputedStyle(wrapperMobile).transform.slice(19, -4)
-  secondCircleMobile.style.strokeDashoffset = circleProgressMobile - (+scrolled / 5.87)
+  secondCircleMobile.style.strokeDashoffset = circleProgressMobile - (+scrolled / 5.2)
 })
 
 //5.87
