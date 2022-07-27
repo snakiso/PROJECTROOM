@@ -1,0 +1,173 @@
+.we-work
+ min-height: 100vh
+ color: white
+ background: black
+ &__title
+  text-align: center
+  .title
+   margin-bottom: 12px
+  p:nth-child(2)
+   margin: 0
+   font-size: 16px
+   font-family: 'Gilroy-Medium'
+  p:nth-child(3)
+   font-family: 'Gilroy-Medium'
+   text-transform: uppercase
+   margin-top: 80px
+   font-size: 24px
+   span
+    background-color: rgba(92, 77, 216, 1)
+ &__wrapper
+  max-width: 1300px
+  display: flex
+  margin: 80px auto 0
+  padding: 0 15px 120px
+ &__work-circle
+  position: absolute
+  transform: rotate(-90deg)
+  circle
+   stroke: rgba(51, 51, 51, 1)
+  .work-circle-progress
+   stroke-dashoffset: 523
+   stroke-dasharray: 628
+   stroke: rgba(92, 77, 216, 1)   
+ &__work
+  flex-basis: 50%
+  position: relative
+  ul
+   padding-left: 62px
+   text-transform: uppercase
+   position: relative
+   z-index: 5 
+   li
+    height: 200px
+    display: flex
+    align-items: center
+    div
+     display: flex 
+     align-items: center
+     column-gap: 22px
+     .unactive-number, .unactive-work
+      color: #ffffff17
+      transition: all 1s
+     .active-number
+      color: rgba(92, 77, 216, 1)
+      transition: all 1s 
+     .active-work
+      color: white
+      transition: all 1s  
+     span
+      font-family: 'Gilroy-Medium'
+      font-size: 72px
+     p
+      margin: 0 
+      font-size: 28px
+ &__details
+  flex-basis: 50%
+  ul
+   max-width: 550px
+   margin: 0 0 0 auto
+   li
+    display: flex
+    align-items: center
+    height: 200px
+    font-family: 'Gilroy-Medium'
+    font-size: 18px
+    border-bottom: 1px solid rgba(51, 51, 51, 1)
+   li:last-child
+    border: none 
+.we__work__slider-mobile
+ display: none     
+@media screen and ( max-width: 1000px )
+ .we-work
+  &__title
+   p:last-child
+    max-width: 590px
+    margin-left: auto
+    margin-right: auto
+    line-height: 140%
+  &__work
+   ul
+    li
+     div
+      span
+       font-size: 60px 
+      p
+       font-size: 18px
+  &__details
+   ul
+    li
+     font-size: 16px
+     max-width: 350px            
+@media screen and ( max-width: 768px )
+ .we-work__work-circle-mobile
+  position: absolute
+  top: 0
+  left: 33%
+  z-index: 2
+  transform: rotate(-90deg)
+ .work-circle-progress-mobile
+  stroke-dashoffset: 264
+  stroke-dasharray: 314
+  stroke: rgba(92, 77, 216, 1) 
+ .we-work
+  &__title
+   span
+    font-size: 14px
+   p:nth-child(2) 
+    font-size: 14px
+    margin: auto
+    max-width: 280px
+   p:last-child
+    letter-spacing: 0.12em
+    font-size: 16px
+    max-width: 220px
+  &__wrapper
+   display: none  
+ .we__work__slider-mobile
+  display: block
+  position: relative
+  max-width: 320px
+  margin: auto
+  overflow: hidden
+  padding: 0 10px
+  .swiper-wrapper
+   z-index: 4
+   .swiper-slide-active
+    .active-number
+     color: rgba(92, 77, 216, 1) !important
+     transition: all .5s
+    .active-work
+     color: white !important
+     transition: all .5s  
+   .swiper-slide
+    height: 240px
+    align-items: center
+    max-width: 300px
+    background: none
+    flex-direction: column 
+    .swiper-slide-work
+     position: relative
+     z-index: 3
+     height: 101px
+     align-items: center
+     display: flex
+     flex-direction: column 
+     justify-content: center
+    .active-number
+     font-family: 'Gilroy-Medium'
+     font-size: 44px
+     color: #ffffff17
+     transition: all .5s 
+    .active-work
+     color: #ffffff17
+     text-transform: uppercase
+     font-size: 18px
+     transition: all .5s
+    .swiper-slide-details
+     margin-top: 30px
+     border-top: 1px solid rgba(51, 51, 51, 1)
+     p
+      font-size: 14px
+      font-family: 'Gilroy-Medium'
+      line-height: 140%  

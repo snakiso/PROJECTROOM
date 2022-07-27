@@ -2,184 +2,400 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="./css/gilroy-regular.css">
- <link rel="stylesheet" href="./css/gilroy-medium.css">
- <link rel="stylesheet" href="./css/gilroy-bold.css">
- <link rel="stylesheet" href="./css/style.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
- <title>Projectroom</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/gilroy-regular.css">
+  <link rel="stylesheet" href="./css/gilroy-medium.css">
+  <link rel="stylesheet" href="./css/gilroy-bold.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Projectroom</title>
 </head>
 
 <body>
- <header class="fixed-header">
-  <div class="fixed-header__wrapper">
-   <a href="index.html" class="fixed-header__logo">
-    <img src="./img/Logo.svg" alt="">
-   </a>
-   <div class="menu-open">
-    <span class="hamburger"></span>
-   </div>
-  </div>
- </header>
- <nav class="nav-container">
-  <div class="nav-container-bg">
-   <img src="./img/nav-back.svg" alt="">
-  </div>
-  <div class="menu-close"></div>
-  <ul class="nav-list">
-   <li><a href="index.html">главная</a></li>
-   <li><a href="#">о нас</a></li>
-   <li><a href="services.html">услуги</a></li>
-   <li><a href="#">кейсы</a></li>
-   <li><a href="#">контакты</a></li>
-  </ul>
- </nav>
- <main>
-  <section class="about-main">
-    <div class="swiper-slide width-100 bg-black">
-     <div class="slide-bg slide-bg-2"></div>
-     <div class="home-slider__content">
-      <div class="home-slider__container">
-       <div class="margin-left-50">
-        <h2 class="home-slider__title home-slider__slide2 home-slider__slide2-desk">
-         <span>ЛУЧШИЕ РЕШЕНИЯ И ИДЕИ</span>
-         <span>ДЛЯ ВАШЕГО БИЗНЕСА</span>
-        </h2>
-        <h2 class="home-slider__title home-slider__slide2 home-slider__slide2-mobile">
-         <span>ЛУЧШИЕ РЕШЕНИЯ</span>
-         <span>И ИДЕИ ДЛЯ</span>
-         <span>ВАШЕГО БИЗНЕСА</span>
-        </h2>
-        <ul class="home-slider__list">
-         <li>* Профессиональная команда</li>
-         <li>* Новаторские идеи</li>
-         <li>* Качественная реализация</li>
-        </ul>
-       </div>
+  <header class="fixed-header">
+    <div class="fixed-header__wrapper">
+      <a href="index.html" class="fixed-header__logo">
+        <img src="./img/Logo.svg" alt="">
+      </a>
+      <div class="menu-open">
+        <span class="hamburger"></span>
       </div>
-     </div>
     </div>
-    <a href="#down" class="scroll-button">
-     <div class="scroll-arrow-box">
-      <span class="scroll-arrow"></span>
-     </div>
-     <div class="scroll-button-flip-box">
-      <span class="scroll-button-flip" data-text='SCROLL'>
-       SCROLL
-      </span>
-     </div>
-    </a>
-   </div>
-  </section>
-  <section id="down" class="projectroom about-projectroom">
-   <div data-animation-container class="projectroom__container-flex">
-    <div class='projectroom__title'>
-     <h2 class="projectroom__large-title title">
-      <span data-animation-child class="animate__animated own-transition"
-       data-animation="animate__fadeInLeft">PROJECTROOM</span>
-      <span data-animation-child class="animate__animated own-transition" data-animation="animate__fadeInLeft"
-       data-animation-delay="200ms">ВЕБ-СТУДИЯ
-       ПОЛНОГО ЦИКЛА</span>
-     </h2>
+  </header>
+  <nav class="nav-container">
+    <div class="nav-container-bg">
+      <img src="./img/nav-back.svg" alt="">
     </div>
-    <div class="about-projectroom__wrapper">
-     <div class="about-projectroom__container">
-      <div class="about-projectroom__text">
-       <img src="./img/about-img/quotes.svg" alt="">
-       <p>Динамично развивающаяся команда профессионалов, которую объединяют единые цели — помогать клиентам раскрывать свой
-       потенциал в сфере digital, расти и совершенствоваться</p>
-      </div>
-     </div>
-     <div class="about-projectroom__info">
-      <img src="./img/about-img/project-img.jpg" alt="">
-      <div class="about-projectroom__info-text"></div>
-     </div>
-    </div>
-  </section>
-  <section class="contact-us">
-   <div data-animation-container>
-    <h4 data-animation-child class="contact-us__title animate__animated" data-animation="animate__fadeInLeft">
-     СВЯЖИТЕСЬ С НАМИ</h4>
-   </div>
-   <div class="contact-us__wrapper">
-    <div data-animation-container class="contact-us__data">
-     <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
-      <input type="text" name='name' placeholder="Имя">
-     </div>
-     <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
-      <input type="email" name='mail' placeholder="E-mail" pattern=".+@globex\.com" required>
-     </div>
-     <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
-      <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-     </div>
-    </div>
-    <div data-animation-container class="contact-us__message animate__animated" data-animation="animate__fadeInUp">
-     <textarea name="text" placeholder="Сообщение"></textarea>
-    </div>
-    <div data-animation-container class="contact-us__send-field">
-     <div data-animation-child class="contact-us__captcha animate__animated" data-animation="animate__fadeInLeft">
-      <form>
-       <input type="checkbox" name="robot">
-       <label for="robot">Я не робот</label>
-      </form>
-      <p>Конфиденциальность-Условия использования</p>
-     </div>
-     <form data-animation-child class="contact-us__agree animate__animated " data-animation="animate__fadeInRight">
-      <input type="checkbox" name="robot">
-      <label for="robot">Даю согласие на обработку данных</label>
-     </form>
-     <button data-animation-child class="button contact-us__button animate__animated "
-      data-animation="animate__fadeInRight">Отправить <img src="./img/Arrow_right.svg" alt=""></button>
-    </div>
-   </div>
-  </section>
- </main>
- <footer class="footer">
-  <div class="footer__wrapper">
-   <div class="footer__left-block">
-    <img src="./img/Logo.svg" alt="" class="footer__logo">
-    <ul class="footer__nav">
-     <li><a href="#">О СТУДИИ</a></li>
-     <li><a href="#">УСЛУГИ</a></li>
-     <li><a href="#">КЕЙСЫ</a></li>
-     <li><a href="#">КЛИЕНТЫ</a></li>
-     <li><a href="#">КОНТАКТЫ</a></li>
+    <div class="menu-close"></div>
+    <ul class="nav-list">
+      <li><a href="index.html">главная</a></li>
+      <li><a href="#">о нас</a></li>
+      <li><a href="services.html">услуги</a></li>
+      <li><a href="#">кейсы</a></li>
+      <li><a href="#">контакты</a></li>
     </ul>
-   </div>
-   <div class="footer__right-block">
-    <div class="footer__contacts-1">
-     <ul>
-      <li class="li-flex"><img src="./img/info.svg" alt=""><a
-        href="mailto:mail@htmlacademy.ru">info@projectroom.digital</a></li>
-      <li class="li-flex"><img src="./img/phone.svg" alt=""><a href="tel:++7954695563"> +7 (495) 469-55-63</a>
-      </li>
-     </ul>
-     <p>107023, Москва,</p>
-     <p>Малая Семеновская ул., 3Ас1</p>
+  </nav>
+  <main>
+    <section class="about-main">
+      <div class="swiper-slide width-100 bg-black">
+        <div class="slide-bg slide-bg-2"></div>
+        <div class="home-slider__content">
+          <div class="home-slider__container">
+            <div class="margin-left-50">
+              <h2 class="home-slider__title home-slider__slide2 home-slider__slide2-desk">
+                <span>ЛУЧШИЕ РЕШЕНИЯ И ИДЕИ</span>
+                <span>ДЛЯ ВАШЕГО БИЗНЕСА</span>
+              </h2>
+              <h2 class="home-slider__title home-slider__slide2 home-slider__slide2-mobile">
+                <span>ЛУЧШИЕ РЕШЕНИЯ</span>
+                <span>И ИДЕИ ДЛЯ</span>
+                <span>ВАШЕГО БИЗНЕСА</span>
+              </h2>
+              <ul class="home-slider__list">
+                <li>* Профессиональная команда</li>
+                <li>* Новаторские идеи</li>
+                <li>* Качественная реализация</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#down" class="scroll-button">
+        <div class="scroll-arrow-box">
+          <span class="scroll-arrow"></span>
+        </div>
+        <div class="scroll-button-flip-box">
+          <span class="scroll-button-flip" data-text='SCROLL'>
+            SCROLL
+          </span>
+        </div>
+      </a>
+      </div>
+    </section>
+    <section id="down" class="projectroom about-projectroom">
+      <div data-animation-container class="projectroom__container-flex">
+        <div class='projectroom__title'>
+          <h2 class="projectroom__large-title title">
+            <span data-animation-child class="animate__animated own-transition"
+              data-animation="animate__fadeInLeft">PROJECTROOM</span>
+            <span data-animation-child class="animate__animated own-transition" data-animation="animate__fadeInLeft"
+              data-animation-delay="200ms">ВЕБ-СТУДИЯ
+              ПОЛНОГО ЦИКЛА</span>
+          </h2>
+        </div>
+        <div class="about-projectroom__wrapper">
+          <div class="about-projectroom__container">
+            <div class="about-projectroom__text">
+              <img src="./img/about-img/quotes.svg" alt="">
+              <p>Динамично развивающаяся команда профессионалов, которую объединяют единые цели — помогать клиентам
+                раскрывать свой
+                потенциал в сфере digital, расти и совершенствоваться</p>
+            </div>
+          </div>
+          <div class="about-projectroom__info">
+            <img src="./img/about-img/project-img.jpg" alt="">
+            <div class="about-projectroom__info-text"></div>
+          </div>
+        </div>
+    </section>
+    <section class="we-can">
+      <div class='we-can__title'>
+        <h2 class="title">Что мы умеем?</h2>
+      </div>
+      <!--slider start-->
+      <div class="we-can__slider">
+        <!--swiper-wrapper start-->
+        <div class="swiper-wrapper">
+          <!--swiper-slide start-->
+          <div class="swiper-slide">
+            <img src="./img/about-img/galery-card.jpg" alt="">
+            <div class="swiper-slide__info">
+              <h4>ПОДДЕРЖКА</h4>
+              <p>Не останавливаемся только на создании сайта, но и поддерживаем его дальше по качеству, дизайну и
+                содержимому,
+                обеспечивая бесперебойную работу</p>
+            </div>
+          </div>
+          <!--swiper-slide end-->
+          <!--swiper-slide start-->
+          <div class="swiper-slide">
+            <img src="./img/about-img/galery-card1.jpg" alt="">
+            <div class="swiper-slide__info">
+              <h4>АНАЛИТИКА</h4>
+              <p>Анализируем рынок, выявляем проблемы и потребности</p>
+            </div>
+          </div>
+          <!--swiper-slide end-->
+          <!--swiper-slide start-->
+          <div class="swiper-slide">
+            <img src="./img/about-img/galery-card2.jpg" alt="">
+            <div class="swiper-slide__info">
+              <h4>РЕШЕНИЯ</h4>
+              <p>Советуем, предлагаем, рекомендуем эффективные решения и делимся опытом</p>
+            </div>
+          </div>
+          <!--swiper-slide end-->
+          <!--swiper-slide start-->
+          <div class="swiper-slide">
+            <img src="./img/about-img/galery-card3.jpg" alt="">
+            <div class="swiper-slide__info">
+              <h4>UI/UX ДИЗАЙН</h4>
+              <p>Понимаем, что необходимо вашему пользователю и строим все вокруг этого</p>
+            </div>
+          </div>
+          <!--swiper-slide end-->
+        </div>
+        <!--slider-wrapper end-->
+        <div class="swiper-button-next">
+          <div class="slider-arrow-next-box">
+            <span class="slider-arrow-next"></span>
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+          <div class="slider-arrow-prev-box">
+            <span class="slider-arrow-prev"></span>
+          </div>
+        </div>
+      </div>
+      <!--slider end-->
+    </section>
+    <section class="we-work">
+      <div class='we-work__title'>
+        <h2 class="title">Как мы работаем?</h2>
+        <p>Этапы рабочего процесса формируются в зависимости от целей и задач</p>
+        <p>У каждого бизнеса — <span>своя история.</span> У каждой задачи — <span>своё решение</span></p>
+      </div>
+      <div class="we-work__wrapper">
+        <div class="we-work__work">
+          <svg class="we-work__work-circle" width="200" height="200" viewBox="0 0 200 200" fill="white"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle r="99" cx="100" cy="100" fill="none" stroke-width="1" stroke="#ccc" />
+            <circle class='work-circle-progress' r="99" cx="100" cy="100" fill="none" stroke-width="3" stroke="#ccc" />
+          </svg>
+          <ul>
+            <li>
+              <div>
+                <span class="unactive-number active-number">01</span>
+                <p class="unactive-work active-work">цели и задачи</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="unactive-number">02</span>
+                <p class="unactive-work">аналитика</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="unactive-number">03</span>
+                <p class="unactive-work">дизайн-концепция</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="unactive-number">04</span>
+                <p class="unactive-work">программирование</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="unactive-number">05</span>
+                <p class="unactive-work">запуск и наполнение</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="unactive-number">06</span>
+                <p class="unactive-work">сопровождение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="we-work__details">
+          <ul>
+            <li>Анализ проекта, заполнение брифа клиентом, подготовка предложений и рекомендаций, разработка технического задания</li>
+            <li>Проработка функционала сайта, анализ поведения пользователей и их вовлеченности, разработка интерфейса</li>
+            <li>Разработка дизайна сайта, отрисовка интерфейса, иллюстрации</li>
+            <li>Настройка CMS, front-/back-end программирование, наполнение базы данных, тестирование</li>
+            <li>Запуск сайта, наполнение контентом, устранение ошибок</li>
+            <li>Контроль работоспособности сайта, консультирование клиента по техническим вопросам</li>
+          </ul>
+        </div>
+      </div>
+      <!--we-work mobile slider start-->
+      <div class="we__work__slider-mobile">
+        <svg class="we-work__work-circle-mobile" width="100" height="100" viewBox="0 0 100 100" fill="white"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle r="49" cx="50" cy="50" fill="none" stroke-width="1" stroke="#ccc" />
+          <circle class='work-circle-progress-mobile' r="49" cx="50" cy="50" fill="none" stroke-width="3" stroke="#ccc" />
+        </svg>
+        <!--we-work swiper-wrapper start-->
+        <div class="swiper-wrapper swiper-wrapper-for-js">
+          <!--we-work swiper-slide start-->
+          <div class="swiper-slide">
+            <div class="swiper-slide-work">
+              <span class="active-number">01</span>
+              <span class="active-work">ЦЕЛИ И ЗАДАЧИ</span>
+            </div>
+            <div class="swiper-slide-details">
+              <p>
+                Анализ проекта, заполнение брифа клиентом, подготовка предложений и рекомендаций, разработка технического задания
+              </p>
+            </div>
+          </div>
+          <!--we-work swiper-slide end-->
+          <!--we-work swiper-slide start-->
+          <div class="swiper-slide">
+            <div class="swiper-slide-work">
+              <span class="active-number">02</span>
+              <span class="active-work">АНАЛИТИКА</span>
+            </div>
+            <div class="swiper-slide-details">
+              <p>
+                Проработка функционала сайта, анализ поведения пользователей и их вовлеченности, разработка интерфейса
+              </p>
+            </div>
+          </div>
+          <!--we-work swiper-slide end-->
+          <!--we-work swiper-slide start-->
+          <div class="swiper-slide">
+            <div class="swiper-slide-work">
+              <span class="active-number">03</span>
+              <span class="active-work">дизайн-концепция</span>
+            </div>
+            <div class="swiper-slide-details">
+              <p>
+                Разработка дизайна сайта, отрисовка интерфейса, иллюстрации
+              </p>
+            </div>
+          </div>
+          <!--we-work swiper-slide end-->
+          <!--we-work swiper-slide start-->
+          <div class="swiper-slide">
+            <div class="swiper-slide-work">
+              <span class="active-number">04</span>
+              <span class="active-work">программирование</span>
+            </div>
+            <div class="swiper-slide-details">
+              <p>
+                Настройка CMS, front-/back-end программирование, наполнение базы данных, тестирование
+              </p>
+            </div>
+          </div>
+          <!--we-work swiper-slide end-->
+          <!--we-work swiper-slide start-->
+          <div class="swiper-slide">
+            <div class="swiper-slide-work">
+              <span class="active-number">05</span>
+              <span class="active-work">запуск и наполнение</span>
+            </div>
+            <div class="swiper-slide-details">
+              <p>
+                Запуск сайта, наполнение контентом, устранение ошибок
+            </div>
+          </div>
+          <!--we-work swiper-slide end-->
+          <!--we-work swiper-slide start-->
+          <div class="swiper-slide">
+            <div class="swiper-slide-work">
+              <span class="active-number">06</span>
+              <span class="active-work">сопровождение</span>
+            </div>
+            <div class="swiper-slide-details">
+              <p>
+                Контроль работоспособности сайта, консультирование клиента по техническим вопросам
+              </p>
+            </div>
+          </div>
+          <!--we-work swiper-slide end-->
+        </div>
+        <!--we-work swiper-wrapper end-->
+      </div>
+      <!--we-work mobile slider end-->
+    </section>
+    <section class="contact-us">
+      <div data-animation-container>
+        <h4 data-animation-child class="contact-us__title animate__animated" data-animation="animate__fadeInLeft">
+          СВЯЖИТЕСЬ С НАМИ</h4>
+      </div>
+      <div class="contact-us__wrapper">
+        <div data-animation-container class="contact-us__data">
+          <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
+            <input type="text" name='name' placeholder="Имя">
+          </div>
+          <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
+            <input type="email" name='mail' placeholder="E-mail" pattern=".+@globex\.com" required>
+          </div>
+          <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
+            <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          </div>
+        </div>
+        <div data-animation-container class="contact-us__message animate__animated" data-animation="animate__fadeInUp">
+          <textarea name="text" placeholder="Сообщение"></textarea>
+        </div>
+        <div data-animation-container class="contact-us__send-field">
+          <div data-animation-child class="contact-us__captcha animate__animated" data-animation="animate__fadeInLeft">
+            <form>
+              <input type="checkbox" name="robot">
+              <label for="robot">Я не робот</label>
+            </form>
+            <p>Конфиденциальность-Условия использования</p>
+          </div>
+          <form data-animation-child class="contact-us__agree animate__animated " data-animation="animate__fadeInRight">
+            <input type="checkbox" name="robot">
+            <label for="robot">Даю согласие на обработку данных</label>
+          </form>
+          <button data-animation-child class="button contact-us__button animate__animated "
+            data-animation="animate__fadeInRight">Отправить <img src="./img/Arrow_right.svg" alt=""></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__left-block">
+        <img src="./img/Logo.svg" alt="" class="footer__logo">
+        <ul class="footer__nav">
+          <li><a href="#">О СТУДИИ</a></li>
+          <li><a href="#">УСЛУГИ</a></li>
+          <li><a href="#">КЕЙСЫ</a></li>
+          <li><a href="#">КЛИЕНТЫ</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+      </div>
+      <div class="footer__right-block">
+        <div class="footer__contacts-1">
+          <ul>
+            <li class="li-flex"><img src="./img/info.svg" alt=""><a
+                href="mailto:mail@htmlacademy.ru">info@projectroom.digital</a></li>
+            <li class="li-flex"><img src="./img/phone.svg" alt=""><a href="tel:++7954695563"> +7 (495) 469-55-63</a>
+            </li>
+          </ul>
+          <p>107023, Москва,</p>
+          <p>Малая Семеновская ул., 3Ас1</p>
+        </div>
+        <div class="footer__contacts-2">
+          <ul>
+            <li class="li-flex"><img src="./img/WhatsApp.svg" alt=""><a href="#"> WHATSAPP</a></li>
+            <li class="li-flex"><img src="./img/Telegram.svg" alt=""><a href="#"> TELEGRAM</a></li>
+          </ul>
+          <div class="footer__cookie">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Cookie</a>
+          </div>
+        </div>
+        <p class="footer__year">© PROJECTROOM, 2022</p>
+      </div>
     </div>
-    <div class="footer__contacts-2">
-     <ul>
-      <li class="li-flex"><img src="./img/WhatsApp.svg" alt=""><a href="#"> WHATSAPP</a></li>
-      <li class="li-flex"><img src="./img/Telegram.svg" alt=""><a href="#"> TELEGRAM</a></li>
-     </ul>
-     <div class="footer__cookie">
-      <a href="#">Пользовательское соглашение</a>
-      <a href="#">Cookie</a>
-     </div>
-    </div>
-    <p class="footer__year">© PROJECTROOM, 2022</p>
-   </div>
-  </div>
- </footer>
- <script src="./js/swiper.js"></script>
- <script src="./js/jQuery2.2.0.js"></script>
- <script src="./js/ScrollAnimations.js"></script>
- <script src="./js/Headroom.js"></script>
- <script src="./js/jquery.spincrement.min.js"></script>
- <script src="./js/index.js"></script>
+  </footer>
+  <script src="./js/swiper.js"></script>
+  <script src="./js/jQuery2.2.0.js"></script>
+  <script src="./js/ScrollAnimations.js"></script>
+  <script src="./js/Headroom.js"></script>
+  <script src="./js/jquery.spincrement.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

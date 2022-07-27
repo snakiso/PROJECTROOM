@@ -1,2 +1,53 @@
 .about-projectroom
- color: white !important
+ &__wrapper
+  display: flex
+  margin: auto
+  max-width: 1300px
+  align-items: center
+ &__container
+  width: 100%
+  flex-basis: 50%
+  max-width: 665px
+ &__text
+  position: relative
+  max-width: 525px
+  display: flex
+  padding-right: 110px
+  max-height: 300px
+  img
+   position: absolute
+   left: 0
+   top: 0
+  p
+   max-width: 400px
+   text-transform: uppercase
+   font-family: 'Gilroy-Medium'
+   font-size: 24px
+   color: white 
+   opacity: 1
+   padding-left: 115px
+   margin: 0
+   line-height: 40.8px
+ &__info
+  width: 100% 
+  max-width: 665px
+  flex-basis: 50% 
+
+
+@media screen and ( max-width: 768px )
+  .about-projectroom
+    &__wrapper
+      flex-direction: column
+    &__text
+      max-width: 240px
+      margin: auto
+      padding-right: 0
+      img
+        width: 42px
+      p
+        font-size: 12px
+        line-height: 140% 
+        padding-left: 55px  
+    &__info
+      img
+        width: 100%

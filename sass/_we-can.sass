@@ -1,0 +1,75 @@
+.we-can
+ min-height: 100vh
+ background: white
+ .title
+  color: rgba(51, 51, 51, 1)
+  padding-bottom: 80px
+ &__slider
+  width: 100%
+  height: 100%
+  position: relative
+  padding-bottom: 140px
+  .swiper-button-prev
+   left: calc(50% - 20px)
+   transform: translateX(-50%)
+  .swiper-button-next
+   left: calc( 50% + 20px )
+  .slider-arrow-next:before
+   border-top: 2px solid #979797
+   border-right: 2px solid #979797
+  .slider-arrow-prev:before
+   border-bottom: 2px solid #979797
+   border-left: 2px solid #979797
+  .swiper-slide
+   margin: 0
+   height: 100%
+   transition-property: transform
+   img
+    vertical-align: middle
+    max-width: 100%
+    border-style: none
+    width: 100%
+   &__info
+    position: absolute
+    bottom: 40px
+    left: 50px
+    max-width: 700px
+    padding: 0
+    h4
+     font-size: 24px
+     color: rgba(202, 77, 255, 1)
+     margin-bottom: 4px
+    p
+     font-size: 34px
+     text-transform: uppercase
+     color: white
+     margin: 0
+@media screen and ( max-width: 1200px )
+ .we-can
+  &__slider
+   .swiper-slide__info
+     max-width: 300px
+     h4
+      font-size: 18px
+     p
+      font-size: 20px
+@media screen and ( max-width: 768px )
+ .we-can
+  &__slider
+   .swiper-slide__info
+     max-width: 450px
+     h4
+      font-size: 20px
+     p
+      font-size: 24px
+@media screen and ( max-width: 500px )
+ .we-can
+  &__slider
+   .swiper-slide__info
+     bottom: 20px
+     left: 20px
+     max-width: 300px
+     h4
+      font-size: 12px
+     p
+      font-size: 14px      

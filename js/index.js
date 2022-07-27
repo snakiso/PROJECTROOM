@@ -88,6 +88,35 @@ var swiper = new Swiper('.we-do__slider', {
     clickable: true
   }
 });
+// // //
+// // //
+// // //
+var swiper = new Swiper('.we-can__slider', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  centeredSlides: true,
+  speed: 1400,
+  freeMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1
+    }
+  }
+});
+// // // 
+// // //
+// // //
+var swiper = new Swiper('.we__work__slider-mobile', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  centeredSlides: true,
+  speed: 1400,
+  freeMode: true,
+});
 
 ///3.header
 let hamburger = document.querySelector('.menu-open')
@@ -109,26 +138,26 @@ headroom.init()
 /// /// ///
 /// /// ///
 /* 5. number animation (spincrement) */
-$(document).ready(function () {
-  var show = true;
-  var countbox = ".benefits__number";
-  $(window).on("scroll load resize", function () {
-    if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-    var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-    var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-    var w_height = $(window).height(); // Высота окна браузера
-    var d_height = $(document).height(); // Высота всего документа
-    var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-    if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-      $('.benefits__number').css('opacity', '1');
-      $('.benefits__number').spincrement({
-        thousandSeparator: "",
-        duration: 4000
-      });
-      show = false;
-    }
-  });
-});
+// $(document).ready(function () {
+//   var show = true;
+//   var countbox = ".benefits__number";
+//   $(window).on("scroll load resize", function () {
+//     if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+//     var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+//     var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+//     var w_height = $(window).height(); // Высота окна браузера
+//     var d_height = $(document).height(); // Высота всего документа
+//     var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+//     if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+//       $('.benefits__number').css('opacity', '1');
+//       $('.benefits__number').spincrement({
+//         thousandSeparator: "",
+//         duration: 4000
+//       });
+//       show = false;
+//     }
+//   });
+// });
 // // //
 // // //
 /* 6. Progress bar */
@@ -137,3 +166,74 @@ $(".skills__progress-zero").each(function () {
     width: $(this).attr("data-progress")
   });
 });
+
+
+/* 7. Circle progress bar */
+let unactiveWork = document.querySelectorAll('.unactive-work')
+let unactiveNumber = document.querySelectorAll('.unactive-number') 
+let section = document.querySelector('.we-work')
+let circle = document.querySelector('.we-work__work-circle')
+let secondCircle = document.querySelector('.work-circle-progress')
+let heightWrap = document.querySelector('.we-work__work').clientHeight //wrapper height = 1205px
+let circleProgress = window.getComputedStyle(secondCircle).strokeDashoffset.slice(0, -2)
+window.addEventListener('scroll', () =>{
+  if (section.getBoundingClientRect().top <= 0 && section.getBoundingClientRect().top > -1000){
+    let scrolled = 0 - section.getBoundingClientRect().top
+    secondCircle.style.strokeDashoffset = circleProgress - scrolled / 1.912
+    circle.style.top = scrolled 
+  } else if (section.getBoundingClientRect().top <= -1000) {
+    circle.style.top = 1005
+    secondCircle.style.strokeDashoffset = 0
+  }
+})
+let wrapperMobile = document.querySelector('.swiper-wrapper-for-js')
+let secondCircleMobile = document.querySelector('.work-circle-progress-mobile')
+let circleProgressMobile = window.getComputedStyle(secondCircleMobile).strokeDashoffset.slice(0, -2) 
+window.addEventListener('touchstart', () => {
+  let scrolled = 0 - wrapperMobile.getBoundingClientRect().left
+  secondCircleMobile.style.strokeDashoffset = circleProgressMobile - (+scrolled / 5.87)
+  console.log(wrapperMobile.getBoundingClientRect().left)
+})
+
+//5.87
+//// // ///
+function removeClass(){
+  for (let i = 0; i < unactiveWork.length; i++){
+    unactiveWork[i].classList.remove('active-work')
+  }
+  for (let j = 0; j < unactiveNumber.length; j++ ){
+    unactiveNumber[j].classList.remove('active-number')
+  }
+}
+window.addEventListener('scroll', () => {
+  if (section.getBoundingClientRect().top > -100) {
+    removeClass()
+    unactiveWork[0].classList.add('active-work')
+    unactiveNumber[0].classList.add('active-number')
+  }
+  if (section.getBoundingClientRect().top < -100){
+    removeClass()
+    unactiveWork[1].classList.add('active-work')
+    unactiveNumber[1].classList.add('active-number')
+  }
+  if (section.getBoundingClientRect().top < -300) {
+    removeClass()
+    unactiveWork[2].classList.add('active-work')
+    unactiveNumber[2].classList.add('active-number')
+  }
+  if (section.getBoundingClientRect().top < -500) {
+    removeClass()
+    unactiveWork[3].classList.add('active-work')
+    unactiveNumber[3].classList.add('active-number')
+  }
+  if (section.getBoundingClientRect().top < -700) {
+    removeClass()
+    unactiveWork[4].classList.add('active-work')
+    unactiveNumber[4].classList.add('active-number')
+  }
+  if (section.getBoundingClientRect().top < -900) {
+    removeClass()
+    unactiveWork[5].classList.add('active-work')
+    unactiveNumber[5].classList.add('active-number')
+  }
+})
