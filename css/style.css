@@ -2468,6 +2468,7 @@ input, textarea {
   background-color: #F5F5F5;
 }
 .skills .title {
+  color: rgb(34, 34, 34);
   text-align: start;
   margin-left: 10%;
 }
@@ -3042,6 +3043,35 @@ input, textarea {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
+.our-team__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  width: 175px;
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  z-index: 3;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.our-team__logo img {
+  width: 22px;
+  height: 22px;
+}
+.our-team__logo .line {
+  width: 105px;
+  height: 1px;
+  background: rgb(92, 77, 216);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
 .our-team__profession {
   z-index: 3;
   margin: 0;
@@ -3072,6 +3102,15 @@ input, textarea {
   width: 68px;
   height: 68px;
 }
+.our-team__box:hover .our-team__logo {
+  -webkit-column-gap: 0px;
+     -moz-column-gap: 0px;
+          column-gap: 0px;
+  left: 25px;
+}
+.our-team__box:hover .our-team__logo .line {
+  width: 0px;
+}
 .our-team__box:hover .our-team__profession {
   top: 1%;
   -webkit-transform: translate(0, 0);
@@ -3090,6 +3129,65 @@ input, textarea {
   }
   .our-team__text {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .our-team__wrapper {
+    padding-bottom: 80px;
+  }
+  .our-team__box {
+    width: 300px;
+  }
+  .our-team__box-bg {
+    width: 78px;
+    height: 68px;
+  }
+  .our-team__logo {
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+  .our-team__logo .line {
+    width: 0;
+  }
+  .our-team__profession {
+    top: 1%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    left: 85px;
+    color: rgb(34, 34, 34);
+    font-size: 16px;
+  }
+  .our-team__text {
+    font-size: 16px;
+  }
+  .our-team__section-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our-team__section-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .our-team__section-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (max-width: 1250px) {
