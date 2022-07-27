@@ -2547,6 +2547,7 @@ input, textarea {
 
 .about-main {
   min-height: 100vh;
+  position: relative;
 }
 .about-main .swiper-slide {
   min-height: 100vh;
