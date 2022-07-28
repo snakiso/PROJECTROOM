@@ -2,9 +2,10 @@
  background-color: #F5F5F5
  color: #333333
  min-height: 100vh
- padding-bottom: 120px
  h2
   margin-bottom: 0
+ &__container
+  padding-bottom: 120px
  &__case
   margin-top: 80px
   max-width: 1819px
@@ -29,11 +30,54 @@
    animation-duration: 2s
  &__button
    margin-top: 80px
-   animation-delay: 2s   
+   animation-delay: 2s 
+ &__more
+   height: 315px 
+   background: rgba(92, 77, 216, 1)
+   display: flex
+   align-items: center
+   justify-content: center
+ &__button-more
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  color: white
+  border: none
+  font-size: 44px
+  text-transform: uppercase
+ &__button-more::before
+  content: ''
+  background: white
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  right: 0px
+  transform: scaleX(0)
+  transform-origin: right
+  transition: .6s cubic-bezier(.767, .01, .18, 1.01)
+ &__button-more:hover:before
+  transform: scaleX(1) 
+ &__button-more:hover .cases__button-more-text::before
+  width: 100%   
 .case-mirror
  flex-direction: row-reverse
  margin-right: 0
  margin-left: auto
+.cases__button-more-text
+  position: relative
+.cases__button-more-text::before
+  content: attr(data-text)
+  position: absolute
+  top: 50%
+  color: rgba(92, 77, 216, 1)
+  transform: translateY(-50%)
+  left: 0
+  transition: .6s cubic-bezier(.767, .01, .18, 1.01)
+  width: 0%
+  white-space: nowrap
+  overflow: hidden
 
 @media screen and ( max-width: 900px )
   .cases
@@ -45,10 +89,17 @@
       margin-top: 0
 @media screen and ( max-width: 768px ) 
   .cases
-    padding-bottom: 80px
+    &__container
+      padding-bottom: 80px
     &__case
       flex-wrap: wrap
       justify-content: center
     &__info
       padding: 0 12px
-      margin-top: 22px         
+      margin-top: 22px
+    &__more
+      height: 200px           
+    &__button-more
+      font-size: 24px
+      width: 250px
+      height: 45px
