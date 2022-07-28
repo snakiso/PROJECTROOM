@@ -1,20 +1,26 @@
 .own-transition
  transition-delay: 0.5s
  transition-duration: 1s
+.animation-delay-1s
+ animation-delay: 1s
+.animation-delay-2s
+ animation-delay: 2s
 .own-delay
  animation-delay: .5s
-
+[data-animation].overlay-anim-box2,
+[data-animation].overlay-anim-box1:before,
+[data-animation].overlay-anim-box1:after,
 [data-animation].overlay-anim-box1:before,
 [data-animation].overlay-anim-box1:after,
 [data-animation].overlay-anim-box1,
 [data-animation].animated
  opacity: 1
 
-.overlay-anim-box1
+.overlay-anim-box1, .overlay-anim-box2
  display: inline-block
  overflow: hidden
  position: relative
-.overlay-anim-box1:before
+.overlay-anim-box1:before, .overlay-anim-box2:before
  content: ''
  background: #F5F5F5
  position: absolute
@@ -25,6 +31,12 @@
  transition: 2s cubic-bezier(.858, .01, .068, .99)
  z-index: 3
  transform: translateX(0)
+
+.overlay-anim-box2:before 
+ background: black
+
+.overlay-anim-box2.overlay-anim2:before
+ transform: translateX(110%)
 
 .overlay-anim-box1.overlay-anim2:before
  transform: translateX(110%)

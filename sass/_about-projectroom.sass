@@ -1,9 +1,12 @@
 .about-projectroom
+ p
+  animation-delay: 1s 
  &__wrapper
   display: flex
   margin: auto
   max-width: 1300px
   align-items: center
+  flex: 1
  &__container
   width: 100%
   flex-basis: 50%
@@ -24,30 +27,69 @@
    font-family: 'Gilroy-Medium'
    font-size: 24px
    color: white 
-   opacity: 1
    padding-left: 115px
    margin: 0
    line-height: 40.8px
- &__info
-  width: 100% 
+ &__info 
   max-width: 665px
-  flex-basis: 50% 
-
-
+  flex-basis: 50%
+  position: relative
+ &__img
+  max-width: 600px
+  margin: 0 0 0 auto
+  img
+   width: 100%  
+ &__info-text
+  position: absolute
+  bottom: 50px
+  span:nth-child(1)
+   font-size: 88px
+   background: rgba(92, 77, 216, 1)
+   font-family: 'Gilroy-Medium'
+   padding: 0 20px 0 12px
+  span:nth-child(2)
+   font-size: 44px
+   font-family: 'Gilroy-Medium'
+  p
+   color: white    
+   max-width: 580px
+   margin: 12px 0 0 0
+@media screen and ( max-width: 1200px )
+  .about-projectroom
+    &__text
+      p
+        font-size: 18px
+        line-height: 25px
+    &__info-text
+      bottom: 20px
+      span:nth-child(1)
+        font-size: 60px
+      span:nth-child(2)
+        font-size: 30px
+      p
+        font-size: 14px 
+        max-width: 270px           
 @media screen and ( max-width: 768px )
   .about-projectroom
     &__wrapper
       flex-direction: column
     &__text
-      max-width: 240px
-      margin: auto
-      padding-right: 0
+      max-width: 320px
+      margin: 0 auto 40px
+      padding: 0 12px
       img
         width: 42px
+        left: 12px
       p
         font-size: 12px
         line-height: 140% 
-        padding-left: 55px  
+        padding-left: 55px
+        letter-spacing: 0.12em
+    &__img
+      padding: 0 0 0 35px       
     &__info
+      padding: 0 12px
       img
         width: 100%
+        
+         

@@ -5,18 +5,23 @@
  &__title
   text-align: center
   .title
-   margin-bottom: 12px
+   margin-bottom: 12px 
+  p
+   margin: 0 
+ &__slogan
+  text-transform: uppercase
+  font-family: 'Gilroy-Medium'
+  margin-top: 80px
+  font-size: 24px
+  display: flex
+  justify-content: center
+  column-gap: 8px 
   p:nth-child(2)
-   margin: 0
-   font-size: 16px
-   font-family: 'Gilroy-Medium'
-  p:nth-child(3)
-   font-family: 'Gilroy-Medium'
-   text-transform: uppercase
-   margin-top: 80px
-   font-size: 24px
-   span
-    background-color: rgba(92, 77, 216, 1)
+   background-color: rgba(92, 77, 216, 1)
+   animation-delay: 1.5s   
+  p:nth-child(4)
+   animation-delay: 2.5s 
+   background-color: rgba(92, 77, 216, 1)    
  &__wrapper
   max-width: 1300px
   display: flex
@@ -81,11 +86,8 @@
 @media screen and ( max-width: 1000px )
  .we-work
   &__title
-   p:last-child
-    max-width: 590px
-    margin-left: auto
-    margin-right: auto
-    line-height: 140%
+  &__slogan
+    font-size: 16px 
   &__work
    ul
     li
@@ -97,6 +99,7 @@
   &__details
    ul
     li
+     margin: 0 0 0 auto
      font-size: 16px
      max-width: 350px            
 @media screen and ( max-width: 768px )
@@ -112,11 +115,18 @@
   stroke: rgba(92, 77, 216, 1)
   transition: all .5s linear
  .we-work
+  &__slogan
+    flex-direction: column
+    align-items: center
+    margin: 40px 0
+    p
+      letter-spacing: 0.12em
+    p:nth-child(2)
+      font-size: 16px !important  
   &__title
-   span
+   p:nth-child(2)
     font-size: 14px
-   p:nth-child(2) 
-    font-size: 14px
+    font-family: 'Gilroy-Medium' 
     margin: auto
     max-width: 280px
    p:last-child

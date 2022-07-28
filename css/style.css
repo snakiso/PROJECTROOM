@@ -316,11 +316,24 @@ a {
           transition-duration: 1s;
 }
 
+.animation-delay-1s {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.animation-delay-2s {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
 .own-delay {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
+[data-animation].overlay-anim-box2,
+[data-animation].overlay-anim-box1:before,
+[data-animation].overlay-anim-box1:after,
 [data-animation].overlay-anim-box1:before,
 [data-animation].overlay-anim-box1:after,
 [data-animation].overlay-anim-box1,
@@ -328,13 +341,13 @@ a {
   opacity: 1;
 }
 
-.overlay-anim-box1 {
+.overlay-anim-box1, .overlay-anim-box2 {
   display: inline-block;
   overflow: hidden;
   position: relative;
 }
 
-.overlay-anim-box1:before {
+.overlay-anim-box1:before, .overlay-anim-box2:before {
   content: "";
   background: #F5F5F5;
   position: absolute;
@@ -347,6 +360,15 @@ a {
   z-index: 3;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.overlay-anim-box2:before {
+  background: black;
+}
+
+.overlay-anim-box2.overlay-anim2:before {
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
 }
 
 .overlay-anim-box1.overlay-anim2:before {
@@ -1701,6 +1723,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .pleasure__wrapper {
+    padding-bottom: 80px;
+  }
   .pleasure ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2539,6 +2564,9 @@ input, textarea {
 .services-main {
   height: calc(100vh - 110px);
 }
+.services-main .scroll-button {
+  bottom: 10px;
+}
 .services-main .slide-bg {
   height: 100%;
 }
@@ -2550,8 +2578,23 @@ input, textarea {
   min-height: 100vh;
   position: relative;
 }
+.about-main .scroll-button {
+  bottom: 10px;
+}
 .about-main .swiper-slide {
   min-height: 100vh;
+}
+.about-main .home-slider__list li:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.about-main .home-slider__list li:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.about-main .home-slider__list li:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 @media screen and (max-width: 768px) {
@@ -2565,6 +2608,10 @@ input, textarea {
     height: 100%;
   }
 }
+.about-projectroom p {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
 .about-projectroom__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2574,6 +2621,9 @@ input, textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .about-projectroom__container {
   width: 100%;
@@ -2601,18 +2651,62 @@ input, textarea {
   font-family: "Gilroy-Medium";
   font-size: 24px;
   color: white;
-  opacity: 1;
   padding-left: 115px;
   margin: 0;
   line-height: 40.8px;
 }
 .about-projectroom__info {
-  width: 100%;
   max-width: 665px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  position: relative;
+}
+.about-projectroom__img {
+  max-width: 600px;
+  margin: 0 0 0 auto;
+}
+.about-projectroom__img img {
+  width: 100%;
+}
+.about-projectroom__info-text {
+  position: absolute;
+  bottom: 50px;
+}
+.about-projectroom__info-text span:nth-child(1) {
+  font-size: 88px;
+  background: rgb(92, 77, 216);
+  font-family: "Gilroy-Medium";
+  padding: 0 20px 0 12px;
+}
+.about-projectroom__info-text span:nth-child(2) {
+  font-size: 44px;
+  font-family: "Gilroy-Medium";
+}
+.about-projectroom__info-text p {
+  color: white;
+  max-width: 580px;
+  margin: 12px 0 0 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-projectroom__text p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .about-projectroom__info-text {
+    bottom: 20px;
+  }
+  .about-projectroom__info-text span:nth-child(1) {
+    font-size: 60px;
+  }
+  .about-projectroom__info-text span:nth-child(2) {
+    font-size: 30px;
+  }
+  .about-projectroom__info-text p {
+    font-size: 14px;
+    max-width: 270px;
+  }
+}
 @media screen and (max-width: 768px) {
   .about-projectroom__wrapper {
     -webkit-box-orient: vertical;
@@ -2621,17 +2715,25 @@ input, textarea {
             flex-direction: column;
   }
   .about-projectroom__text {
-    max-width: 240px;
-    margin: auto;
-    padding-right: 0;
+    max-width: 320px;
+    margin: 0 auto 40px;
+    padding: 0 12px;
   }
   .about-projectroom__text img {
     width: 42px;
+    left: 12px;
   }
   .about-projectroom__text p {
     font-size: 12px;
     line-height: 140%;
     padding-left: 55px;
+    letter-spacing: 0.12em;
+  }
+  .about-projectroom__img {
+    padding: 0 0 0 35px;
+  }
+  .about-projectroom__info {
+    padding: 0 12px;
   }
   .about-projectroom__info img {
     width: 100%;
@@ -2746,18 +2848,32 @@ input, textarea {
 .we-work__title .title {
   margin-bottom: 12px;
 }
-.we-work__title p:nth-child(2) {
+.we-work__title p {
   margin: 0;
-  font-size: 16px;
-  font-family: "Gilroy-Medium";
 }
-.we-work__title p:nth-child(3) {
-  font-family: "Gilroy-Medium";
+.we-work__slogan {
   text-transform: uppercase;
+  font-family: "Gilroy-Medium";
   margin-top: 80px;
   font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
 }
-.we-work__title p:nth-child(3) span {
+.we-work__slogan p:nth-child(2) {
+  background-color: rgb(92, 77, 216);
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.we-work__slogan p:nth-child(4) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   background-color: rgb(92, 77, 216);
 }
 .we-work__wrapper {
@@ -2864,11 +2980,8 @@ input, textarea {
 }
 
 @media screen and (max-width: 1000px) {
-  .we-work__title p:last-child {
-    max-width: 590px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 140%;
+  .we-work__slogan {
+    font-size: 16px;
   }
   .we-work__work ul li div span {
     font-size: 60px;
@@ -2877,6 +2990,7 @@ input, textarea {
     font-size: 18px;
   }
   .we-work__details ul li {
+    margin: 0 0 0 auto;
     font-size: 16px;
     max-width: 350px;
   }
@@ -2897,11 +3011,25 @@ input, textarea {
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
   }
-  .we-work__title span {
-    font-size: 14px;
+  .we-work__slogan {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 40px 0;
+  }
+  .we-work__slogan p {
+    letter-spacing: 0.12em;
+  }
+  .we-work__slogan p:nth-child(2) {
+    font-size: 16px !important;
   }
   .we-work__title p:nth-child(2) {
     font-size: 14px;
+    font-family: "Gilroy-Medium";
     margin: auto;
     max-width: 280px;
   }
