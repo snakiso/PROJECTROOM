@@ -1,0 +1,109 @@
+.static-header
+ position: static
+ height: 140px
+ background: rgba(29, 29, 27, 1)
+.contact-main
+ background-color: white
+ color: black !important
+ min-height: 100vh
+ margin-bottom: 362px
+ .contact-us__wrapper
+  display: flex
+  padding: 0
+  max-width: 1930px
+  margin: 0 0 0 auto
+ .contact-us__button
+  background-color: rgba(92, 77, 216, 1)  
+ &__title
+  color: white
+  font-size: 64px !important
+  background-color: rgba(92, 77, 216, 1)  
+  width: fit-content
+ &__container
+  flex-basis: 50%  
+  margin-right: 110px
+  max-width: 750px
+  padding-left: 10px
+  h4
+   text-transform: uppercase
+   font-size: 28px 
+  .contact-us__data
+   flex-direction: column
+  .contact-us__data-block
+   max-width: none
+   input
+    background-color: white !important
+    border-bottom: 1px solid rgba(168, 166, 166, 1)
+    color: rgba(102, 102, 102, 1) 
+   input::placeholder
+    color: rgba(102, 102, 102, 1) 
+  textarea
+   background-color: white !important
+   border-bottom: 1px solid rgba(168, 166, 166, 1)
+   color: rgba(102, 102, 102, 1) 
+  textarea::placeholder 
+   color: rgba(102, 102, 102, 1)  
+ &__contacts
+  h4
+   margin: 20px 0 8px 0
+   text-transform: uppercase
+   font-size: 28px
+   color: rgba(34, 34, 34, 1)
+  p
+   margin: 0
+   font-family: 'Gilroy-Medium'
+   font-size: 18px
+  a
+   color: rgba(34, 34, 34, 1) !important
+   font-family: 'Gilroy-Medium'
+   font-size: 18px
+ &__mail
+  display: flex
+  align-items: center
+  margin-top: 20px
+  column-gap: 130px
+  h4
+   margin: 0 0 8px 0
+ &__messangers
+  display: flex
+  flex-direction: column
+  row-gap: 12px  
+ &__messanger
+  align-items: center
+  text-transform: uppercase
+  display: flex
+  p
+   font-family: 'Gilroy-Bold' !important
+   letter-spacing: 0.12em
+ &__map
+  flex-basis: 50% 
+@media screen and ( max-width: 1200px )
+ .contact-main
+  &__map
+   width: 100%
+   img
+    width: 100%
+  .contact-us__wrapper
+   align-items: center
+   flex-direction: column
+  &__container
+   margin: 0 0 40px 0 
+@media screen and ( max-width: 500px )
+ .contact-main
+  margin-bottom: 608px
+  &__title
+   font-size: 24px !important
+  &__container
+   .contact-us__captcha
+    p
+     max-width: none
+   h4
+    font-size: 18px
+   p,a
+    font-size: 16px
+    max-width: 180px 
+  &__mail
+   flex-direction: column
+   align-items: flex-start 
+  &__messangers
+   margin-top: 30px       
