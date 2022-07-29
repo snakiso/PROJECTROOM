@@ -2646,7 +2646,7 @@ input, textarea {
 }
 .services-main .home-slider__title-reverse p {
   margin: 0;
-  background-color: rgb(92, 77, 216);
+  background-color: white;
   margin: 9px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -2668,24 +2668,27 @@ input, textarea {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
-.services-main .swiper-slide {
+
+.swiper-slide {
   min-height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
-  .services-main {
-    height: calc(100vh - 110px);
-  }
-  .scroll-button {
-    bottom: 10px;
-  }
-  .slide-bg {
-    height: 100%;
-  }
-  .swiper-slide {
-    height: calc(100vh - 110px);
-  }
+.services-main {
+  height: calc(100vh - 110px);
 }
+
+.scroll-button {
+  bottom: 10px;
+}
+
+.slide-bg {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: calc(100vh - 110px);
+}
+
 .about-main {
   min-height: 100vh;
   position: relative;
