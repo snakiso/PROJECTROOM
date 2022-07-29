@@ -1,6 +1,18 @@
 ///1. ScrollAnimations 
 var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
 $containers.scrollAnimations();
+// button to top// 
+let buttonToTop = document.querySelector('.to-top-button')
+let sections = document.getElementsByTagName('section')
+window.addEventListener('scroll', () => {
+  screenHeight = window.innerHeight
+  if (sections[0].getBoundingClientRect().top < -(screenHeight/2)){
+    buttonToTop.style.visibility ='visible'
+  }else{
+    buttonToTop.style.visibility = 'hidden'
+  }
+})
+//  // // //
 ///2. Swiper slider */
 var interleaveOffset = 0.5;
 // //
@@ -194,7 +206,7 @@ wrapperMobile.addEventListener('transitionend', () => {
   secondCircleMobile.style.strokeDashoffset = circleProgressMobile - (+scrolled / 5.2)
 })
 
-//5.87
+//5.2
 //// // ///
 function removeClass(){
   for (let i = 0; i < unactiveWork.length; i++){
