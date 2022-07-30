@@ -2700,30 +2700,28 @@ input, textarea {
   min-height: 100vh;
 }
 
-.services-main {
-  height: calc(100vh - 110px);
+@media screen and (max-width: 768px) {
+  .services-main {
+    height: calc(100vh - 110px);
+  }
+  .services-main .home-slider__title-reverse p {
+    margin: 0;
+    background-color: rgb(92, 77, 216);
+    margin: 9px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .scroll-button {
+    bottom: 10px;
+  }
+  .slide-bg {
+    height: 100%;
+  }
+  .swiper-slide {
+    height: calc(100vh - 110px);
+  }
 }
-.services-main .home-slider__title-reverse p {
-  margin: 0;
-  background-color: rgb(92, 77, 216);
-  margin: 9px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.scroll-button {
-  bottom: 10px;
-}
-
-.slide-bg {
-  height: 100%;
-}
-
-.swiper-slide {
-  height: calc(100vh - 110px);
-}
-
 .about-main {
   min-height: 100vh;
   position: relative;
