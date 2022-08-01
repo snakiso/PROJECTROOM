@@ -6,7 +6,7 @@ let buttonToTop = document.querySelector('.to-top-button')
 let sections = document.getElementsByTagName('section')
 window.addEventListener('scroll', () => {
   screenHeight = window.innerHeight
-  if (sections[0].getBoundingClientRect().top < -(screenHeight/2)){
+  if (sections[0].getBoundingClientRect().top < -(screenHeight)){
     buttonToTop.style.visibility ='visible'
   }else{
     buttonToTop.style.visibility = 'hidden'
@@ -146,10 +146,12 @@ closeButton.addEventListener('click', () => {
 let header = document.querySelector('.fixed-header')
 let headroom = new Headroom(header)
 headroom.init()
+/* 5. Midnight */
+
 
 /// /// ///
 /// /// ///
-/* 5. number animation (spincrement) */
+/* 6. number animation (spincrement) */
  $(document).ready(function () {
    var show = true;
    var countbox = ".benefits__number";
@@ -172,7 +174,7 @@ headroom.init()
  });
 // // //
 // // //
-/* 6. Progress bar */
+/* 7. Progress bar */
 $(".skills__progress-zero").each(function () {
   $(this).find(".skills__progress-full").animate({
     width: $(this).attr("data-progress")
@@ -180,7 +182,7 @@ $(".skills__progress-zero").each(function () {
 });
 
 
-/* 7. Circle progress bar */
+/* 8. Circle progress bar */
 let unactiveWork = document.querySelectorAll('.unactive-work')
 let unactiveNumber = document.querySelectorAll('.unactive-number') 
 let section = document.querySelector('.we-work')
