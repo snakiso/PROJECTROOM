@@ -7,6 +7,16 @@
  animation-delay: 2s 
 .own-delay
  animation-delay: .5s
+.point-active.overlay-anim2:before
+ background-color: #00000000 !important
+.exp-anim.overlay-anim2:before
+ width: 160px
+ transition: all 2s
+.exp-anim2.overlay-anim2:before
+ width: 191px
+ transition: all 2s   
+[data-animation].slider-overlay,
+[data-animation].overlay-anim-box5,  
 [data-animation].overlay-anim-box4, 
 [data-animation].overlay-anim-box3,
 [data-animation].overlay-anim-box2,
@@ -35,11 +45,19 @@
  transition-delay: 0.5s
 .swiper-slide-active .slider-overlay:before
  transform: translateX(-1%)
-.overlay-anim-box1, .overlay-anim-box2, .overlay-anim-box3,.overlay-anim-box4
+.overlay-anim-box1, 
+.overlay-anim-box2, 
+.overlay-anim-box3,
+.overlay-anim-box4,
+.overlay-anim-box5
  display: inline-block
  overflow: hidden
  position: relative
-.overlay-anim-box1:before, .overlay-anim-box2:before, .overlay-anim-box3:before, .overlay-anim-box4:before
+.overlay-anim-box1:before,
+.overlay-anim-box2:before, 
+.overlay-anim-box3:before, 
+.overlay-anim-box4:before,
+.overlay-anim-box5:before
  content: ''
  background: #F5F5F5
  position: absolute
@@ -58,10 +76,16 @@
 .overlay-anim-box4:before
  background: #333333   
 
+.overlay-anim-box5:before  
+ background: #222222
+
 .overlay-anim-box2:before
  background: black
  transition-delay: 1s
 .swiper-slide-active .overlay-anim-box2:before
+ transform: translateX(110%)
+
+.overlay-anim-box5.overlay-anim2:before
  transform: translateX(110%)
 
 .overlay-anim-box4.overlay-anim2:before
@@ -75,7 +99,37 @@
 
 .overlay-anim-box1.overlay-anim2:before
  transform: translateX(110%)
-
+.overlay-anim2.slider-overlay:before
+ transform: translateX(-1%)
+.tr-delay-5.slider-overlay:before,
+.tr-delay-5.overlay-anim-box5:before
+ transition-delay: 1.8s   
+.tr-delay-4.overlay-anim-box2:before,
+.tr-delay-4.slider-title-fill:before,
+.tr-delay-4.slider-title-fill:after,
+.tr-delay-4.slider-overlay:before,
+.tr-delay-4.overlay-anim-box5:before
+ transition-delay: 1.6s  
+.tr-delay-3.overlay-anim-box2:before,
+.tr-delay-3.slider-title-fill:before,
+.tr-delay-3.slider-title-fill:after,
+.tr-delay-3.slider-overlay:before,
+.tr-delay-3.overlay-anim-box5:before
+ transition-delay: 1.4s   
+.tr-delay-2.overlay-anim-box2:before,
+.tr-delay-2.slider-overlay:before,
+.tr-delay-2.overlay-anim-box2:before,
+.tr-delay-2.slider-title-fill:before,
+.tr-delay-2.slider-title-fill:after,
+.tr-delay-2.overlay-anim-box5:before
+ transition-delay: 1.2s
+.tr-delay-1.slider-overlay:before,
+.tr-delay-1.slider-title-fill:before,
+.tr-delay-1.slider-title-fill:after,
+.tr-delay-1.overlay-anim-box5:before
+ transition-delay: 1s
+.tr-delay.point-active:before
+ transition-delay: attr(data-delay) ''
 .slide-progress
  animation-name: slide-progress
  animation-duration: 4s

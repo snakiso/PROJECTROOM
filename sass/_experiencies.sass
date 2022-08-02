@@ -15,10 +15,12 @@
   left: 220px
   width: 180px
   height: 34px
+  img
+   animation-delay: 1s 
  &__plus::before
   content: ''
   height: 1px
-  width: 160px
+  width: 0
   position: absolute
   top: calc( 50% - 1px )
   background-color: rgba(92, 77, 216, 1)
@@ -35,11 +37,11 @@
   font-family: 'Gilroy-Medium'
   line-height: 150%
   img
-    max-width: 63px
-    margin-bottom: 8px
+   max-width: 63px
+   margin-bottom: 8px
   span:first-child
    font-size: 88px
-   margin-bottom: 25px    
+   margin-bottom: 16px    
  &__item-img
   max-width: 550px
   position: relative
@@ -67,7 +69,6 @@
   .experiencies__plus:before
    top: 50%
    left: 54px 
-   width: 191px
   .experiencies__info
    left:0  
  &__year
@@ -101,12 +102,38 @@
    height: 11px
    background-color: rgba(92, 77, 216, 1)  
    border-radius: 50%
+  .point-active:before
+   content: ''
+   width: 11px
+   height: 11px
+   background-color: black
+   position: absolute 
   .point-unactive
-   background-color: rgba(34, 34, 34, 1)  
+   background-color: rgba(34, 34, 34, 1) 
+  .point-active:nth-child(1)::before
+   transition-delay: 2s 
+  .point-active:nth-child(2)::before
+   transition-delay: 1.8s 
+  .point-active:nth-child(3)::before
+   transition-delay: 1.6s 
+  .point-active:nth-child(4)::before
+   transition-delay: 1.4s 
+  .point-active:nth-child(5)::before
+   transition-delay: 1.2s 
+  .point-active:nth-child(6)::before
+   transition-delay: 1s 
+  .point-active:nth-child(7)::before
+   transition-delay: .8s 
+  .point-active:nth-child(8)::before
+   transition-delay: .6s 
+  .point-active:nth-child(9)::before
+   transition-delay: .4s 
+  .point-active:nth-child(10)::before
+   transition-delay: .2s                    
  &__point:before
   content: ''
   height: 1px
-  width: 191px
+  width: 0
   position: absolute
   top: calc( 50% - 1px )
   background-color: rgba(92, 77, 216, 1)
