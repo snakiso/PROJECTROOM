@@ -16,7 +16,7 @@
  background-size: cover
  background-position: center center
  background-repeat: no-repeat
- z-index: 0
+ z-index: 2
  display: inline-block
  overflow: hidden
  &__reverse
@@ -48,7 +48,10 @@
  &__list
    color: white
    margin: 0 0 60px 40px
+   .overlay-anim-box2
+    display: block
    li
+    width: fit-content
     font-family: 'Gilroy-Medium'
     text-transform: uppercase
     letter-spacing: 0.12em
@@ -65,12 +68,11 @@
   font-family: 'Gilroy-Regular'
   margin: 0 0 90px 40px
  &__title-reverse
-  color: rgba(92, 77, 216, 1)
+  color: white
   font-size: 44px
   text-transform: uppercase
   max-width: 520px
   span
-    background-color: white
     line-height: 60px 
     padding: 0 10px
  &__button
@@ -398,7 +400,11 @@
           max-width: 19px 
     &__title-reverse
       color: white
+      .slider-title-fill:after
+        background-color: rgb(92, 77, 216)
+        color: white
       span
+        margin: 2px 0
         line-height: 35px
         background-color: rgba(92, 77, 216, 1)  
     &__content
@@ -418,7 +424,7 @@
     &__slide2-mobile
       display: block
       max-width: 280px
-      line-height: 35px     
+      line-height: 25px     
     &__slide2
       margin: 0 !important
       span

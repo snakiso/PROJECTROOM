@@ -132,13 +132,19 @@ var swiper = new Swiper('.we__work__slider-mobile', {
 
 ///3.header
 let hamburger = document.querySelector('.menu-open')
+let hamburgerBlck = document.querySelector('.menu-open-blck')
 let nav = document.querySelector('.nav-container')
 let closeButton = document.querySelector('.menu-close')
 hamburger.addEventListener('click', () => {
   hamburger.classList.add('menu-open-active')
   nav.classList.add('nav-container-active')
 })
+hamburgerBlck.addEventListener('click', () => {
+  hamburgerBlck.classList.add('menu-open-active')
+  nav.classList.add('nav-container-active')
+})
 closeButton.addEventListener('click', () => {
+  hamburgerBlck.classList.remove('menu-open-active')
   hamburger.classList.remove('menu-open-active')
   nav.classList.remove('nav-container-active')
 })
@@ -146,8 +152,6 @@ closeButton.addEventListener('click', () => {
 let header = document.querySelector('.fixed-header')
 let headroom = new Headroom(header)
 headroom.init()
-/* 5. Midnight */
-
 
 /// /// ///
 /// /// ///
@@ -166,7 +170,7 @@ headroom.init()
       $('.benefits__number').css('opacity', '1');
        $('.benefits__number').spincrement({
          thousandSeparator: "",
-         duration: 4000
+         duration: 5000
        });
       show = false;
      }

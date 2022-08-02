@@ -14,13 +14,32 @@
 </head>
 
 <body>
+  <a href="#up" class="to-top-button">
+    <span class="to-top-arrow"></span>
+  </a>
   <header class="fixed-header">
-    <div class="fixed-header__wrapper">
-      <a href="index.html" class="fixed-header__logo">
-        <img src="./img/Logo.svg" alt="">
-      </a>
-      <div class="menu-open">
-        <span class="hamburger"></span>
+    <div class="midnightHeader default">
+      <div class="midnightInner">
+        <div class="fixed-header__wrapper">
+          <a href="index.html" class="fixed-header__logo">
+            <img src="./img/Logo.svg" alt="">
+          </a>
+          <div class="menu-open">
+            <span class="hamburger"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="midnightHeader black">
+      <div class="midnightInner">
+        <div class="fixed-header__wrapper">
+          <a href="index.html" class="fixed-header__logo">
+            <img src="./img/Logo-blck.svg" alt="">
+          </a>
+          <div class="menu-open-blck">
+            <span class="hamburger humburger-blck"></span>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -104,7 +123,7 @@
           </div>
         </div>
     </section>
-    <section class="we-can">
+    <section class="we-can" data-midnight="black">
       <div data-animation-container class='we-can__title'>
         <h2 data-animation-child class="title animate__animated" data-animation="animate__fadeInLeft">Что мы умеем?</h2>
       </div>
@@ -324,7 +343,7 @@
       </div>
       <!--we-work mobile slider end-->
     </section>
-    <section class="our-team">
+    <section class="our-team" data-midnight="black">
       <div data-animation-container class='our-team__title'>
         <h2 data-animation-child class="title animate__animated" data-animation="animate__fadeInDown">наша команда</h2>
       </div>
@@ -499,6 +518,8 @@
   </footer>
   <script src="./js/swiper.js"></script>
   <script src="./js/jQuery2.2.0.js"></script>
+  <script src="./js/midnight.jquery.js"></script>
+  <script src="./js/midnight.js"></script>
   <script src="./js/ScrollAnimations.js"></script>
   <script src="./js/Headroom.js"></script>
   <script src="./js/jquery.spincrement.min.js"></script>

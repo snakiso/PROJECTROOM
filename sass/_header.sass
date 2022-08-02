@@ -21,8 +21,16 @@
  transform: scaleX(1)
  transition: 1s cubic-bezier(.767, .01, .18, 1.01)
  transition-delay: 1s
+.menu-open-blck
+ cursor: pointer
+ width: 40px
+ height: 22px
+ transform-origin: right
+ transform: scaleX(1)
+ transition: 1s cubic-bezier(.767, .01, .18, 1.01)
+ transition-delay: 1s  
 .menu-open:before
- background: white
+ background:  white
  content: ''
  position: absolute
  width: 40px
@@ -30,7 +38,20 @@
  top: 50%
  left: 0
  transform-origin: right
+.menu-open-blck:before
+ background:  black
+ content: ''
+ position: absolute
+ width: 40px
+ height: 2px
+ top: 50%
+ left: 0
+ transform-origin: right  
 .menu-open-active
+ .humburger-blck:before
+  transition-delay: 0s
+  transition: .3s cubic-bezier(.225, 1, .316, .99)
+  transform: translateY(10px)
  .hamburger:before
   transition-delay: 0s
   transition: .3s cubic-bezier(.225, 1, .316, .99)
@@ -60,9 +81,13 @@
  transform: translateY(0%)
 .headroom--unpinned 
  transform: translateY(-100%)
+.midnightHeader.black .hamburger:before
+ background: black
+.midnightHeader.black .hamburger:after  
+ background: black  
 @media screen and ( max-width: 768px )
  .fixed-header
-  position: relative  
+  position: relative !important 
   height: 110px
   background: black
   .fixed-header__logo

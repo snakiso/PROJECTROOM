@@ -18,12 +18,28 @@
  <span class="to-top-arrow"></span>
 </a>
 <header class="fixed-header">
-        <div class="fixed-header__wrapper">
+        <div class="midnightHeader default">
+          <div class="midnightInner">
+          <div class="fixed-header__wrapper">
           <a href="index.html" class="fixed-header__logo">
             <img src="./img/Logo.svg" alt="">
           </a>
           <div class="menu-open">
             <span class="hamburger"></span>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div class="midnightHeader black">
+          <div class="midnightInner">
+            <div class="fixed-header__wrapper">
+              <a href="index.html" class="fixed-header__logo">
+                <img src="./img/Logo-blck.svg" alt="">
+              </a>
+              <div class="menu-open-blck">
+                <span class="hamburger humburger-blck"></span>
+              </div>
+            </div>
           </div>
         </div>
   </header>
@@ -52,13 +68,13 @@
             <div class="home-slider__container">
               <div class="margin-left-50">
                 <h2 class="home-slider__title">
-                  <span>USABILITY</span>
-                  <div>
+                  <span class="overlay-anim-box2 tr-delay-1">USABILITY</span>
+                  <div class="overlay-anim-box2 tr-delay-2">
                     <img src="./img/vs.svg" alt="">
                     <span>CREATIVITY</span>
                   </div>
                 </h2>
-                <button class="home-slider__button button">ПЕРЕЗЕНТАЦИЯ <img src="./img/Arrow_right.svg"
+                <button class="home-slider__button button slider-fade">ПЕРЕЗЕНТАЦИЯ <img src="./img/Arrow_right.svg"
                     alt=""></button>
               </div>
             </div>
@@ -72,20 +88,20 @@
             <div class="home-slider__container">
               <div class="margin-left-50">
                 <h2 class="home-slider__title home-slider__slide2 home-slider__slide2-desk">
-                  <span>ЛУЧШИЕ РЕШЕНИЯ И ИДЕИ</span>
-                  <span>ДЛЯ ВАШЕГО БИЗНЕСА</span>
+                  <span class="slider-overlay">ЛУЧШИЕ РЕШЕНИЯ И ИДЕИ</span>
+                  <span class="slider-overlay">ДЛЯ ВАШЕГО БИЗНЕСА</span>
                 </h2>
                 <h2 class="home-slider__title home-slider__slide2 home-slider__slide2-mobile">
-                  <span>ЛУЧШИЕ РЕШЕНИЯ</span>
-                  <span>И ИДЕИ ДЛЯ</span>
-                  <span>ВАШЕГО БИЗНЕСА</span>
+                  <span class="slider-overlay">ЛУЧШИЕ РЕШЕНИЯ</span>
+                  <span class="slider-overlay">И ИДЕИ ДЛЯ</span>
+                  <span class="slider-overlay">ВАШЕГО БИЗНЕСА</span>
                 </h2>
                 <ul class="home-slider__list">
-                  <li>* Профессиональная команда</li>
-                  <li>* Новаторские идеи</li>
-                  <li>* Качественная реализация</li>
+                  <li class="overlay-anim-box2">* Профессиональная команда</li>
+                  <li class="overlay-anim-box2">* Новаторские идеи</li>
+                  <li class="overlay-anim-box2">* Качественная реализация</li>
                 </ul>
-                <button class="home-slider__button slider2-button button">ПОДРОБНЕЕ<img src="./img/Arrow_right.svg" alt=""></button>
+                <button class="home-slider__button slider2-button button slider-fade">ПОДРОБНЕЕ<img src="./img/Arrow_right.svg" alt=""></button>
               </div>
             </div>
           </div>
@@ -98,12 +114,12 @@
             <div class="home-slider__container">
               <div class='margin-left-50__reverse'>
                 <div class="home-slider__title-reverse">
-                    <span>веб-разработка</span>
-                    <span>сервис и поддержка</span>
-                    <span>маркетинг</span>
-                    <span>продвижение</span>
+                    <span class="slider-title-fill" data-text="веб-разработка">веб-разработка</span>
+                    <span class="slider-title-fill tr-delay-2" data-text="сервис и поддержка">сервис и поддержка</span>
+                    <span class="slider-title-fill tr-delay-3" data-text="маркетинг">маркетинг</span>
+                    <span class="slider-title-fill tr-delay-4" data-text="продвижение">продвижение</span>
                 </div>
-                <button class="home-slider__button-reverse button">ПОДРОБНЕЕ<img src="./img/black-arrow.svg"
+                <button class="home-slider__button-reverse button slider-fade">ПОДРОБНЕЕ<img src="./img/black-arrow.svg"
                     alt=""></button>
               </div>
             </div>
@@ -197,7 +213,7 @@
       </div>
       <div class="experiencies__wrapper">
         <div data-animation-container class="experiencies__item">
-          <div class="experiencies__item-img">
+          <div data-animation-child class="experiencies__item-img overlay-anim-box3" data-animation="overlay-anim2">
             <img src="./img/exp1.jpg" alt="">
             <div class="experiencies__year">
               <span class="benefits__number">15</span>
@@ -215,8 +231,8 @@
           </div>
         </div>
         <div data-animation-container class="experiencies__item">
-          <div class="experiencies__item-img">
-            <img src="./img/exp2.jpg" alt="">
+          <div data-animation-child class="experiencies__item-img overlay-anim-box3" data-animation="overlay-anim2">
+            <img  src="./img/exp2.jpg" alt="">
             <div class="experiencies__year">
               <span  class="benefits__number">165</span>
               <span data-animation-child class="animate__animated" data-animation="animate__fadeInUp" >клиентов</span>
@@ -245,8 +261,8 @@
           </div>
         </div>
         <div data-animation-container class="experiencies__item">
-          <div class="experiencies__item-img">
-            <img src="./img/exp3.jpg" alt="">
+          <div data-animation-child class="experiencies__item-img overlay-anim-box3" data-animation="overlay-anim2">
+            <img  src="./img/exp3.jpg" alt="">
             <div class="experiencies__year">
               <span data-animation-child class="benefits__number">287</span>
               <span data-animation-child class="animate__animated" data-animation="animate__fadeInUp" >реализованных</span>
@@ -271,13 +287,12 @@
       </div>
       <div class="cases__container">
         <div data-animation-container class="cases__case case-mirror">
-          <div class="cases__img">
-            <img data-animation-child src="./img/case1.jpg" alt="" class="animate__animated"
-              data-animation="animate__fadeInRight">
+          <div data-animation-child  class="cases__img overlay-anim-box4" data-animation="overlay-anim2">
+            <img  src="./img/case1.jpg" alt=""  >
           </div>
           <div class="cases__info">
-            <h4 data-animation-child class="cases__title animate__animated own-transition"
-              data-animation="animate__fadeInLeft">QNAP
+            <h4 data-animation-child class="cases__title  own-transition overlay-anim-box4"
+              data-animation="overlay-anim2">QNAP
             </h4>
             <p data-animation-child class="cases__text animate__animated own-transition"
               data-animation="animate__fadeInUp">Исходим
@@ -291,13 +306,12 @@
           </div>
         </div>
         <div data-animation-container class="cases__case ">
-          <div class="cases__img">
-            <img data-animation-child src="./img/case2.jpg" alt="" class="animate__animated"
-              data-animation="animate__fadeInLeft">
+          <div data-animation-child  class="cases__img overlay-anim-box4" data-animation="overlay-anim2">
+            <img  src="./img/case2.jpg" alt="">
           </div>
           <div class="cases__info">
-            <h4 data-animation-child class="cases__title animate__animated own-transition"
-              data-animation="animate__fadeInRight">
+            <h4 data-animation-child class="cases__title overlay-anim-box4 own-transition"
+              data-animation="overlay-anim2">
               Транспортная неделя</h4>
             <p data-animation-child class="cases__text animate__animated own-transition"
               data-animation="animate__fadeInUp">Исходим
@@ -311,13 +325,12 @@
           </div>
         </div>
         <div data-animation-container class="cases__case case-mirror">
-          <div class="cases__img">
-            <img data-animation-child src="./img/case3.png" alt="" class="animate__animated"
-              data-animation="animate__fadeInRight">
+          <div data-animation-child  class="cases__img overlay-anim-box4" data-animation="overlay-anim2">
+            <img data-animation-child src="./img/case3.png" alt="">
           </div>
           <div class="cases__info">
-            <h4 data-animation-child class="cases__title animate__animated own-transition"
-              data-animation="animate__fadeInLeft">
+            <h4 data-animation-child class="cases__title overlay-anim-box4 own-transition"
+              data-animation="overlay-anim2">
               РЖДстрой</h4>
             <p data-animation-child class="cases__text animate__animated own-transition"
               data-animation="animate__fadeInUp">Одна
@@ -331,13 +344,12 @@
           </div>
         </div>
         <div data-animation-container class="cases__case">
-          <div class="cases__img">
-            <img data-animation-child src="./img/case4.png" alt="" class="animate__animated"
-              data-animation="animate__fadeInLeft">
+          <div data-animation-child  class="cases__img overlay-anim-box4" data-animation="overlay-anim2">
+            <img data-animation-child src="./img/case4.png" alt="">
           </div>
           <div class="cases__info">
-            <h4 data-animation-child class="cases__title animate__animated own-transition"
-              data-animation="animate__fadeInRight">КРЭТ
+            <h4 data-animation-child class="cases__title overlay-anim-box4 own-transition"
+              data-animation="overlay-anim2">КРЭТ
             </h4>
             <p data-animation-child class="cases__text animate__animated own-transition"
               data-animation="animate__fadeInUp">Исходим
@@ -352,10 +364,10 @@
         </div>
       </div>
     </section>
-    <section class="pleasure">
+    <section class="pleasure" data-midnight="black">
       <div class="pleasure__wrapper">
         <div data-animation-container class="container">
-          <h2 data-animation-child class="title animate__animated" data-animation="animate__fadeInLeft">Нашей работой
+          <h2 data-animation-child class="title overlay-anim-box1" data-animation="overlay-anim2">Нашей работой
             остались довольны</h2>
           <ul class="pleasure__client-list">
             <li>
@@ -415,9 +427,9 @@
             </li>
             <li class="empty-spot-li">
               <a data-animation-container href="#" class="empty-spot">
-                <span data-animation-child class="animate__animated" data-animation="animate__fadeInLeft">ВСЕ</span>
-                <span data-animation-child class="animate__animated"
-                  data-animation="animate__fadeInRight">КЛИЕНТЫ</span>
+                <span data-animation-child class="overlay-anim-box1" data-animation="overlay-anim2">ВСЕ</span>
+                <span data-animation-child class="overlay-anim-box1"
+                  data-animation="overlay-anim2">КЛИЕНТЫ</span>
               </a>
             </li>
           </ul>
@@ -425,7 +437,7 @@
       </div>
     </section>
     <!-- section start -->
-    <section class="mini-slider">
+    <section class="mini-slider" data-midnight="black">
       <!-- testimonials-slider start -->
       <div class="testimonials-slider">
         <!-- swiper-wrapper start -->
@@ -568,6 +580,7 @@
   <script src="./js/swiper.js"></script>
   <script src="./js/jQuery2.2.0.js"></script>
   <script src="./js/midnight.jquery.js"></script>
+  <script src="./js/midnight.js"></script>
   <script src="./js/ScrollAnimations.js"></script>
   <script src="./js/Headroom.js"></script>
   <script src="./js/jquery.spincrement.min.js"></script>

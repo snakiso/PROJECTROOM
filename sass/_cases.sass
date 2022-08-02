@@ -12,6 +12,7 @@
   display: flex
   align-items: center
   column-gap: 5%
+  margin-right: 30%
  &__info
   max-width: 332px
   max-height: 312px 
@@ -64,7 +65,7 @@
 .case-mirror
  flex-direction: row-reverse
  margin-right: 0
- margin-left: auto
+ margin-left: 30%
 .cases__button-more-text
   position: relative
 .cases__button-more-text::before
@@ -78,7 +79,20 @@
   width: 0%
   white-space: nowrap
   overflow: hidden
-
+@media screen and ( max-width: 1600px )
+  .cases
+    &__case
+      margin-right: 10%
+  .case-mirror
+    margin-right: 0
+    margin-left: 10%
+@media screen and ( max-width: 1200px )
+  .cases
+    &__case
+      margin-right: 0
+  .case-mirror
+    margin-right: 0
+    margin-left: 0       
 @media screen and ( max-width: 900px )
   .cases
     &__title

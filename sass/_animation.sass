@@ -4,9 +4,11 @@
 .animation-delay-1s
  animation-delay: 1s
 .animation-delay-2s
- animation-delay: 2s
+ animation-delay: 2s 
 .own-delay
  animation-delay: .5s
+[data-animation].overlay-anim-box4, 
+[data-animation].overlay-anim-box3,
 [data-animation].overlay-anim-box2,
 [data-animation].overlay-anim-box1:before,
 [data-animation].overlay-anim-box1:after,
@@ -15,12 +17,29 @@
 [data-animation].overlay-anim-box1,
 [data-animation].animated
  opacity: 1
-
-.overlay-anim-box1, .overlay-anim-box2
+.slider-overlay
  display: inline-block
  overflow: hidden
  position: relative
-.overlay-anim-box1:before, .overlay-anim-box2:before
+.slider-overlay:before
+ content: ''
+ width: 101%
+ height: 100%
+ background: rgb(92, 77, 216)
+ position: absolute
+ top: 0
+ left: 100%
+ transition: 1s cubic-bezier(.858, .01, .068, .99)
+ z-index: 1
+ transform: translateX(-100%)
+ transition-delay: 0.5s
+.swiper-slide-active .slider-overlay:before
+ transform: translateX(-1%)
+.overlay-anim-box1, .overlay-anim-box2, .overlay-anim-box3,.overlay-anim-box4
+ display: inline-block
+ overflow: hidden
+ position: relative
+.overlay-anim-box1:before, .overlay-anim-box2:before, .overlay-anim-box3:before, .overlay-anim-box4:before
  content: ''
  background: #F5F5F5
  position: absolute
@@ -29,11 +48,27 @@
  bottom: 0
  right: 0
  transition: 2s cubic-bezier(.858, .01, .068, .99)
- z-index: 3
+ z-index: 1
  transform: translateX(0)
 
-.overlay-anim-box2:before 
+.overlay-anim-box3:before
  background: black
+ transition-delay: 0s
+
+.overlay-anim-box4:before
+ background: #333333   
+
+.overlay-anim-box2:before
+ background: black
+ transition-delay: 1s
+.swiper-slide-active .overlay-anim-box2:before
+ transform: translateX(110%)
+
+.overlay-anim-box4.overlay-anim2:before
+ transform: translateX(110%)
+
+.overlay-anim-box3.overlay-anim2:before
+ transform: translateX(110%)
 
 .overlay-anim-box2.overlay-anim2:before
  transform: translateX(110%)
@@ -51,3 +86,39 @@
   transform: translateX(-100%)
  100%
   transform: translateX(0)
+
+.slider-fade
+ display: inline-block
+ opacity: 0
+ transform: translateY(30px)
+ transition: 1s cubic-bezier(.767, .01, .18, 1.01)
+ transition-delay: 1.6s 
+.swiper-slide-active .slider-fade
+ opacity: 1
+ transform: translateY(0) 
+
+.slider-title-fill
+ white-space: nowrap
+ color: transparent
+ position: relative
+ display: inline-block
+.slider-title-fill:before, .slider-title-fill:after
+ content: attr(data-text)
+ position: absolute
+ top: 50%
+ color: white
+ transform: translateY(-50%)
+ left: 0
+ transition: 1s cubic-bezier(.767, .01, .18, 1.01)
+ width: 0%
+ white-space: nowrap
+ overflow: hidden
+ transition-delay: 1s
+.slider-title-fill:after
+ color: rgb(92, 77, 216)
+ background-color: white
+ transition-delay: 1.2s
+.swiper-slide-active .slider-title-fill:before 
+ width: 100% 
+.swiper-slide-active .slider-title-fill:after
+ width: 100% 
