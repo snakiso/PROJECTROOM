@@ -707,6 +707,7 @@ a {
   max-width: 520px;
 }
 .home-slider__title-reverse span {
+  margin: 3px 0;
   line-height: 60px;
   padding: 0 10px;
 }
