@@ -686,6 +686,18 @@ a {
   width: 100%;
 }
 
+@media screen and (max-width: 1100px) {
+  .exp-anim.overlay-anim2:before {
+    height: 130px;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+  .exp-anim2.overlay-anim2:before {
+    height: 180px !important;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+}
 .home-slider__slide2-mobile {
   display: none;
 }
@@ -1548,7 +1560,7 @@ a {
 }
 .experiencies__info span:first-child {
   font-size: 88px;
-  margin-bottom: 16px;
+  line-height: 100%;
 }
 .experiencies__item-img {
   max-width: 550px;
@@ -1773,7 +1785,7 @@ a {
   }
   .experiencies__plus::before {
     width: 1px !important;
-    height: 130px;
+    height: 0;
     left: 50%;
     top: -140px;
   }
@@ -1803,7 +1815,7 @@ a {
   .experiencies__item:nth-child(2) .experiencies__plus::before {
     left: 50%;
     top: -190px;
-    height: 180px;
+    height: 0;
   }
 }
 .cases {
