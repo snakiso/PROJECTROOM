@@ -344,10 +344,48 @@ a {
 }
 .nav-list li {
   margin: 8px 0;
+  overflow: hidden;
 }
 
 .nav-button {
   position: relative;
+  display: inline-block;
+  -webkit-transform: translateY(104%);
+          transform: translateY(104%);
+  -webkit-transition: 1.5s cubic-bezier(0.225, 1, 0.316, 0.99);
+  transition: 1.5s cubic-bezier(0.225, 1, 0.316, 0.99);
+}
+
+.nav-container-active .nav-button {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 1.5s cubic-bezier(0.225, 1, 0.316, 0.99);
+  transition: 1.5s cubic-bezier(0.225, 1, 0.316, 0.99);
+}
+
+.nav-container-active .nav-list li:nth-child(1) a {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.nav-container-active .nav-list li:nth-child(2) a {
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
+}
+
+.nav-container-active .nav-list li:nth-child(3) a {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+.nav-container-active .nav-list li:nth-child(4) a {
+  -webkit-transition-delay: 1.3s;
+          transition-delay: 1.3s;
+}
+
+.nav-container-active .nav-list li:nth-child(5) a {
+  -webkit-transition-delay: 1.4s;
+          transition-delay: 1.4s;
 }
 
 .nav-button:before {
@@ -1784,7 +1822,7 @@ a {
     width: 34px;
   }
   .experiencies__plus::before {
-    width: 1px !important;
+    width: 2px !important;
     height: 0;
     left: 50%;
     top: -140px;
