@@ -155,29 +155,6 @@ headroom.init()
 
 /// /// ///
 /// /// ///
-/* 6. number animation (spincrement) */
- $(document).ready(function () {
-   var show = true;
-   var countbox = ".benefits__number";
-   $(window).on("scroll load resize", function () {
-     if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-     var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-    var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-     var w_height = $(window).height(); // Высота окна браузера
-    var d_height = $(document).height(); // Высота всего документа
-    var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-     if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-      $('.benefits__number').css('opacity', '1');
-       $('.benefits__number').spincrement({
-         thousandSeparator: "",
-         duration: 5000
-       });
-      show = false;
-     }
-   });
- });
-// // //
-// // //
 /* 7. Progress bar */
 $(".skills__progress-zero").each(function () {
   $(this).find(".skills__progress-full").animate({
@@ -185,72 +162,3 @@ $(".skills__progress-zero").each(function () {
   });
 });
 
-
-/* 8. Circle progress bar */
-let unactiveWork = document.querySelectorAll('.unactive-work')
-let unactiveNumber = document.querySelectorAll('.unactive-number') 
-let section = document.querySelector('.we-work')
-let circle = document.querySelector('.we-work__work-circle')
-let secondCircle = document.querySelector('.work-circle-progress')
-let heightWrap = document.querySelector('.we-work__work').clientHeight //wrapper height = 1205px
-let circleProgress = window.getComputedStyle(secondCircle).strokeDashoffset.slice(0, -2)
-window.addEventListener('scroll', () =>{
-  if (section.getBoundingClientRect().top <= 0 && section.getBoundingClientRect().top > -1000){
-    let scrolled = 0 - section.getBoundingClientRect().top
-    secondCircle.style.strokeDashoffset = circleProgress - scrolled / 1.912
-    circle.style.top = scrolled 
-  } else if (section.getBoundingClientRect().top <= -1000) {
-    circle.style.top = 1005
-    secondCircle.style.strokeDashoffset = 0
-  }
-})
-let wrapperMobile = document.querySelector('.swiper-wrapper-for-js')
-let secondCircleMobile = document.querySelector('.work-circle-progress-mobile')
-let circleProgressMobile = window.getComputedStyle(secondCircleMobile).strokeDashoffset.slice(0, -2)
-wrapperMobile.addEventListener('transitionend', () => {
-  let scrolled = 0 - window.getComputedStyle(wrapperMobile).transform.slice(19, -4)
-  secondCircleMobile.style.strokeDashoffset = circleProgressMobile - (+scrolled / 5.2)
-})
-
-//5.2
-//// // ///
-function removeClass(){
-  for (let i = 0; i < unactiveWork.length; i++){
-    unactiveWork[i].classList.remove('active-work')
-  }
-  for (let j = 0; j < unactiveNumber.length; j++ ){
-    unactiveNumber[j].classList.remove('active-number')
-  }
-}
-window.addEventListener('scroll', () => {
-  if (section.getBoundingClientRect().top > -100) {
-    removeClass()
-    unactiveWork[0].classList.add('active-work')
-    unactiveNumber[0].classList.add('active-number')
-  }
-  if (section.getBoundingClientRect().top < -100){
-    removeClass()
-    unactiveWork[1].classList.add('active-work')
-    unactiveNumber[1].classList.add('active-number')
-  }
-  if (section.getBoundingClientRect().top < -300) {
-    removeClass()
-    unactiveWork[2].classList.add('active-work')
-    unactiveNumber[2].classList.add('active-number')
-  }
-  if (section.getBoundingClientRect().top < -500) {
-    removeClass()
-    unactiveWork[3].classList.add('active-work')
-    unactiveNumber[3].classList.add('active-number')
-  }
-  if (section.getBoundingClientRect().top < -700) {
-    removeClass()
-    unactiveWork[4].classList.add('active-work')
-    unactiveNumber[4].classList.add('active-number')
-  }
-  if (section.getBoundingClientRect().top < -900) {
-    removeClass()
-    unactiveWork[5].classList.add('active-work')
-    unactiveNumber[5].classList.add('active-number')
-  }
-})
