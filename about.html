@@ -57,7 +57,7 @@
     </ul>
   </nav>
   <main>
-    <section data-animation-container class="about-main">
+    <section data-animation-container class="about-main" id="up">
       <div class="swiper-slide width-100 bg-black">
         <div class="slide-bg slide-bg-2"></div>
         <div class="home-slider__content">
@@ -184,12 +184,12 @@
     <section class="we-work">
       <div data-animation-container class='we-work__title'>
         <h2 data-animation-child class="title overlay-anim-box2" data-animation="overlay-anim2">Как мы работаем?</h2>
-        <p data-animation-child class="animate__animated" data-animation="animate__fadeInUp" >Этапы рабочего процесса формируются в зависимости от целей и задач</p>
+        <p data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="2s">Этапы рабочего процесса формируются в зависимости от целей и задач</p>
         <div class="we-work__slogan">
-          <p data-animation-child class="overlay-anim-box2 tr-delay-4" data-animation="overlay-anim2">У каждого бизнеса —</p>
-          <p data-animation-child class="slider-overlay tr-delay-5" data-animation="overlay-anim2">своя история.</p>
-          <p data-animation-child class="overlay-anim-box2 tr-delay-4" data-animation="overlay-anim2">У каждой задачи -</p>
-          <p data-animation-child class="slider-overlay tr-delay-5" data-animation="overlay-anim2">своё решение</p>
+          <p data-animation-child class="overlay-anim-box2 tr-delay-2s" data-animation="overlay-anim2">У каждого бизнеса —</p>
+          <p data-animation-child class="slider-overlay tr-delay-3s" data-animation="overlay-anim2">своя история.</p>
+          <p data-animation-child class="overlay-anim-box2 tr-delay-4s" data-animation="overlay-anim2">У каждой задачи -</p>
+          <p data-animation-child class="slider-overlay tr-delay-5s" data-animation="overlay-anim2">своё решение.</p>
         </div>
       </div>
       <div class="we-work__wrapper">
@@ -342,11 +342,11 @@
     </section>
     <section class="our-team" data-midnight="black">
       <div data-animation-container class='our-team__title'>
-        <h2 data-animation-child class="title animate__animated" data-animation="animate__fadeInDown">наша команда</h2>
+        <h2 data-animation-child class="title overlay-anim-box1" data-animation="overlay-anim2">наша команда</h2>
       </div>
       <div data-animation-container class="our-team__wrapper">
         <div class="our-team__section-1">
-        <a data-animation-child href="#" class="our-team__box animate__animated" data-animation="animate__fadeInLeft">
+        <a data-animation-child href="#" class="our-team__box overlay-anim-box5" data-animation="overlay-anim2">
           <div class="our-team__logo">
             <div class="line"></div>
             <img class="our-team__icon" src="./img/about-img/manager.svg">
@@ -355,7 +355,7 @@
           <h4 class="our-team__profession">Менеджер проекта</h4>
           <p class="our-team__text">На связи с клиентом 24/7. Выстраивает все процессы</p>
         </a>
-        <a data-animation-child href="#" class="our-team__box animate__animated" data-animation="animate__fadeInLeft">
+        <a data-animation-child href="#" class="our-team__box overlay-anim-box5" data-animation="overlay-anim2">
           <div class="our-team__logo">
             <div class="line"></div>
             <img class="our-team__icon" src="./img/about-img/marketolog.svg">
@@ -365,7 +365,7 @@
           <p class="our-team__text">Знает о вашей целевой аудитории все: кто она, где её искать и
           как влюбить в вас</p>
         </a>
-        <a data-animation-child href="#" class="our-team__box animate__animated" data-animation="animate__fadeInRight">
+        <a data-animation-child href="#" class="our-team__box overlay-anim-box5" data-animation="overlay-anim2">
           <div class="our-team__logo">
             <div class="line"></div>
             <img class="our-team__icon" src="./img/about-img/proect.svg">
@@ -374,7 +374,7 @@
           <h4 class="our-team__profession">Проектировщик интерфейсов</h4>
           <p class="our-team__text">Пользователи найдут все, что нужно, за пару кликов</p>
         </a>
-        <a data-animation-child href="#" class="our-team__box animate__animated" data-animation="animate__fadeInRight">
+        <a data-animation-child href="#" class="our-team__box overlay-anim-box5" data-animation="overlay-anim2">
           <div class="our-team__logo">
             <div class="line"></div>
             <img class="our-team__icon" src="./img/about-img/designer.svg">
@@ -386,7 +386,7 @@
         </a>
         </div>
         <div class="our-team__section-2">
-          <a href="#" data-animation-child class="our-team__box animate__animated animation-delay-1s" data-animation="animate__fadeInUp">
+          <a href="#" data-animation-child class="our-team__box  overlay-anim-box5 tr-delay-1" data-animation="overlay-anim2">
             <div class="our-team__logo">
               <div class="line"></div>
               <img class="our-team__icon" src="./img/about-img/verstka.svg">
@@ -395,7 +395,7 @@
             <h4 class="our-team__profession">Верстальщик</h4>
             <p class="our-team__text">Ваш сайт будет корректно отображаться на всех устройствах</p>
           </a>
-          <a href="#" data-animation-child class="our-team__box animate__animated animation-delay-1s" data-animation="animate__fadeInUp">
+          <a href="#" data-animation-child class="our-team__box  overlay-anim-box5 tr-delay-1" data-animation="overlay-anim2">
             <div class="our-team__logo">
               <div class="line"></div>
               <img class="our-team__icon" src="./img/about-img/frontend.svg">
@@ -404,7 +404,7 @@
             <h4 class="our-team__profession">Frontend-разработчик</h4>
             <p class="our-team__text">Ваш сайт будет интерактивным и эффектным</p>
           </a>
-          <a href="#" data-animation-child class="our-team__box animate__animated animation-delay-1s" data-animation="animate__fadeInUp">
+          <a href="#" data-animation-child class="our-team__box  overlay-anim-box5 tr-delay-1" data-animation="overlay-anim2">
             <div class="our-team__logo">
               <div class="line"></div>
               <img class="our-team__icon" src="./img/about-img/backend.svg">
@@ -415,7 +415,7 @@
           </a>
         </div>
         <div class="our-team__section-3">
-          <a href="#" data-animation-child class="our-team__box animate__animated animation-delay-2s" data-animation="animate__fadeInLeft">
+          <a href="#" data-animation-child class="our-team__box  overlay-anim-box5 tr-delay-3" data-animation="overlay-anim2">
             <div class="our-team__logo">
               <div class="line"></div>
               <img class="our-team__icon" src="./img/about-img/copyrite.svg">
@@ -425,7 +425,7 @@
             <p class="our-team__text">Ваши тексты будут одинаково хороши как для пользователей, так
             и для поисковых систем</p>
           </a>
-          <a href="#" data-animation-child class="our-team__box animate__animated animation-delay-2s" data-animation="animate__fadeInRight">
+          <a href="#" data-animation-child class="our-team__box  overlay-anim-box5 tr-delay-3" data-animation="overlay-anim2">
             <div class="our-team__logo">
               <div class="line"></div>
               <img class="our-team__icon" src="./img/about-img/content-manager.svg">
@@ -440,38 +440,42 @@
     </section>
     <section class="contact-us">
       <div data-animation-container>
-        <h4 data-animation-child class="contact-us__title animate__animated" data-animation="animate__fadeInLeft">
+        <h4 data-animation-child class="contact-us__title overlay-anim-box5 tr-delay-1" data-animation="overlay-anim2">
           СВЯЖИТЕСЬ С НАМИ</h4>
       </div>
       <div class="contact-us__wrapper">
         <div data-animation-container class="contact-us__data">
-          <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
+          <div data-animation-child class="contact-us__data-block overlay-anim-box5 tr-delay-2"
+            data-animation="overlay-anim2">
             <input type="text" name='name' placeholder="Имя">
           </div>
-          <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
+          <div data-animation-child class="contact-us__data-block  overlay-anim-box5 tr-delay-3"
+            data-animation="overlay-anim2">
             <input type="email" name='mail' placeholder="E-mail" pattern=".+@globex\.com" required>
           </div>
-          <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
+          <div data-animation-child class="contact-us__data-block  overlay-anim-box5 tr-delay-4"
+            data-animation="overlay-anim2">
             <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
           </div>
         </div>
-        <div data-animation-container class="contact-us__message animate__animated" data-animation="animate__fadeInUp">
+        <div data-animation-container class="contact-us__message overlay-anim-box5 tr-delay-3"
+          data-animation="overlay-anim2">
           <textarea name="text" placeholder="Сообщение"></textarea>
         </div>
-        <div data-animation-container class="contact-us__send-field">
-          <div data-animation-child class="contact-us__captcha animate__animated" data-animation="animate__fadeInLeft">
+        <div data-animation-container class="contact-us__send-field ">
+          <div data-animation-child class="contact-us__captcha overlay-anim-box5 tr-delay-3" data-animation="overlay-anim2">
             <form>
               <input type="checkbox" name="robot">
               <label for="robot">Я не робот</label>
             </form>
             <p>Конфиденциальность-Условия использования</p>
           </div>
-          <form data-animation-child class="contact-us__agree animate__animated " data-animation="animate__fadeInRight">
+          <form data-animation-child class="contact-us__agree overlay-anim-box5 tr-delay-3" data-animation="overlay-anim2">
             <input type="checkbox" name="robot">
             <label for="robot">Даю согласие на обработку данных</label>
           </form>
-          <button data-animation-child class="button contact-us__button animate__animated "
-            data-animation="animate__fadeInRight">Отправить <img src="./img/Arrow_right.svg" alt=""></button>
+          <button data-animation-child class="button contact-us__button overlay-anim-box5 tr-delay-3"
+            data-animation="overlay-anim2">Отправить <img src="./img/Arrow_right.svg" alt=""></button>
         </div>
       </div>
     </section>

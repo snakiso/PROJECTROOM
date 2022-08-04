@@ -565,6 +565,14 @@ a {
           transform: translateX(110%);
 }
 
+.slider-title-fill.overlay-anim2:before {
+  width: 100%;
+}
+
+.slider-title-fill.overlay-anim2:after {
+  width: 100%;
+}
+
 .overlay-anim-box5.overlay-anim2:before {
   -webkit-transform: translateX(110%);
           transform: translateX(110%);
@@ -591,8 +599,8 @@ a {
 }
 
 .overlay-anim2.slider-overlay:before {
-  -webkit-transform: translateX(-1%);
-          transform: translateX(-1%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .tr-delay-5s.slider-overlay:before {
@@ -600,7 +608,8 @@ a {
           transition-delay: 5s;
 }
 
-.tr-delay-4s.slider-overlay:before {
+.tr-delay-4s.slider-overlay:before,
+.tr-delay-4s.overlay-anim-box2:before {
   -webkit-transition-delay: 4s;
           transition-delay: 4s;
 }
@@ -610,20 +619,22 @@ a {
           transition-delay: 3s;
 }
 
-.tr-delay-2s.slider-overlay:before {
+.tr-delay-2s.slider-overlay:before,
+.tr-delay-2s.overlay-anim-box2:before {
   -webkit-transition-delay: 2s;
           transition-delay: 2s;
 }
 
 .tr-delay-5.slider-overlay:before,
-.tr-delay-5.overlay-anim-box5:before {
+.tr-delay-5.overlay-anim-box5:before,
+.tr-delay-4.slider-title-fill:after {
   -webkit-transition-delay: 1.8s;
           transition-delay: 1.8s;
 }
 
 .tr-delay-4.overlay-anim-box2:before,
 .tr-delay-4.slider-title-fill:before,
-.tr-delay-4.slider-title-fill:after,
+.tr-delay-3.slider-title-fill:after,
 .tr-delay-4.slider-overlay:before,
 .tr-delay-4.overlay-anim-box5:before {
   -webkit-transition-delay: 1.6s;
@@ -632,7 +643,7 @@ a {
 
 .tr-delay-3.overlay-anim-box2:before,
 .tr-delay-3.slider-title-fill:before,
-.tr-delay-3.slider-title-fill:after,
+.tr-delay-2.slider-title-fill:after,
 .tr-delay-3.slider-overlay:before,
 .tr-delay-3.overlay-anim-box5:before {
   -webkit-transition-delay: 1.4s;
@@ -643,7 +654,7 @@ a {
 .tr-delay-2.slider-overlay:before,
 .tr-delay-2.overlay-anim-box2:before,
 .tr-delay-2.slider-title-fill:before,
-.tr-delay-2.slider-title-fill:after,
+.tr-delay-1.slider-title-fill:after,
 .tr-delay-2.overlay-anim-box5:before {
   -webkit-transition-delay: 1.2s;
           transition-delay: 1.2s;
@@ -651,7 +662,6 @@ a {
 
 .tr-delay-1.slider-overlay:before,
 .tr-delay-1.slider-title-fill:before,
-.tr-delay-1.slider-title-fill:after,
 .tr-delay-1.overlay-anim-box5:before {
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
@@ -3100,7 +3110,6 @@ input, textarea {
 }
 .services-main .home-slider__title-reverse p {
   margin: 0;
-  background-color: white;
   margin: 9px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -3133,7 +3142,7 @@ input, textarea {
   .services-main .home-slider__title-reverse p {
     margin: 0;
     background-color: rgb(92, 77, 216);
-    margin: 9px;
+    margin: 3px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -3443,6 +3452,9 @@ input, textarea {
      -moz-column-gap: 8px;
           column-gap: 8px;
 }
+.we-work__slogan .slider-overlay:before {
+  background-color: black;
+}
 .we-work__slogan p:nth-child(2) {
   background-color: rgb(92, 77, 216);
   -webkit-animation-delay: 1.5s;
@@ -3699,6 +3711,10 @@ input, textarea {
 }
 .our-team__title {
   color: rgb(34, 34, 34);
+  text-align: center;
+}
+.our-team__title .overlay-anim-box1:before {
+  background-color: white;
 }
 .our-team__wrapper {
   max-width: 1301px;
@@ -3738,6 +3754,9 @@ input, textarea {
   width: 275px;
   height: 275px;
   cursor: pointer;
+}
+.our-team .overlay-anim-box5:before {
+  z-index: 4;
 }
 .our-team__box-bg {
   position: relative;
