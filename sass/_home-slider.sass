@@ -28,6 +28,12 @@
  width: 100%
  overflow: hidden
  background: #000
+ .button:hover
+  padding: 0
+ .button:hover.arrow-btn::before
+  right: 20px
+ .button:hover.arrow-btn::after
+  right: 20px 
  .swiper-wrapper
   min-height: 100vh
  .swiper-slide
@@ -43,11 +49,11 @@
   max-width: 600px
   .slider-title-fill:after
    color: white
-   background-color: rgba(92, 77, 216, 1)
-   padding: 0 10px  
+   background-color: rgba(92, 77, 216, 1)  
   span
    line-height: 60px
    margin: 3px 0
+   padding: 0 10px
  &__list
    color: white
    margin: 0 0 60px 40px
@@ -82,12 +88,21 @@
  &__button
   margin-left: 40px
   background-color: rgba(92, 77, 216, 1)
+  span
+   padding-right: 20px  
+ &__button:hover.arrow-btn::before
+  background: white  
  &__button-reverse
   margin-top: 85px
   background-color: white
   color: #000
-  img
-    width: 12px
+  span
+   padding-right: 20px
+  .arrow-btn::after
+   border-right: 2px solid black
+   border-top: 2px solid black
+ &__button-reverse:hover.arrow-btn::before
+  background: black  
  .swiper-pagination
   bottom: 66px
   right: 40px

@@ -23,6 +23,18 @@ input,textarea
  min-height: 100vh
  background-color: #222222
  color: #FFFFFF
+ .arrow-btn::before
+  right: 150px 
+ .arrow-btn::after
+  right: 150px 
+ .button:hover
+  padding: 0
+ .button:hover.arrow-btn::before
+  right: 120px
+ .button:hover.arrow-btn::after
+  right: 120px 
+  border-right: 2px solid rgba(92, 77, 216, 1)
+  border-top: 2px solid rgba(92, 77, 216, 1)   
  div:first-child
   text-align: center
  &__title
@@ -105,6 +117,14 @@ input,textarea
   margin-top: 25px
   width: 100%
   height: 60px !important
+  span
+   padding-right: 20px
+   transition: 0.5s cubic-bezier(0.858, 0.01, 0.068, 0.99)
+.button:hover.contact-us__button
+  border: 1px solid rgb(92, 77, 216)
+  span
+   color: rgb(92, 77, 216)
+   transition: 0.5s cubic-bezier(0.858, 0.01, 0.068, 0.99)   
 @media screen and ( max-width: 875px )
  .contact-us
   margin-bottom: 403px

@@ -29,6 +29,7 @@ a
  margin: 0
  padding-top: 120px
 .button
+ position: relative
  text-transform: uppercase
  display: flex !important
  align-items: center
@@ -43,6 +44,15 @@ a
  letter-spacing: 0.24em
  font-family: 'Gilroy-Medium'
  cursor: pointer
+ transition: 0.5s cubic-bezier(.858, .01, .068, .99)  
+.home-slider__button-reverse.arrow-btn::after
+ border-right: 2px solid black
+ border-top: 2px solid black  
+.button:hover.arrow-btn::before
+ transform: translateY(-50%) scaleX(1)
+.button:hover
+ padding-right: 30px
+ transition: 0.5s cubic-bezier(.858, .01, .068, .99) !important  
 .margin-left-50
  margin-left: 50%
  &__reverse

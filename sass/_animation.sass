@@ -83,6 +83,13 @@
 .overlay-anim-box5:before  
  background: #222222
 
+.anim-opacity
+ opacity: 0 
+ transition: all 2s
+ transition-delay: 1.8s 
+.anim-opacity.overlay-anim2:before
+ opacity: 1
+ 
 .overlay-anim-box2:before
  background: black
  transition-delay: 0s
@@ -166,10 +173,10 @@
  opacity: 0
  transform: translateY(30px)
  transition: 1s cubic-bezier(.767, .01, .18, 1.01)
- transition-delay: 1.6s 
 .swiper-slide-active .slider-fade
  opacity: 1
- transform: translateY(0) 
+ transform: translateY(0)
+ transition-delay: 1.6s 
 
 .slider-title-fill
  white-space: nowrap
