@@ -836,10 +836,11 @@ a {
 .home-slider__slide2 .slider-title-fill:after {
   color: white;
   background-color: rgb(92, 77, 216);
+  padding: 0 10px;
 }
 .home-slider__slide2 span {
   line-height: 60px;
-  padding: 0 10px;
+  margin: 3px 0;
 }
 .home-slider__list {
   color: white;
