@@ -1402,6 +1402,7 @@ a {
     font-size: 44px;
     margin-left: 0;
     margin-bottom: 22px;
+    max-width: 300px;
   }
   .home-slider__title span {
     padding: 0 15px;
