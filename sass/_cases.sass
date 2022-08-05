@@ -13,6 +13,8 @@
   align-items: center
   column-gap: 5%
   margin-right: 30%
+  .overlay-anim-box4:before
+    transition: 1s cubic-bezier(0.858, 0.01, 0.068, 0.99) 
  &__info
   max-width: 332px
   max-height: 312px 
@@ -23,15 +25,20 @@
  &__text
   font-family: 'Gilroy-Medium'
   color: #A8A6A6
-  animation-delay: 1.75s 
+  animation-delay: .5s 
  &__img
   max-width: 1376px
   img
    width: 100% 
-   animation-duration: 2s
+   transition: 1s cubic-bezier(.858, .01, .068, .99) 
+ &__img:hover
+  img
+   transform: scale(1.1)   
  &__button
    margin-top: 80px
-   animation-delay: 2s 
+   animation-delay: .7s
+   padding-right: 10px
+   transition: .5s cubic-bezier(.858, .01, .068, .99) 
  &__more
    height: 315px 
    background: rgba(92, 77, 216, 1)
@@ -79,6 +86,36 @@
   width: 0%
   white-space: nowrap
   overflow: hidden
+.arrow-btn::before
+  content: ''
+  position: absolute
+  top: 50%
+  right: 40px
+  transform: translateY(-50%) scaleX(0)
+  width: 30px
+  height: 2px
+  transition: .5s cubic-bezier(.858, .01, .068, .99)
+  transform-origin: right
+  background: rgba(92, 77, 216, 1)
+.arrow-btn::after
+  content: ''
+  position: absolute
+  top: 50%
+  right: 40px
+  width: 7px
+  height: 7px
+  border-right: 2px solid white
+  border-top: 2px solid white
+  transform: translateY(-50%) rotate(45deg)
+  transition: .5s cubic-bezier(.858, .01, .068, .99)
+.cases__button:hover.arrow-btn::before
+  transform: translateY(-50%) scaleX(1)  
+.cases__button:hover.arrow-btn::after
+  border-right: 2px solid rgba(92, 77, 216, 1)
+  border-top: 2px solid rgba(92, 77, 216, 1) 
+.cases__button:hover
+  padding-right: 30px
+  transition: .5s cubic-bezier(.858, .01, .068, .99)   
 @media screen and ( max-width: 1600px )
   .cases
     &__case

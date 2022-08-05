@@ -64,7 +64,19 @@
   font-family: 'Gilroy-Medium'
   color: rgba(102, 102, 102, 1)
  &__button
+  position: relative
   margin-top: 55px
+  animation-delay: 0.7s
+  padding-right: 10px
+  transition: 0.5s cubic-bezier(0.858, 0.01, 0.068, 0.99)
+ &__button:hover.arrow-btn::before
+  transform: translateY(-50%) scaleX(1)  
+ &__button:hover.arrow-btn::after
+  border-right: 2px solid rgba(92, 77, 216, 1)
+  border-top: 2px solid rgba(92, 77, 216, 1) 
+ &__button:hover
+  padding-right: 30px
+  transition: .5s cubic-bezier(.858, .01, .068, .99)   
 @media screen and ( max-width: 900px )
  .testimonials-slider 
   margin: 0 15px
