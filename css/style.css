@@ -2776,6 +2776,8 @@ input, textarea {
     grid-template-areas: "agree" "captcha" "button";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    overflow: hidden;
+    height: auto;
   }
   .contact-us__captcha {
     margin-top: 22px;
