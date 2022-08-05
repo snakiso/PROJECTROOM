@@ -2693,19 +2693,19 @@ input, textarea {
   color: #FFFFFF;
 }
 .contact-us .arrow-btn::before {
-  right: 150px;
+  right: 35%;
 }
 .contact-us .arrow-btn::after {
-  right: 150px;
+  right: 35%;
 }
 .contact-us .button:hover {
   padding: 0;
 }
 .contact-us .button:hover.arrow-btn::before {
-  right: 120px;
+  right: 30%;
 }
 .contact-us .button:hover.arrow-btn::after {
-  right: 120px;
+  right: 30%;
   border-right: 2px solid rgb(92, 77, 216);
   border-top: 2px solid rgb(92, 77, 216);
 }
@@ -2848,6 +2848,12 @@ input, textarea {
   .contact-us {
     margin-bottom: 608px;
   }
+  .contact-us .arrow-btn::after {
+    right: 20%;
+  }
+  .contact-us .arrow-btn::before {
+    right: 20%;
+  }
   .contact-us__title {
     padding-top: 80px;
   }
@@ -2868,6 +2874,7 @@ input, textarea {
     grid-template-rows: 1fr;
     overflow: hidden;
     height: auto;
+    padding: 0 1px;
   }
   .contact-us__captcha {
     margin-top: 22px;

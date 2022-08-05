@@ -24,15 +24,15 @@ input,textarea
  background-color: #222222
  color: #FFFFFF
  .arrow-btn::before
-  right: 150px 
+  right: 35% 
  .arrow-btn::after
-  right: 150px 
+  right: 35% 
  .button:hover
   padding: 0
  .button:hover.arrow-btn::before
-  right: 120px
+  right: 30%
  .button:hover.arrow-btn::after
-  right: 120px 
+  right: 30%
   border-right: 2px solid rgba(92, 77, 216, 1)
   border-top: 2px solid rgba(92, 77, 216, 1)   
  div:first-child
@@ -131,6 +131,10 @@ input,textarea
 @media screen and ( max-width: 600px )  
  .contact-us
   margin-bottom: 608px
+  .arrow-btn::after
+   right: 20%
+  .arrow-btn::before
+   right: 20% 
   &__title
    padding-top: 80px
   &__data
@@ -145,6 +149,7 @@ input,textarea
    grid-template-rows: 1fr
    overflow: hidden
    height: auto
+   padding: 0 1px
   &__captcha
    margin-top: 22px
    grid-area: captcha
