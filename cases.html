@@ -199,38 +199,41 @@
     </section>
     <section class="contact-us">
       <div data-animation-container>
-        <h4 data-animation-child class="contact-us__title animate__animated" data-animation="animate__fadeInLeft">
+        <h4 data-animation-child class="contact-us__title overlay-anim-box5" data-animation="overlay-anim2">
           СВЯЖИТЕСЬ С НАМИ</h4>
       </div>
-      <div class="contact-us__wrapper">
-        <div data-animation-container class="contact-us__data">
-          <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
+      <div data-animation-container class="contact-us__wrapper">
+        <div class="contact-us__data">
+          <div data-animation-child class="contact-us__data-block overlay-anim-box5 tr-delay-1"
+            data-animation="overlay-anim2">
             <input type="text" name='name' placeholder="Имя">
           </div>
-          <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
+          <div data-animation-child class="contact-us__data-block  overlay-anim-box5 tr-delay-2"
+            data-animation="overlay-anim2">
             <input type="email" name='mail' placeholder="E-mail" pattern=".+@globex\.com" required>
           </div>
-          <div data-animation-child class="contact-us__data-block animate__animated" data-animation="animate__fadeInUp">
+          <div data-animation-child class="contact-us__data-block  overlay-anim-box5 tr-delay-3"
+            data-animation="overlay-anim2">
             <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
           </div>
         </div>
-        <div data-animation-container class="contact-us__message animate__animated" data-animation="animate__fadeInUp">
+        <div data-animation-child class="contact-us__message overlay-anim-box5 tr-delay-2" data-animation="overlay-anim2">
           <textarea name="text" placeholder="Сообщение"></textarea>
         </div>
-        <div data-animation-container class="contact-us__send-field">
-          <div data-animation-child class="contact-us__captcha animate__animated" data-animation="animate__fadeInLeft">
+        <div data-animation-child class="contact-us__send-field overlay-anim-box5 tr-delay-2"
+          data-animation="overlay-anim2">
+          <div class="contact-us__captcha ">
             <form>
               <input type="checkbox" name="robot">
               <label for="robot">Я не робот</label>
             </form>
             <p>Конфиденциальность-Условия использования</p>
           </div>
-          <form data-animation-child class="contact-us__agree animate__animated " data-animation="animate__fadeInRight">
+          <form class="contact-us__agree ">
             <input type="checkbox" name="robot">
             <label for="robot">Даю согласие на обработку данных</label>
           </form>
-          <button data-animation-child class="button contact-us__button animate__animated "
-            data-animation="animate__fadeInRight">Отправить <img src="./img/Arrow_right.svg" alt=""></button>
+          <button href="#" class="contact-us__button button arrow-btn"><span>Отправить</span></button>
         </div>
       </div>
     </section>

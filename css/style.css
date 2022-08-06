@@ -918,6 +918,7 @@ a {
   font-size: 88px;
   font-family: "Gilroy-Regular";
   margin: 0 0 90px 40px;
+  max-width: 900px;
 }
 .home-slider__title-reverse {
   color: white;
