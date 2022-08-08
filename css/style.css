@@ -4134,6 +4134,13 @@ input, textarea {
   min-height: 100vh;
   position: relative;
 }
+.cases-main .overlay-anim-box5 {
+  display: block;
+}
+.cases-main .slider-title-fill:after {
+  color: white;
+  background-color: rgb(92, 77, 216);
+}
 .cases-main .scroll-button {
   bottom: 10px;
   z-index: 10;
@@ -4147,6 +4154,12 @@ input, textarea {
 .cases-main .slide-bg {
   background-image: url("../img/cases-bg.jpg");
   z-index: 5;
+}
+.cases-main .cases-main-mobile {
+  display: none;
+}
+.cases-main .home-slider__title-mobile {
+  display: none;
 }
 .cases-main .home-slider__title {
   margin: 0 0 40px 40px;
@@ -4168,6 +4181,7 @@ input, textarea {
   font-size: 24px;
 }
 .cases-main h4 p:last-child {
+  margin: 5px 0;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
@@ -4177,12 +4191,7 @@ input, textarea {
   display: flex;
 }
 .cases-main h4 div p:first-child {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-.cases-main h4 div p:last-child {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  margin: 0;
 }
 .cases-main .bg-purple {
   margin: 0;
@@ -4198,6 +4207,17 @@ input, textarea {
   .cases-main {
     min-height: calc(100vh - 110px);
   }
+  .cases-main .cases-main-desk {
+    display: none;
+  }
+  .cases-main .cases-main-mobile {
+    display: block;
+  }
+  .cases-main .cases-main-mobile div {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .cases-main .home-slider__content-1 {
     background: none;
   }
@@ -4205,19 +4225,31 @@ input, textarea {
     min-height: calc(100vh - 110px);
   }
   .cases-main .home-slider__title {
+    display: none;
+  }
+  .cases-main .home-slider__title-mobile {
+    display: block;
     font-size: 24px;
     margin: 0 0 20px 0px;
+    text-transform: uppercase;
   }
-  .cases-main .home-slider__title p {
-    background-color: rgb(92, 77, 216);
+  .cases-main .home-slider__title-mobile .slider-title-fill {
+    display: block;
+  }
+  .cases-main .home-slider__title-mobile p {
+    margin: 2px 0 !important;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding: 0 15px;
-    margin: 5px 0;
+  }
+  .cases-main p {
+    margin: 1px 0 !important;
   }
   .cases-main h4 {
     font-size: 14px;
+    margin: 0;
+  }
+  .cases-main h4 p:last-child {
     margin: 0;
   }
   .cases-main h4 div {
