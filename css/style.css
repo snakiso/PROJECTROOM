@@ -263,6 +263,10 @@ a {
   background: black;
 }
 
+.midnightInner {
+  min-height: 98px;
+}
+
 @media screen and (max-width: 768px) {
   .fixed-header {
     position: relative !important;
