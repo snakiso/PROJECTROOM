@@ -14,6 +14,9 @@
 </head>
 
 <body>
+  <a href="#up" class="to-top-button">
+    <span class="to-top-arrow"></span>
+  </a>
 <header class="fixed-header">
   <div class="midnightHeader default">
     <div class="midnightInner">
@@ -82,26 +85,30 @@
     </div>
   </section>
   <section id="down" class="we-do">
-   <div data-animation-container>
-    <h2 data-animation-child class="title animate__animated" data-animation="animate__fadeInLeft" >Что мы делаем</h2>
+   <div data-animation-container class="title">
+    <h2 data-animation-child class="title overlay-anim-box5 tr-delay-1" data-animation="overlay-anim2">Что мы делаем</h2>
    </div>
    <div class="we-do__wrapper">
-    <div data-animation-container class="we-do__item">
-     <div data-animation-child class="we-do__img animate__animated" data-animation="animate__fadeInLeft" >
+    <div class="we-do__item">
+     <div data-animation-container  class="we-do__img overlay-anim-box4" data-animation="overlay-anim2" >
       <img src="./img/services-img/we-do1.jpg" alt="">
      </div>
-     <div class="we-do__info " >
-      <div data-animation-child  class="we-do__title animate__animated" data-animation="animate__fadeInLeft">
-       <h4>Аналитика</h4>
-       <h3>Определяем вектор всех последующих действий для достижения цели</h3>
+     <div data-animation-container class="we-do__info">
+      <div  class="we-do__title" >
+       <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Аналитика</h4>
+       <h3>
+        <span data-animation-child class="slider-overlay tr-delay-1" data-animation="overlay-anim2">Определяем вектор всех</span>
+        <span data-animation-child class="slider-overlay tr-delay-2" data-animation="overlay-anim2">последующих действий</span>
+        <span data-animation-child class="slider-overlay tr-delay-3" data-animation="overlay-anim2">для достижения цели</span>
+        </h3>
        <ul>
-        <li>Предпроектное исследование</li>
-        <li>Анализ задач, проблем и потребностей</li>
-        <li>Разработка предложений и рекомендаций</li>
-        <li>Подготовка технического задания</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1s" >Предпроектное исследование</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.1s" >Анализ задач, проблем и потребностей</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.2s" >Разработка предложений и рекомендаций</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.3s" >Подготовка технического задания</li>
        </ul>
       </div>
-      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInRight">
+      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.5s">
        <p>
         В первую очередь прорабатываем вопрос совместно с вами, предоставляем бриф, проводим интервью вашей рабочей группы.
         Определив потребности, анализируем конкурентной среду и выявляем преимущества вашего бизнеса. Разрабатываем предложения
@@ -111,20 +118,24 @@
       </div>
      </div>
     </div>
-    <div data-animation-container class="we-do__item">
-     <div data-animation-child class="we-do__img animate__animated" data-animation="animate__fadeInLeft">
+    <div class="we-do__item">
+     <div data-animation-container class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do2.jpg" alt="">
      </div>
-     <div  class="we-do__info">
-      <div data-animation-child class="we-do__title animate__animated" data-animation="animate__fadeInLeft">
-       <h4>Дизайн и интерфейс</h4>
-       <h3>Разрабатываем комплекс визуальных и структурных решений</h3>
+     <div data-animation-container  class="we-do__info">
+      <div class="we-do__title">
+       <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2" >Дизайн и интерфейс</h4>
+       <h3>
+        <span data-animation-child class="slider-overlay tr-delay-1" data-animation="overlay-anim2">Разрабатываем комплекс</span>
+        <span data-animation-child class="slider-overlay tr-delay-2" data-animation="overlay-anim2">визуальных и структурных</span>
+        <span data-animation-child class="slider-overlay tr-delay-3" data-animation="overlay-anim2">решений</span>
+        </h3>
        <ul>
-        <li>Создание уникальной визуальной составляющей</li>
-        <li>Разработка UI/UX дизайна</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1s" >Создание уникальной визуальной составляющей</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.1s" >Разработка UI/UX дизайна</li>
        </ul>
       </div>
-      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInRight">
+      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.2s">
        <p>
         Грамотный дизайн, как комплекс структурных и визуальных решений, реализует основные задачи сайта. Мы придерживаемся трёх
         правил — простота в использовании, комфорт в работе, грамотно организованная структура. Используя устоявшиеся,
@@ -136,20 +147,23 @@
       </div>
      </div>
     </div>
-    <div data-animation-container class="we-do__item">
-     <div data-animation-child  class="we-do__img animate__animated" data-animation="animate__fadeInLeft">
+    <div class="we-do__item">
+     <div data-animation-container class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do3.jpg" alt="">
      </div>
-     <div  class="we-do__info">
-      <div data-animation-child class="we-do__title animate__animated" data-animation="animate__fadeInLeft">
-       <h4>Программирование</h4>
-       <h3>Продуманная архитектура и эффективный код</h3>
+     <div data-animation-container  class="we-do__info">
+      <div class="we-do__title">
+        <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Программирование</h4>
+       <h3>
+        <span data-animation-child class="slider-overlay tr-delay-1" data-animation="overlay-anim2">Продуманная архитектура</span>
+        <span data-animation-child class="slider-overlay tr-delay-2" data-animation="overlay-anim2">и эффективный код</span> 
+         </h3>
        <ul>
-        <li>Frontend разработка</li>
-        <li>Backend разработка</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1s" >Frontend разработка</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.1s" >Backend разработка</li>
        </ul>
       </div>
-      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInRight">
+      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.3s">
        <p>
         Одна из основных задач — не только перенести дизайн-макет в код, но и сделать так, чтобы все работало быстро
         и корректно, организовать логичную работу компонентов сайта. То самое «лицо», которое вы видите, попав на любую страницу
@@ -162,23 +176,29 @@
       </div>
      </div>
     </div>
-    <div data-animation-container class="we-do__item">
-     <div data-animation-child class="we-do__img animate__animated" data-animation="animate__fadeInLeft">
+    <div class="we-do__item">
+     <div data-animation-container class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do4.jpg" alt="">
      </div>
-     <div  class="we-do__info">
-      <div data-animation-child class="we-do__title animate__animated" data-animation="animate__fadeInLeft">
-       <h4>Сервис и поддержка</h4>
-       <h3>Возьмём «под крыло» созданные нами или уже существующие сайты, чтобы сделать их ещё лучше</h3>
+     <div data-animation-container class="we-do__info">
+      <div class="we-do__title">
+        <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Сервис и поддержка</h4>
+       <h3>
+        <span data-animation-child class="slider-overlay tr-delay-1" data-animation="overlay-anim2">Возьмём «под крыло»</span>
+        <span data-animation-child class="slider-overlay tr-delay-2" data-animation="overlay-anim2">созданные нами</span>
+        <span data-animation-child class="slider-overlay tr-delay-3" data-animation="overlay-anim2">или уже существующие</span>
+        <span data-animation-child class="slider-overlay tr-delay-4" data-animation="overlay-anim2">сайты, чтобы сделать</span>
+        <span data-animation-child class="slider-overlay tr-delay-5" data-animation="overlay-anim2">их ещё лучше</span>
+            </h3>
        <ul>
-        <li>Регистрация домена и хостинга</li>
-        <li>Аренда, настройка и администрирование серверов</li>
-        <li>Техническая поддержка</li>
-        <li>Контент-поддержка</li>
-        <li>Дизайн-поддержка</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1s" >Регистрация домена и хостинга</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.1s" >Аренда, настройка и администрирование серверов</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.2s" >Техническая поддержка</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.3s" >Контент-поддержка</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.4s" >Дизайн-поддержка</li>
        </ul>
       </div>
-      <div data-animation-child class="we-do__text animate__animated"data-animation="animate__fadeInRight">
+      <div data-animation-child class="we-do__text animate__animated"data-animation="animate__fadeInUp" data-animation-delay="1.5s">
        <p>
        То, с чего все начинается — регистрация домена и хостинга — базовые услуги, без которых невозможно создание ни одного
        сайта. Подберём доменные имена, учитывая ваши пожелания, подскажем в какой зоне лучше оставаться и поможем выбрать
@@ -192,21 +212,24 @@
       </div>
      </div>
     </div>
-    <div data-animation-container class="we-do__item">
-     <div data-animation-child class="we-do__img animate__animated" data-animation="animate__fadeInLeft">
+    <div class="we-do__item">
+     <div data-animation-container class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do5.jpg" alt="">
      </div>
-     <div  class="we-do__info">
-      <div data-animation-child class="we-do__title animate__animated" data-animation="animate__fadeInLeft">
-       <h4>Маркетинг</h4>
-       <h3>Подбираем ключ к сознанию ваших пользователей</h3>
+     <div data-animation-container class="we-do__info">
+      <div  class="we-do__title">
+        <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Маркетинг</h4>
+       <h3>
+        <span data-animation-child class="slider-overlay tr-delay-1" data-animation="overlay-anim2">Подбираем ключ к сознанию</span>
+        <span data-animation-child class="slider-overlay tr-delay-2" data-animation="overlay-anim2">ваших пользователей</span>
+         </h3>
        <ul>
-        <li>Комплексный аудит</li>
-        <li>Анализ юзабилити</li>
-        <li>Создание уникального контента</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1s" >Комплексный аудит</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.1s" >Анализ юзабилити</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.2s" >Создание уникального контента</li>
        </ul>
       </div>
-      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInRight">
+      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.3s">
        <p>
         Не понимаете почему пользователи не находят ваш сайт и быстро уходят? Тогда мы поможем разобраться в чем проблема,
         проведём всесторонний анализ, отталкиваясь от шести ключевых факторов: удобство интерфейса, навигация и меню, структура
@@ -222,21 +245,24 @@
       </div>
      </div>
     </div>
-    <div data-animation-container class="we-do__item">
-     <div data-animation-child class="we-do__img animate__animated" data-animation="animate__fadeInLeft">
+    <div class="we-do__item">
+     <div data-animation-container class="we-do__img animate__animated" data-animation="animate__fadeInLeft">
       <img src="./img/services-img/we-do6.jpg" alt="">
      </div>
-     <div  class="we-do__info">
-      <div data-animation-child class="we-do__title animate__animated" data-animation="animate__fadeInLeft">
-       <h4>Продвижение</h4>
-       <h3>Результат превыше ваших ожиданий</h3>
+     <div data-animation-container class="we-do__info">
+      <div  class="we-do__title">
+        <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Продвижение</h4>
+       <h3>
+        <span data-animation-child class="slider-overlay tr-delay-1" data-animation="overlay-anim2">Результат превыше ваших</span>
+        <span data-animation-child class="slider-overlay tr-delay-2" data-animation="overlay-anim2">ожиданий</span>
+         </h3>
        <ul>
-        <li>Контекстная реклама</li>
-        <li>SEO-продвижение</li>
-        <li>SMM</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1s" >Контекстная реклама</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.1s" >SEO-продвижение</li>
+        <li data-animation-child class="animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.2s" >SMM</li>
        </ul>
       </div>
-      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInt">
+      <div data-animation-child class="we-do__text animate__animated" data-animation="animate__fadeInUp" data-animation-delay="1.3s">
        <p>
        В нашем арсенале есть партнёры, которым мы доверяем и сами видели результат, приносящий доход нашим клиентам.
        Мы ручаемся и знаем к кому вас направить. Опыт взаимного сотрудничества показал высокие результаты. Настроят контекстную

@@ -1,5 +1,6 @@
 
 /* 8. Circle progress bar */
+let unactiveDetails = document.querySelectorAll('.unactive-details')
 let unactiveWork = document.querySelectorAll('.unactive-work')
 let unactiveNumber = document.querySelectorAll('.unactive-number')
 let section = document.querySelector('.we-work')
@@ -34,36 +35,45 @@ function removeClass() {
  for (let j = 0; j < unactiveNumber.length; j++) {
   unactiveNumber[j].classList.remove('active-number')
  }
+ for (let i = 0; i < unactiveDetails.length; i++) {
+  unactiveDetails[i].classList.remove('active-details')
+ } 
 }
 window.addEventListener('scroll', () => {
  if (section.getBoundingClientRect().top > -100) {
   removeClass()
   unactiveWork[0].classList.add('active-work')
   unactiveNumber[0].classList.add('active-number')
+  unactiveDetails[0].classList.add('active-details')
  }
  if (section.getBoundingClientRect().top < -100) {
   removeClass()
   unactiveWork[1].classList.add('active-work')
   unactiveNumber[1].classList.add('active-number')
+  unactiveDetails[1].classList.add('active-details')
  }
  if (section.getBoundingClientRect().top < -300) {
   removeClass()
   unactiveWork[2].classList.add('active-work')
   unactiveNumber[2].classList.add('active-number')
+  unactiveDetails[2].classList.add('active-details')
  }
  if (section.getBoundingClientRect().top < -500) {
   removeClass()
   unactiveWork[3].classList.add('active-work')
   unactiveNumber[3].classList.add('active-number')
+  unactiveDetails[3].classList.add('active-details')
  }
  if (section.getBoundingClientRect().top < -700) {
   removeClass()
   unactiveWork[4].classList.add('active-work')
   unactiveNumber[4].classList.add('active-number')
+  unactiveDetails[4].classList.add('active-details')
  }
  if (section.getBoundingClientRect().top < -900) {
   removeClass()
   unactiveWork[5].classList.add('active-work')
   unactiveNumber[5].classList.add('active-number')
+  unactiveDetails[5].classList.add('active-details')
  }
 })

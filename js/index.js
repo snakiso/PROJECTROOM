@@ -111,6 +111,9 @@ var swiper = new Swiper('.we-can__slider', {
   spaceBetween: 30,
   centeredSlides: true,
   speed: 1400,
+  autoplay: {
+    delay: 5000
+  },
   freeMode: true,
   navigation: {
     nextEl: ".swiper-button-next",

@@ -2,6 +2,8 @@
    background-color: rgba(34, 34, 34, 1)
    min-height: 100vh
    color: white
+   .overlay-anim-box4:before
+      background-color: rgba(34, 34, 34, 1)
    &__slider
       display: none
    &__item:last-child
@@ -27,6 +29,18 @@
          font-size: 34px
          max-width: 550px
          text-transform: uppercase
+         .slider-overlay:before
+            background: white
+         .tr-delay-1.slider-overlay:before
+            transition-delay: 0.4s
+         .tr-delay-2.slider-overlay:before
+            transition-delay: 0.5s
+         .tr-delay-3.slider-overlay:before
+            transition-delay: 0.6s
+         .tr-delay-4.slider-overlay:before
+            transition-delay: 0.7s
+         .tr-delay-5.slider-overlay:before
+            transition-delay: 0.8s               
       ul
          li
             position: relative
