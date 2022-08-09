@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <a href="#up" class="to-top-button">
+  <button class="to-top-button">
     <span class="to-top-arrow"></span>
-  </a>
+  </button>
 <header class="fixed-header">
   <div class="midnightHeader default">
     <div class="midnightInner">
@@ -57,7 +57,7 @@
   </ul>
  </nav>
  <main>
-  <section class="services-main">
+  <section class="services-main" id="up">
     <div class="swiper-slide width-100 bg-black__reverse">
      <div class="slide-bg slide-bg__reverse"></div>
      <div class="home-slider__content">
@@ -90,12 +90,12 @@
    </div>
    <div class="we-do__wrapper">
     <div class="we-do__item">
-     <div data-animation-container  class="we-do__img overlay-anim-box4" data-animation="overlay-anim2" >
+     <div data-animation-container  class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do1.jpg" alt="">
      </div>
-     <div data-animation-container class="we-do__info">
+     <div data-animation-container class="we-do__info" data-animation-start>
       <div  class="we-do__title" >
-       <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Аналитика</h4>
+       <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2" >Аналитика</h4>
        <h3>
         <span data-animation-child class="slider-overlay tr-delay-1" data-animation="overlay-anim2">Определяем вектор всех</span>
         <span data-animation-child class="slider-overlay tr-delay-2" data-animation="overlay-anim2">последующих действий</span>
@@ -122,7 +122,7 @@
      <div data-animation-container class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do2.jpg" alt="">
      </div>
-     <div data-animation-container  class="we-do__info">
+     <div data-animation-container data-animation-start  class="we-do__info">
       <div class="we-do__title">
        <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2" >Дизайн и интерфейс</h4>
        <h3>
@@ -151,7 +151,7 @@
      <div data-animation-container class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do3.jpg" alt="">
      </div>
-     <div data-animation-container  class="we-do__info">
+     <div data-animation-container data-animation-start  class="we-do__info">
       <div class="we-do__title">
         <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Программирование</h4>
        <h3>
@@ -180,7 +180,7 @@
      <div data-animation-container class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do4.jpg" alt="">
      </div>
-     <div data-animation-container class="we-do__info">
+     <div data-animation-container data-animation-start class="we-do__info">
       <div class="we-do__title">
         <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Сервис и поддержка</h4>
        <h3>
@@ -216,7 +216,7 @@
      <div data-animation-container class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do5.jpg" alt="">
      </div>
-     <div data-animation-container class="we-do__info">
+     <div data-animation-container data-animation-start class="we-do__info">
       <div  class="we-do__title">
         <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Маркетинг</h4>
        <h3>
@@ -249,7 +249,7 @@
      <div data-animation-container class="we-do__img overlay-anim-box4" data-animation="overlay-anim2">
       <img src="./img/services-img/we-do6.jpg" alt="">
      </div>
-     <div data-animation-container class="we-do__info">
+     <div data-animation-container data-animation-start class="we-do__info">
       <div  class="we-do__title">
         <h4 data-animation-child class="slider-overlay" data-animation="overlay-anim2">Продвижение</h4>
        <h3>
@@ -703,5 +703,6 @@
  <script src="./js/jquery.spincrement.min.js"></script>
  <script src="./js/index.js"></script>
  <script src="./js/numberAnimation.js"></script>
+ <script src="./js/buttonToTop.js"></script>
 </body>
 </html>

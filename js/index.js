@@ -1,20 +1,9 @@
 ///1. ScrollAnimations 
-var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container], [data-animation-start]');
+$('[data-animation-start]').scrollAnimations({
+  offset: 0.8
+});
 $containers.scrollAnimations();
-// button to top// 
-let buttonToTop = document.querySelector('.to-top-button')
-let sections = document.getElementsByTagName('section')
-let check = document.querySelectorAll('.experiencies__item') // высота экрана деленная на 2
-let check2 = document.querySelector('.benefits__number')
-window.addEventListener('scroll', () => {
-  screenHeight = window.innerHeight
- // console.log(check2.getBoundingClientRect().top) 
-  if (sections[0].getBoundingClientRect().top < -(screenHeight)){
-    buttonToTop.style.visibility ='visible'
-  }else{
-    buttonToTop.style.visibility = 'hidden'
-  }
-})
 //  // // //
 ///2. Swiper slider */
 var interleaveOffset = 0.5;

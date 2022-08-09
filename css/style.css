@@ -4529,6 +4529,7 @@ input, textarea {
           transition-duration: 1s;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+  border: none;
 }
 
 .to-top-button:before {
