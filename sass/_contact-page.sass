@@ -2,11 +2,34 @@
  position: static
  height: 140px
  background: rgba(29, 29, 27, 1)
+ .midnightInner
+  display: flex
+  min-height: 140px
+ .midnightHeader.black
+  display: none
 .contact-main
  background-color: white
  color: black !important
  min-height: 100vh
  margin-bottom: 362px
+ .overlay-anim-box1
+  display: block
+ .overlay-anim-box1:before
+  background: #FFFF
+ .tr-delay-1.overlay-anim-box1:before
+  transition-delay: 0.2s
+ .tr-delay-2.overlay-anim-box1:before
+  transition-delay: 0.4s
+ .tr-delay-3.overlay-anim-box1:before
+  transition-delay: 0.6s
+ .tr-delay-4.overlay-anim-box1:before
+  transition-delay: 0.8s
+ .tr-delay-5.overlay-anim-box1:before
+  transition-delay: 1s
+ .tr-delay-6.overlay-anim-box1:before
+  transition-delay: 1.2s
+ .tr-delay-7.overlay-anim-box1:before
+  transition-delay: 1.4s   
  .contact-us__wrapper
   display: flex
   padding: 0
@@ -71,12 +94,14 @@
  &__messanger
   align-items: center
   text-transform: uppercase
-  display: flex
+  display: flex !important
   p
    font-family: 'Gilroy-Bold' !important
    letter-spacing: 0.12em
  &__map
   flex-basis: 50% 
+  position: relative
+  z-index: 2
 @media screen and ( max-width: 1200px )
  .contact-main
   &__map

@@ -226,13 +226,13 @@ a {
   -webkit-transition: 1s cubic-bezier(0.767, 0.01, 0.18, 1.01);
   transition: 1s cubic-bezier(0.767, 0.01, 0.18, 1.01);
   left: 0;
-  top: 0;
+  top: 1px;
   -webkit-transition-delay: 1.3s;
           transition-delay: 1.3s;
 }
 
 .hamburger:after {
-  top: auto;
+  top: auto !important;
   bottom: 0;
 }
 
@@ -2758,7 +2758,7 @@ input, textarea {
 }
 .contact-us__send-field {
   margin-top: 30px;
-  display: grid;
+  display: grid !important;
   grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 20px 84px;
   -webkit-column-gap: 30px;
@@ -4308,12 +4308,55 @@ input, textarea {
   height: 140px;
   background: rgb(29, 29, 27);
 }
+.static-header .midnightInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 140px;
+}
+.static-header .midnightHeader.black {
+  display: none;
+}
 
 .contact-main {
   background-color: white;
   color: black !important;
   min-height: 100vh;
   margin-bottom: 362px;
+}
+.contact-main .overlay-anim-box1 {
+  display: block;
+}
+.contact-main .overlay-anim-box1:before {
+  background: white;
+}
+.contact-main .tr-delay-1.overlay-anim-box1:before {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.contact-main .tr-delay-2.overlay-anim-box1:before {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.contact-main .tr-delay-3.overlay-anim-box1:before {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+.contact-main .tr-delay-4.overlay-anim-box1:before {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+.contact-main .tr-delay-5.overlay-anim-box1:before {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+.contact-main .tr-delay-6.overlay-anim-box1:before {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+.contact-main .tr-delay-7.overlay-anim-box1:before {
+  -webkit-transition-delay: 1.4s;
+          transition-delay: 1.4s;
 }
 .contact-main .contact-us__wrapper {
   display: -webkit-box;
@@ -4440,9 +4483,9 @@ input, textarea {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 .contact-main__messanger p {
   font-family: "Gilroy-Bold" !important;
@@ -4451,6 +4494,8 @@ input, textarea {
 .contact-main__map {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 1200px) {
