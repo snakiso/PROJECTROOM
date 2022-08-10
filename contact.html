@@ -146,6 +146,8 @@
           iconImageOffset: [-80, -120],
         });
         myMap.geoObjects.add(myPlacemark)
+        myMap.behaviors
+        .disable(['rightMouseButtonMagnifier', "scrollZoom"])
       }        
     </script>
     <div id="map"></div>
