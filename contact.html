@@ -116,12 +116,39 @@
        <input type="checkbox" name="robot">
        <label for="robot">Даю согласие на обработку данных</label>
       </form>
-      <button data-animation-child class="button contact-us__button ">Отправить <img src="./img/Arrow_right.svg" alt=""></button>
+      <a href="#" class=" button arrow-btn contact-us__button "><span>Отправить</span></a>
      </div>
     </div>
     </div>
     <div class="contact-main__map">
-     <img src="./img/map.jpg" alt="">
+     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7dff6eb1-023d-4cff-b880-0cccd7a96b78"
+      type="text/javascript"></script>
+    <script>
+      var myMap;
+      ymaps.ready(init);
+      function init() {
+        myMap = new ymaps.Map('map', {
+          center: [55.785437, 37.705365],
+          zoom: 18,
+          controls: ['zoomControl',]
+        }, {
+          // searchControlProvider: 'yandex#search'
+        });
+        var myPlacemark = new ymaps.Placemark([55.785437, 37.705365], {
+          balloonContentHeader: '<img src="./img/placemarker.svg">',
+          balloonContentBody: "г.Москва, Малая Семёновская улица, 3А",
+          balloonContentFooter: "Мы ждем",
+          hintContent: "Офис PROJECTROOM"
+        }, {
+          iconLayout: 'default#image',
+         iconImageHref: "./img/placemarker.svg",
+          iconImageSize: [160, 120],
+          iconImageOffset: [-80, -120],
+        });
+        myMap.geoObjects.add(myPlacemark)
+      }        
+    </script>
+    <div id="map"></div>
     </div>
    </div>
   </section>

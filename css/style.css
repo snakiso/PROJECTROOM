@@ -2916,9 +2916,9 @@ input, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 70px;
   max-width: 1300px;
   margin: auto;
@@ -4363,11 +4363,33 @@ input, textarea {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  max-width: 1930px;
+  max-width: 1925px;
   margin: 0 0 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contact-main .contact-us__button {
   background-color: rgb(92, 77, 216);
+}
+.contact-main .arrow-btn:before {
+  right: 85px;
+}
+.contact-main .arrow-btn:after {
+  right: 85px;
+}
+.contact-main .contact-us__button:hover.arrow-btn:before {
+  background: white;
+  right: 50px;
+}
+.contact-main .contact-us__button:hover.arrow-btn:after {
+  right: 50px;
+}
+.contact-main .contact-us__button:hover span {
+  color: white;
+}
+.contact-main .button:hover {
+  padding: 0;
 }
 .contact-main__title {
   color: white;
@@ -4380,9 +4402,8 @@ input, textarea {
 .contact-main__container {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  margin-right: 110px;
   max-width: 750px;
-  padding-left: 10px;
+  padding-left: 0;
 }
 .contact-main__container h4 {
   text-transform: uppercase;
@@ -4496,8 +4517,50 @@ input, textarea {
       flex-basis: 50%;
   position: relative;
   z-index: 2;
+  min-height: 100vh;
 }
 
+#map {
+  height: 100%;
+}
+
+.ymaps-2-1-79-map {
+  height: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-us__captcha form {
+    grid-template-columns: 1fr 3fr;
+  }
+  .contact-main .contact-us__wrapper {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+  .contact-main .contact-main__container {
+    max-width: 650px;
+  }
+  .contact-main .contact-main__container h4 {
+    font-size: 22px;
+  }
+  .contact-main__title {
+    font-size: 50px !important;
+    margin: 40px auto 40px 0;
+  }
+  .contact-main__contacts h4 {
+    font-size: 22px;
+  }
+  .contact-main__contacts p {
+    font-size: 16px;
+  }
+  .contact-main .message-wrapper {
+    max-width: 600px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .contact-main__map {
     width: 100%;
