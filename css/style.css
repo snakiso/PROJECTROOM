@@ -4723,6 +4723,210 @@ input, textarea {
   top: -9px;
 }
 
+.manhattan-main {
+  min-height: 100vh;
+  position: relative;
+}
+.manhattan-main .scroll-arrow:before {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.manhattan-main .scroll-button-flip:before {
+  color: black;
+}
+.manhattan-main .swiper-slide {
+  min-height: 100vh;
+}
+.manhattan-main .slide-bg-2 {
+  background-image: url(../img/manhattan-img/preview.png) !important;
+}
+.manhattan-main .bg-black {
+  background-color: white !important;
+}
+.manhattan-main .home-slider__title {
+  max-width: 600px;
+}
+.manhattan-main .container-bg {
+  width: 50%;
+  margin-left: 50%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+.manhattan-main .container-bg img {
+  height: 100vh;
+}
+.manhattan-main .home-slider__container {
+  position: relative;
+  z-index: 2;
+}
+.manhattan-main .margin-left-50 img {
+  margin-left: 40px;
+}
+.manhattan-main .margin-left-50 .create-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40px;
+  -webkit-column-gap: 44px;
+     -moz-column-gap: 44px;
+          column-gap: 44px;
+  font-family: "Gilroy-Medium";
+  margin-top: 50px;
+}
+.manhattan-main .margin-left-50 .create-info div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.manhattan-main .margin-left-50 .create-info div p:first-child {
+  color: rgb(102, 102, 102);
+  font-size: 18px;
+  margin: 5px 0;
+}
+.manhattan-main .margin-left-50 .create-info div p:nth-child(2) {
+  color: black;
+  font-size: 24px;
+  margin: 0;
+}
+.manhattan-main .margin-left-50 .create-info div a {
+  color: black;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.manhattan-task {
+  min-height: 100vh;
+  background-color: rgb(34, 34, 34);
+  position: relative;
+}
+.manhattan-task .manhattan-task__wrapper {
+  max-width: 1300px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 230px;
+}
+.manhattan-task .manhattan-task__title {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.manhattan-task .manhattan-task__title h3 {
+  text-transform: uppercase;
+  font-size: 64px;
+  margin: 0;
+}
+.manhattan-task .manhattan-task__title p {
+  max-width: 540px;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+.manhattan-task .manhattan-task__task-list ul li {
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 0 0 24px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: white;
+}
+.manhattan-task .manhattan-task__task-list ul li:before {
+  content: "";
+  position: absolute;
+  background: rgb(92, 77, 216);
+  width: 8px;
+  height: 8px;
+  left: 0px;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.manhattan-technologies {
+  min-height: 100vh;
+  background-color: rgb(245, 245, 245);
+}
+.manhattan-technologies__wrapper {
+  max-width: 1300px;
+  margin: auto;
+}
+.manhattan-technologies__title {
+  padding-top: 230px;
+  margin-bottom: 40px;
+}
+.manhattan-technologies__title h3 {
+  margin: 0;
+  color: rgb(51, 51, 51);
+  font-size: 44px;
+}
+.manhattan-technologies .technologies-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 140px;
+}
+.manhattan-technologies .technologies-slider .slider-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 415px;
+  height: 295px;
+}
+.manhattan-technologies .technologies-slider .slider-inner p {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  margin-top: 50px;
+}
+.manhattan-technologies .technologies-slider .swiper-button-next {
+  left: calc(50% + 30px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.manhattan-technologies .technologies-slider .swiper-button-prev {
+  left: calc(50% - 30px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.manhattan-technologies .technologies-slider .slider-arrow-next:before {
+  border-top: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+}
+.manhattan-technologies .technologies-slider .slider-arrow-prev:before {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+}
+.manhattan-technologies .technologies-slider .swiper-button-next:hover .slider-arrow-next:before {
+  border-top: 2px solid rgb(92, 77, 216);
+  border-right: 2px solid rgb(92, 77, 216);
+}
+.manhattan-technologies .technologies-slider .swiper-button-prev:hover .slider-arrow-prev:before {
+  border-bottom: 2px solid rgb(92, 77, 216) !important;
+  border-left: 2px solid rgb(92, 77, 216) !important;
+}
+
 @media screen and (max-width: 1250px) {
   .margin-left-50__reverse {
     margin-left: calc(50% - 400px);

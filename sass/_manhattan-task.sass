@@ -1,0 +1,43 @@
+.manhattan-task
+ min-height: 100vh
+ background-color: rgba(34, 34, 34, 1)
+ position: relative
+ .manhattan-task__wrapper
+  max-width: 1300px
+  margin: auto
+  display: flex
+  justify-content: space-between
+  padding-top: 230px
+ .manhattan-task__title
+  color: white
+  display: flex
+  flex-direction: column
+  justify-content: center
+  h3
+   text-transform: uppercase
+   font-size: 64px
+   margin: 0
+  p
+   max-width: 540px
+   font-size: 18px
+   font-family: 'Gilroy-Medium'
+ .manhattan-task__task-list
+  ul
+   li
+    text-transform: uppercase
+    position: relative
+    padding: 0 0 0 24px
+    margin-bottom: 40px
+    font-size: 18px
+    color: white
+   li:before
+    content: ""
+    position: absolute
+    background: rgb(92, 77, 216)
+    width: 8px
+    height: 8px
+    left: 0px
+    top: 50%
+    border-radius: 50%
+    -webkit-transform: translate(0, -50%)
+    transform: translate(0, -50%)

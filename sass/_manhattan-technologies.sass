@@ -1,0 +1,47 @@
+.manhattan-technologies
+ min-height: 100vh
+ background-color: rgba(245, 245, 245, 1)
+ &__wrapper
+  max-width: 1300px
+  margin: auto
+ &__title
+  padding-top: 230px
+  margin-bottom: 40px
+  h3
+   margin: 0
+   color: rgba(51, 51, 51, 1)
+   font-size: 44px
+ .technologies-slider
+  width: 100%
+  height: 100%
+  position: relative
+  padding-bottom: 140px
+  .slider-inner
+   display: flex
+   flex-direction: column
+   align-items: center
+   justify-content: center
+   width: 415px
+   height: 295px
+   p
+    font-family: 'Gilroy-Medium'
+    font-size: 18px
+    margin-top: 50px
+  .swiper-button-next
+   left: calc(50% + 30px) 
+   transform: translateX(-50%) 
+  .swiper-button-prev
+   left: calc(50% - 30px) 
+   transform: translateX(-50%) 
+  .slider-arrow-next:before
+   border-top: 2px solid rgba(0, 0, 0, 1)
+   border-right: 2px solid rgba(0, 0, 0, 1)
+  .slider-arrow-prev:before
+   border-bottom: 2px solid rgba(0, 0, 0, 1)
+   border-left: 2px solid rgba(0, 0, 0, 1)
+  .swiper-button-next:hover .slider-arrow-next:before
+   border-top: 2px solid rgb(92, 77, 216)
+   border-right: 2px solid rgb(92, 77, 216)
+  .swiper-button-prev:hover .slider-arrow-prev:before
+   border-bottom: 2px solid rgb(92, 77, 216) !important
+   border-left: 2px solid rgb(92, 77, 216) !important

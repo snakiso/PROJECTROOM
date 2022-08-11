@@ -118,6 +118,28 @@ var swiper = new Swiper('.we-can__slider', {
 // // // 
 // // //
 // // //
+var swiper = new Swiper('.technologies-slider', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: false,
+  speed: 2500,
+  autoplay: {
+    delay: 5000
+  },
+  freeMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1
+    }
+  }
+});
+// // // 
+// // // 
+// // //
 var swiper = new Swiper('.we__work__slider-mobile', {
   slidesPerView: 1,
   spaceBetween: 10,
