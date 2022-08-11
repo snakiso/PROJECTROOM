@@ -144,10 +144,6 @@ closeButton.addEventListener('click', () => {
   hamburger.classList.remove('menu-open-active')
   nav.classList.remove('nav-container-active')
 })
-/* 4. Headroom */
-let header = document.querySelector('.fixed-header')
-let headroom = new Headroom(header)
-headroom.init()
 
 /// /// ///
 /// /// ///
