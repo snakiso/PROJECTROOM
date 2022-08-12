@@ -1,0 +1,41 @@
+.manhattan-more
+ background-color: #222222
+ .more-slider
+  overflow: hidden
+  max-width: 1280px
+  min-height: 280px
+  .swiper-pagination
+   left: 50%
+   position: absolute
+   transform: translateX(-50%)
+   margin-top: 30px
+  .swiper-pagination-bullet
+   transition: 0.8s cubic-bezier(0.225, 1, 0.316, 0.99)
+   border-radius: 100%
+   transform: scale(0.5)
+   display: inline-block
+   margin: 0 20px
+   width: 10px
+   height: 10px
+   background: rgb(255, 255, 255)
+  .swiper-pagination-bullet-active
+   background: rgb(92, 77, 216)
+   transform: scale(1)
+   transition: 0.8s cubic-bezier(0.225, 1, 0.316, 0.99)
+ .slide-content
+  display: flex
+  column-gap: 20px
+  background-color: #222222
+ &__wrapper
+  max-width: 1300px
+  padding: 120px 0
+  margin: auto
+ &__title
+  text-align: center
+  h3
+   margin: 0
+   font-size: 44px
+   color: white
+   text-align: center
+   text-transform: uppercase
+   margin-bottom: 60px

@@ -137,7 +137,69 @@ var swiper = new Swiper('.technologies-slider', {
     }
   }
 });
+// // //
+// // //
+// // //
+var swiper = new Swiper('.pages-slider', {
+  slidesPerView: 1,
+  spaceBetween: 60,
+  centeredSlides: true,
+  speed: 2500,
+  autoplay: {
+    delay: 5000
+  },
+  freeMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1
+    }
+  }
+});
 // // // 
+// // // 
+// // //
+var swiper = new Swiper('.d-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  centeredSlides: false,
+  speed: 2500,
+  autoplay: {
+    delay: 5000
+  },
+  freeMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1
+    }
+  }
+});
+// // // 
+// // //
+// // //
+var swiper = new Swiper('.more-slider', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 20,
+  speed: 1200,
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  autoHeight: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
+// // //
 // // // 
 // // //
 var swiper = new Swiper('.we__work__slider-mobile', {
