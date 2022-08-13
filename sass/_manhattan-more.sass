@@ -1,9 +1,15 @@
 .manhattan-more
  background-color: #222222
+ .more-slider-mobile
+  display: none
  .more-slider
   overflow: hidden
   max-width: 1280px
   min-height: 280px
+  .swiper-slide
+    img
+      width: 100%
+ .more-slider,.more-slider-mobile     
   .swiper-pagination
    left: 50%
    position: absolute
@@ -39,3 +45,18 @@
    text-align: center
    text-transform: uppercase
    margin-bottom: 60px
+@media screen and ( max-width: 768px )
+  .manhattan-more
+    &__title
+      h3
+        padding: 0 12px
+        font-size: 33px
+    .more-slider
+      display: none
+    .more-slider-mobile
+      display: block 
+      width: 296px
+      margin: auto
+      overflow: hidden
+      img
+        width: 100%     

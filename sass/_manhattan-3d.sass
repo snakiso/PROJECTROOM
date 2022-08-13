@@ -5,7 +5,9 @@
  .tr-delay-2.overlay-anim-box1:before
    transition-delay: 0.4s
  .tr-delay-3.overlay-anim-box1:before
-   transition-delay: 0.7s     
+   transition-delay: 0.7s 
+ .d-slider
+  max-width: 700px      
  .swiper-slide
   flex-shrink: 1
  .swiper-button-next
@@ -46,4 +48,24 @@
   &__title
    p
     font-size: 16px
-    max-width: 500px 
+    max-width: 500px
+@media screen and ( max-width: 768px )     
+ .manhattan-3d
+  &__wrapper
+   margin-left: 0
+   padding: 100px 12px
+  &__title
+    flex-direction: column
+    padding-left: 12px
+    h3
+      font-size: 33px
+    p
+      font-size: 14px
+      max-width: 500px
+  .d-slider
+    margin-top: 30px
+    overflow: hidden
+    img
+      width: 100%
+    .swiper-slide
+      flex-shrink: 0    

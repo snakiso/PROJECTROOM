@@ -2,12 +2,12 @@
  min-height: 100vh
  background-color: rgba(34, 34, 34, 1)
  position: relative
+ display: flex
  .manhattan-task__wrapper
   max-width: 1300px
   margin: auto
   display: flex
   justify-content: space-between
-  padding-top: 230px
  .manhattan-task__title
   color: white
   display: flex
@@ -41,3 +41,21 @@
     border-radius: 50%
     -webkit-transform: translate(0, -50%)
     transform: translate(0, -50%)
+@media screen and ( max-width: 768px ) 
+ .manhattan-task 
+  &__wrapper
+    flex-direction: column
+    padding: 0 12px
+  &__title
+    h3
+      font-size: 34px !important
+    p
+      font-size: 14px !important
+      margin: 30px 0
+  .manhattan-task__task-list
+    ul
+      li
+        font-size: 14px
+        margin-bottom: 12px
+        letter-spacing: 0.1em
+

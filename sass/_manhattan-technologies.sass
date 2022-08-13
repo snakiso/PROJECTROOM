@@ -1,12 +1,12 @@
 .manhattan-technologies
  min-height: 100vh
  background-color: rgba(245, 245, 245, 1)
+ display: flex
  &__wrapper
   max-width: 1300px
   margin: auto
   position: relative
  &__title
-  padding-top: 230px
   margin-bottom: 40px
   h3
    margin: 0
@@ -46,8 +46,20 @@
   .swiper-button-prev:hover .slider-arrow-prev:before
    border-bottom: 2px solid rgb(92, 77, 216) !important
    border-left: 2px solid rgb(92, 77, 216) !important
+.slide-wrap
+ display: flex   
 @media screen and ( max-width: 1920px )
  .manhattan-technologies
   &__wrapper
     max-width: 940px
-    margin-left: 25%    
+    margin-left: 25%   
+@media screen and ( max-width: 768px )
+  .manhattan-technologies
+    &__wrapper
+      margin: auto
+      width: calc( 100% - 24px )
+    .swiper-slide
+      justify-content: center
+    &__title
+      h3
+        font-size: 33px    

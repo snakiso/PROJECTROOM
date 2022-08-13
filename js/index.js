@@ -120,20 +120,24 @@ var swiper = new Swiper('.we-can__slider', {
 // // //
 var swiper = new Swiper('.technologies-slider', {
   slidesPerView: 3,
+  slidesPerGroup: 2,
   spaceBetween: 30,
   centeredSlides: false,
-  speed: 2500,
+  speed: 1000,
   autoplay: {
     delay: 5000
   },
-  freeMode: true,
+  freeMode: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   },
   breakpoints: {
     768: {
-      slidesPerView: 1
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      centeredSlides: true,
+      loop: true
     }
   }
 });
@@ -141,10 +145,11 @@ var swiper = new Swiper('.technologies-slider', {
 // // //
 // // //
 var swiper = new Swiper('.pages-slider', {
-  slidesPerView: 1,
-  spaceBetween: 60,
-  centeredSlides: true,
-  speed: 2500,
+  slidesPerView: 2,
+  spaceBetween: 80,
+  centeredSlides: false,
+  slidesPerGroup: 2,
+  speed: 1500,
   autoplay: {
     delay: 5000
   },
@@ -154,8 +159,14 @@ var swiper = new Swiper('.pages-slider', {
     prevEl: ".swiper-button-prev"
   },
   breakpoints: {
+    1920: {
+      spaceBetween: 20,
+    },
     768: {
-      slidesPerView: 1
+      spaceBetween: 10,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      centeredSlides: true,
     }
   }
 });
@@ -177,7 +188,8 @@ var swiper = new Swiper('.d-slider', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 1
+      slidesPerView: 1,
+      centeredSlides: true,
     }
   }
 });
@@ -188,6 +200,24 @@ var swiper = new Swiper('.more-slider', {
   slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 20,
+  speed: 1200,
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  autoHeight: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
+// // // 
+// // // 
+// // // 
+var swiper = new Swiper('.more-slider-mobile', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 30,
   speed: 1200,
   autoplay: {
     delay: 5000

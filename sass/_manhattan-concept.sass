@@ -1,5 +1,7 @@
 .manhattan-concept
  background-color: white
+ .concept-img-mobile
+  display: none
  .overlay-anim-box1:before
   background: white
  &__title
@@ -23,11 +25,27 @@
    margin-bottom: 60px 
  &__img
   img
-   width: 100%    
+   max-width: 100%    
 @media screen and ( max-width: 1920px )
  .manhattan-concept
   &__title
    max-width: 1060px
    p
     font-size: 16px
-    max-width: 720px   
+    max-width: 720px
+@media screen and ( max-width: 768px )
+  .manhattan-concept
+    &__title
+      margin-left: 0 
+      padding: 80px  12px 0
+      h3
+        font-size: 33px
+      p
+        font-size: 14px
+    &__img
+      display: flex
+      justify-content: center     
+    .concept-img-mobile
+      display: block
+    .concept-img-desk
+      display: none      
