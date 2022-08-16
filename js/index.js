@@ -202,7 +202,7 @@ var swiper = new Swiper('.more-slider', {
   spaceBetween: 20,
   speed: 1200,
   autoplay: {
-    delay: 5000
+    delay: 2000
   },
   loop: true,
   autoHeight: true,
